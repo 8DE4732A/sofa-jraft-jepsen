@@ -7,7 +7,8 @@ RUN apt update && \
 	apt install -y openjdk-8-jre && \
 	apt install -y curl && \
 	apt install -y iptables && \
-	apt install -y gnuplot
+	apt install -y gnuplot && \ 
+	apt install -y psmisc
 RUN	curl -O https://download.clojure.org/install/linux-install-1.10.1.727.sh &&\
 	chmod +x linux-install-1.10.1.727.sh && \
 	./linux-install-1.10.1.727.sh && \
