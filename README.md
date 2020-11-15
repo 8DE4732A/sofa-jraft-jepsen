@@ -11,4 +11,4 @@ docker network created jepsen
 sh start_node.sh
 docker exec -it client /bin/bash
 ```
-后面参照sofa-jraft-jepsen说明使用
+后面参照sofa-jraft-jepsen说明使用 可能需要设置http_proxy
