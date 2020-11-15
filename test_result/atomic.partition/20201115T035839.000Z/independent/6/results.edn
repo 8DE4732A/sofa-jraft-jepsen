@@ -1,0 +1,15 @@
+{:timeline {:valid? true},
+ :linear
+ {:valid? true,
+  :configs
+  ({:model {:value 2},
+    :last-op
+    {:process 0,
+     :type :ok,
+     :f :read,
+     :value 2,
+     :index 1409,
+     :time 20960326587},
+    :pending []}),
+  :final-paths ()},
+ :valid? true}

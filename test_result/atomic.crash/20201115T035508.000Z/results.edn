@@ -1,0 +1,11 @@
+{:perf
+ {:latency-graph {:valid? true},
+  :rate-graph {:valid? true},
+  :valid? true},
+ :linear
+ {:valid? :unknown,
+  :cause :out-of-memory,
+  :final-paths (),
+  :configs ()},
+ :timeline {:valid? true},
+ :valid? :unknown}

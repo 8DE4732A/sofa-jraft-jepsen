@@ -1,0 +1,4240 @@
+2	:invoke	:write	1
+1	:invoke	:cas	[4 0]
+0	:invoke	:cas	[0 2]
+3	:invoke	:write	0
+1	:fail	:cas	[4 0]
+3	:ok	:write	0
+2	:ok	:write	1
+0	:ok	:cas	[0 2]
+0	:invoke	:write	4
+0	:ok	:write	4
+2	:invoke	:cas	[3 3]
+2	:fail	:cas	[3 3]
+1	:invoke	:read	nil
+1	:ok	:read	4
+2	:invoke	:cas	[3 3]
+3	:invoke	:write	4
+0	:invoke	:read	nil
+2	:fail	:cas	[3 3]
+3	:ok	:write	4
+0	:ok	:read	4
+1	:invoke	:cas	[3 4]
+1	:fail	:cas	[3 4]
+0	:invoke	:write	1
+0	:ok	:write	1
+2	:invoke	:read	nil
+2	:ok	:read	1
+3	:invoke	:read	nil
+3	:ok	:read	1
+0	:invoke	:write	3
+1	:invoke	:read	nil
+1	:ok	:read	1
+0	:ok	:write	3
+2	:invoke	:read	nil
+2	:ok	:read	3
+2	:invoke	:read	nil
+3	:invoke	:write	1
+2	:ok	:read	3
+3	:ok	:write	1
+1	:invoke	:cas	[2 0]
+1	:fail	:cas	[2 0]
+0	:invoke	:cas	[0 1]
+0	:fail	:cas	[0 1]
+3	:invoke	:cas	[1 1]
+3	:ok	:cas	[1 1]
+2	:invoke	:write	4
+2	:ok	:write	4
+0	:invoke	:cas	[0 3]
+1	:invoke	:write	0
+0	:fail	:cas	[0 3]
+1	:ok	:write	0
+3	:invoke	:write	3
+3	:ok	:write	3
+0	:invoke	:read	nil
+0	:ok	:read	3
+2	:invoke	:cas	[2 0]
+2	:fail	:cas	[2 0]
+3	:invoke	:cas	[2 2]
+1	:invoke	:read	nil
+3	:fail	:cas	[2 2]
+1	:ok	:read	3
+2	:invoke	:read	nil
+2	:ok	:read	3
+0	:invoke	:read	nil
+0	:ok	:read	3
+2	:invoke	:cas	[2 1]
+1	:invoke	:write	3
+2	:fail	:cas	[2 1]
+1	:ok	:write	3
+0	:invoke	:read	nil
+3	:invoke	:cas	[3 1]
+0	:ok	:read	3
+3	:ok	:cas	[3 1]
+0	:invoke	:cas	[2 1]
+2	:invoke	:read	nil
+2	:ok	:read	1
+3	:invoke	:cas	[0 0]
+1	:invoke	:write	3
+0	:fail	:cas	[2 1]
+3	:fail	:cas	[0 0]
+1	:ok	:write	3
+3	:invoke	:cas	[0 2]
+2	:invoke	:read	nil
+1	:invoke	:write	1
+3	:fail	:cas	[0 2]
+2	:ok	:read	3
+1	:ok	:write	1
+0	:invoke	:cas	[0 2]
+0	:fail	:cas	[0 2]
+3	:invoke	:read	nil
+3	:ok	:read	1
+2	:invoke	:write	4
+2	:ok	:write	4
+1	:invoke	:write	2
+1	:ok	:write	2
+0	:invoke	:cas	[4 3]
+3	:invoke	:cas	[4 0]
+3	:fail	:cas	[4 0]
+0	:fail	:cas	[4 3]
+2	:invoke	:read	nil
+2	:ok	:read	2
+1	:invoke	:read	nil
+1	:ok	:read	2
+0	:invoke	:cas	[0 4]
+0	:fail	:cas	[0 4]
+1	:invoke	:cas	[4 0]
+1	:fail	:cas	[4 0]
+3	:invoke	:write	1
+3	:ok	:write	1
+2	:invoke	:write	1
+2	:ok	:write	1
+0	:invoke	:read	nil
+0	:ok	:read	1
+2	:invoke	:write	1
+3	:invoke	:write	4
+1	:invoke	:write	4
+2	:ok	:write	1
+1	:ok	:write	4
+3	:ok	:write	4
+2	:invoke	:cas	[0 2]
+0	:invoke	:read	nil
+1	:invoke	:write	0
+2	:fail	:cas	[0 2]
+0	:ok	:read	4
+1	:ok	:write	0
+0	:invoke	:cas	[0 0]
+0	:ok	:cas	[0 0]
+3	:invoke	:cas	[4 3]
+3	:fail	:cas	[4 3]
+2	:invoke	:write	0
+2	:ok	:write	0
+0	:invoke	:cas	[1 0]
+0	:fail	:cas	[1 0]
+1	:invoke	:write	3
+3	:invoke	:cas	[1 2]
+1	:ok	:write	3
+3	:fail	:cas	[1 2]
+2	:invoke	:write	4
+2	:ok	:write	4
+0	:invoke	:write	1
+0	:ok	:write	1
+3	:invoke	:cas	[0 1]
+3	:fail	:cas	[0 1]
+1	:invoke	:read	nil
+1	:ok	:read	1
+0	:invoke	:cas	[3 4]
+2	:invoke	:cas	[3 4]
+0	:fail	:cas	[3 4]
+1	:invoke	:cas	[0 1]
+2	:fail	:cas	[3 4]
+1	:fail	:cas	[0 1]
+3	:invoke	:cas	[1 1]
+3	:ok	:cas	[1 1]
+2	:invoke	:cas	[0 4]
+2	:fail	:cas	[0 4]
+1	:invoke	:read	nil
+1	:ok	:read	1
+0	:invoke	:cas	[2 1]
+0	:fail	:cas	[2 1]
+3	:invoke	:cas	[0 0]
+3	:fail	:cas	[0 0]
+3	:invoke	:read	nil
+3	:ok	:read	1
+2	:invoke	:write	4
+2	:ok	:write	4
+1	:invoke	:write	3
+0	:invoke	:cas	[2 1]
+1	:ok	:write	3
+0	:fail	:cas	[2 1]
+3	:invoke	:cas	[1 4]
+3	:fail	:cas	[1 4]
+1	:invoke	:cas	[3 1]
+2	:invoke	:cas	[0 2]
+1	:ok	:cas	[3 1]
+3	:invoke	:read	nil
+3	:ok	:read	1
+2	:fail	:cas	[0 2]
+0	:invoke	:read	nil
+0	:ok	:read	1
+1	:invoke	:write	0
+3	:invoke	:cas	[0 3]
+1	:ok	:write	0
+2	:invoke	:cas	[1 2]
+3	:ok	:cas	[0 3]
+2	:fail	:cas	[1 2]
+0	:invoke	:cas	[2 0]
+0	:fail	:cas	[2 0]
+1	:invoke	:write	2
+1	:ok	:write	2
+3	:invoke	:cas	[0 2]
+3	:fail	:cas	[0 2]
+0	:invoke	:cas	[1 1]
+0	:fail	:cas	[1 1]
+2	:invoke	:write	0
+2	:ok	:write	0
+3	:invoke	:write	2
+3	:ok	:write	2
+2	:invoke	:write	3
+2	:ok	:write	3
+0	:invoke	:read	nil
+0	:ok	:read	3
+1	:invoke	:write	2
+1	:ok	:write	2
+2	:invoke	:write	3
+2	:ok	:write	3
+3	:invoke	:write	0
+3	:ok	:write	0
+0	:invoke	:read	nil
+0	:ok	:read	0
+1	:invoke	:cas	[2 3]
+1	:fail	:cas	[2 3]
+2	:invoke	:write	1
+2	:ok	:write	1
+1	:invoke	:write	1
+0	:invoke	:read	nil
+1	:ok	:write	1
+0	:ok	:read	1
+3	:invoke	:cas	[2 4]
+3	:fail	:cas	[2 4]
+2	:invoke	:write	2
+2	:ok	:write	2
+1	:invoke	:write	1
+3	:invoke	:cas	[2 1]
+1	:ok	:write	1
+3	:fail	:cas	[2 1]
+0	:invoke	:write	4
+0	:ok	:write	4
+2	:invoke	:cas	[3 0]
+2	:fail	:cas	[3 0]
+1	:invoke	:write	0
+1	:ok	:write	0
+0	:invoke	:write	1
+0	:ok	:write	1
+3	:invoke	:cas	[1 4]
+3	:ok	:cas	[1 4]
+1	:invoke	:read	nil
+1	:ok	:read	4
+2	:invoke	:cas	[2 3]
+2	:fail	:cas	[2 3]
+0	:invoke	:cas	[3 0]
+3	:invoke	:read	nil
+0	:fail	:cas	[3 0]
+3	:ok	:read	4
+3	:invoke	:write	2
+2	:invoke	:cas	[0 3]
+3	:ok	:write	2
+2	:fail	:cas	[0 3]
+0	:invoke	:cas	[0 3]
+1	:invoke	:write	1
+1	:ok	:write	1
+0	:fail	:cas	[0 3]
+1	:invoke	:write	0
+1	:ok	:write	0
+0	:invoke	:cas	[4 1]
+0	:fail	:cas	[4 1]
+3	:invoke	:read	nil
+3	:ok	:read	0
+2	:invoke	:read	nil
+2	:ok	:read	0
+1	:invoke	:cas	[4 0]
+1	:fail	:cas	[4 0]
+0	:invoke	:cas	[1 2]
+0	:fail	:cas	[1 2]
+3	:invoke	:write	3
+1	:invoke	:write	0
+2	:invoke	:write	1
+3	:ok	:write	3
+2	:ok	:write	1
+0	:invoke	:cas	[3 3]
+1	:ok	:write	0
+0	:fail	:cas	[3 3]
+0	:invoke	:write	1
+0	:ok	:write	1
+1	:invoke	:cas	[2 0]
+1	:fail	:cas	[2 0]
+2	:invoke	:cas	[0 0]
+3	:invoke	:write	3
+2	:fail	:cas	[0 0]
+3	:ok	:write	3
+0	:invoke	:cas	[0 0]
+0	:fail	:cas	[0 0]
+1	:invoke	:read	nil
+1	:ok	:read	3
+3	:invoke	:write	0
+3	:ok	:write	0
+1	:invoke	:write	4
+1	:ok	:write	4
+2	:invoke	:cas	[0 1]
+2	:fail	:cas	[0 1]
+0	:invoke	:read	nil
+0	:ok	:read	4
+3	:invoke	:write	2
+3	:ok	:write	2
+3	:invoke	:read	nil
+3	:ok	:read	2
+1	:invoke	:cas	[0 0]
+2	:invoke	:write	0
+1	:fail	:cas	[0 0]
+0	:invoke	:read	nil
+0	:ok	:read	2
+2	:ok	:write	0
+1	:invoke	:cas	[2 1]
+1	:fail	:cas	[2 1]
+2	:invoke	:read	nil
+2	:ok	:read	0
+3	:invoke	:cas	[2 0]
+3	:fail	:cas	[2 0]
+0	:invoke	:write	3
+0	:ok	:write	3
+1	:invoke	:read	nil
+1	:ok	:read	3
+2	:invoke	:read	nil
+2	:ok	:read	3
+3	:invoke	:write	2
+3	:ok	:write	2
+0	:invoke	:read	nil
+0	:ok	:read	2
+2	:invoke	:read	nil
+2	:ok	:read	2
+3	:invoke	:read	nil
+1	:invoke	:read	nil
+3	:ok	:read	2
+1	:ok	:read	2
+2	:invoke	:read	nil
+2	:ok	:read	2
+0	:invoke	:read	nil
+0	:ok	:read	2
+0	:invoke	:read	nil
+0	:ok	:read	2
+1	:invoke	:cas	[1 1]
+1	:fail	:cas	[1 1]
+3	:invoke	:read	nil
+3	:ok	:read	2
+2	:invoke	:read	nil
+2	:ok	:read	2
+1	:invoke	:cas	[0 3]
+1	:fail	:cas	[0 3]
+0	:invoke	:cas	[4 1]
+0	:fail	:cas	[4 1]
+3	:invoke	:cas	[4 1]
+3	:fail	:cas	[4 1]
+2	:invoke	:read	nil
+2	:ok	:read	2
+1	:invoke	:read	nil
+1	:ok	:read	2
+0	:invoke	:read	nil
+0	:ok	:read	2
+2	:invoke	:write	1
+2	:ok	:write	1
+3	:invoke	:read	nil
+3	:ok	:read	1
+1	:invoke	:read	nil
+1	:ok	:read	1
+0	:invoke	:cas	[1 1]
+0	:ok	:cas	[1 1]
+1	:invoke	:cas	[1 0]
+1	:ok	:cas	[1 0]
+3	:invoke	:cas	[2 3]
+3	:fail	:cas	[2 3]
+2	:invoke	:write	0
+2	:ok	:write	0
+:nemesis	:info	:start	nil
+0	:invoke	:write	0
+0	:ok	:write	0
+1	:invoke	:write	1
+3	:invoke	:cas	[1 4]
+1	:ok	:write	1
+3	:ok	:cas	[1 4]
+2	:invoke	:write	1
+2	:ok	:write	1
+0	:invoke	:cas	[1 0]
+0	:ok	:cas	[1 0]
+1	:invoke	:read	nil
+1	:ok	:read	0
+3	:invoke	:write	4
+3	:ok	:write	4
+2	:invoke	:write	2
+2	:ok	:write	2
+0	:invoke	:cas	[2 0]
+0	:ok	:cas	[2 0]
+3	:invoke	:cas	[1 4]
+1	:invoke	:read	nil
+:nemesis	:info	:start	{"jraft.host5" [:killed "jraft.host5"], "jraft.host3" [:killed "jraft.host3"], "jraft.host1" [:killed "jraft.host1"]}
+2	:invoke	:write	1
+0	:invoke	:write	1
+1	:ok	:read	0
+1	:invoke	:write	2
+3	:fail	:cas	[1 4]
+2	:info	:write	1	Fail to set
+0	:info	:write	1	Fail to set
+1	:info	:write	2	Fail to set
+3	:invoke	:write	2
+6	:invoke	:write	0
+6	:info	:write	0	Fail to set
+3	:info	:write	2	Fail to set
+5	:invoke	:write	2
+5	:info	:write	2	Fail to set
+4	:invoke	:write	2
+4	:info	:write	2	Fail to set
+10	:invoke	:cas	[0 1]
+9	:invoke	:cas	[1 2]
+10	:fail	:cas	[0 1]
+9	:fail	:cas	[1 2]
+7	:invoke	:cas	[1 1]
+7	:fail	:cas	[1 1]
+8	:invoke	:cas	[3 0]
+10	:invoke	:write	2
+8	:fail	:cas	[3 0]
+10	:info	:write	2	Fail to set
+9	:invoke	:read	nil
+9	:ok	:read	0
+7	:invoke	:cas	[0 1]
+7	:fail	:cas	[0 1]
+14	:invoke	:cas	[0 1]
+14	:fail	:cas	[0 1]
+8	:invoke	:read	nil
+8	:ok	:read	0
+9	:invoke	:cas	[1 2]
+9	:fail	:cas	[1 2]
+7	:invoke	:cas	[4 0]
+7	:fail	:cas	[4 0]
+14	:invoke	:read	nil
+14	:ok	:read	0
+8	:invoke	:write	0
+8	:info	:write	0	Fail to set
+9	:invoke	:cas	[2 0]
+9	:fail	:cas	[2 0]
+14	:invoke	:cas	[3 2]
+7	:invoke	:read	nil
+14	:fail	:cas	[3 2]
+7	:ok	:read	0
+12	:invoke	:write	1
+12	:info	:write	1	Fail to set
+9	:invoke	:write	0
+9	:info	:write	0	Fail to set
+14	:invoke	:cas	[2 4]
+14	:fail	:cas	[2 4]
+7	:invoke	:write	3
+7	:info	:write	3	Fail to set
+16	:invoke	:read	nil
+16	:ok	:read	0
+14	:invoke	:read	nil
+14	:ok	:read	0
+13	:invoke	:cas	[3 4]
+11	:invoke	:cas	[3 2]
+13	:fail	:cas	[3 4]
+11	:fail	:cas	[3 2]
+14	:invoke	:cas	[3 1]
+14	:fail	:cas	[3 1]
+16	:invoke	:read	nil
+16	:ok	:read	0
+11	:invoke	:write	4
+11	:info	:write	4	Fail to set
+13	:invoke	:read	nil
+13	:ok	:read	0
+16	:invoke	:cas	[0 1]
+15	:invoke	:write	0
+16	:fail	:cas	[0 1]
+15	:info	:write	0	Fail to set
+14	:invoke	:read	nil
+14	:ok	:read	0
+13	:invoke	:cas	[1 3]
+13	:fail	:cas	[1 3]
+14	:invoke	:cas	[1 0]
+14	:fail	:cas	[1 0]
+16	:invoke	:read	nil
+19	:invoke	:read	nil
+16	:ok	:read	0
+19	:ok	:read	0
+13	:invoke	:write	1
+13	:info	:write	1	Fail to set
+16	:invoke	:write	3
+16	:info	:write	3	Fail to set
+14	:invoke	:cas	[0 3]
+14	:fail	:cas	[0 3]
+19	:invoke	:read	nil
+19	:ok	:read	0
+17	:invoke	:cas	[1 1]
+17	:fail	:cas	[1 1]
+17	:invoke	:read	nil
+17	:ok	:read	0
+20	:invoke	:read	nil
+20	:ok	:read	0
+14	:invoke	:write	1
+14	:info	:write	1	Fail to set
+19	:invoke	:write	4
+19	:info	:write	4	Fail to set
+17	:invoke	:read	nil
+17	:ok	:read	0
+20	:invoke	:write	3
+20	:info	:write	3	Fail to set
+23	:invoke	:cas	[3 3]
+23	:fail	:cas	[3 3]
+18	:invoke	:read	nil
+18	:ok	:read	0
+17	:invoke	:cas	[4 0]
+17	:fail	:cas	[4 0]
+18	:invoke	:write	3
+18	:info	:write	3	Fail to set
+24	:invoke	:write	0
+23	:invoke	:read	nil
+24	:info	:write	0	Fail to set
+23	:ok	:read	0
+17	:invoke	:read	nil
+17	:ok	:read	0
+22	:invoke	:write	3
+23	:invoke	:read	nil
+22	:info	:write	3	Fail to set
+23	:ok	:read	0
+28	:invoke	:write	3
+28	:info	:write	3	Fail to set
+17	:invoke	:cas	[4 2]
+17	:fail	:cas	[4 2]
+26	:invoke	:cas	[1 1]
+26	:fail	:cas	[1 1]
+32	:invoke	:read	nil
+23	:invoke	:write	2
+17	:invoke	:cas	[2 1]
+32	:ok	:read	0
+23	:info	:write	2	Fail to set
+17	:fail	:cas	[2 1]
+27	:invoke	:read	nil
+27	:ok	:read	0
+32	:invoke	:cas	[1 1]
+32	:fail	:cas	[1 1]
+17	:invoke	:write	1
+26	:invoke	:read	nil
+17	:info	:write	1	Fail to set
+26	:ok	:read	0
+32	:invoke	:read	nil
+32	:ok	:read	0
+27	:invoke	:cas	[0 0]
+27	:fail	:cas	[0 0]
+26	:invoke	:cas	[1 0]
+26	:fail	:cas	[1 0]
+21	:invoke	:write	3
+21	:info	:write	3	Fail to set
+32	:invoke	:read	nil
+26	:invoke	:write	4
+32	:ok	:read	0
+25	:invoke	:write	0
+26	:info	:write	4	Fail to set
+25	:info	:write	0	Fail to set
+27	:invoke	:write	0
+27	:info	:write	0	Fail to set
+32	:invoke	:read	nil
+32	:ok	:read	0
+31	:invoke	:write	4
+31	:info	:write	4	Fail to set
+29	:invoke	:read	nil
+30	:invoke	:write	2
+29	:ok	:read	0
+30	:info	:write	2	Fail to set
+32	:invoke	:cas	[2 0]
+32	:fail	:cas	[2 0]
+29	:invoke	:write	3
+34	:invoke	:read	nil
+29	:info	:write	3	Fail to set
+34	:ok	:read	0
+35	:invoke	:cas	[0 3]
+35	:fail	:cas	[0 3]
+32	:invoke	:write	2
+32	:info	:write	2	Fail to set
+33	:invoke	:write	1
+33	:info	:write	1	Fail to set
+35	:invoke	:read	nil
+35	:ok	:read	0
+34	:invoke	:cas	[0 0]
+34	:fail	:cas	[0 0]
+36	:invoke	:cas	[4 1]
+36	:fail	:cas	[4 1]
+37	:invoke	:write	0
+35	:invoke	:cas	[2 1]
+37	:info	:write	0	Fail to set
+35	:fail	:cas	[2 1]
+41	:invoke	:read	nil
+36	:invoke	:write	3
+41	:ok	:read	0
+36	:info	:write	3	Fail to set
+34	:invoke	:read	nil
+34	:ok	:read	0
+35	:invoke	:read	nil
+35	:ok	:read	0
+41	:invoke	:cas	[0 1]
+41	:fail	:cas	[0 1]
+40	:invoke	:cas	[4 3]
+40	:fail	:cas	[4 3]
+35	:invoke	:read	nil
+35	:ok	:read	0
+34	:invoke	:read	nil
+34	:ok	:read	0
+40	:invoke	:cas	[2 3]
+40	:fail	:cas	[2 3]
+35	:invoke	:write	3
+34	:invoke	:cas	[0 0]
+35	:info	:write	3	Fail to set
+41	:invoke	:cas	[0 4]
+34	:fail	:cas	[0 0]
+41	:fail	:cas	[0 4]
+39	:invoke	:read	nil
+39	:ok	:read	0
+34	:invoke	:cas	[0 0]
+34	:fail	:cas	[0 0]
+41	:invoke	:read	nil
+41	:ok	:read	0
+40	:invoke	:read	nil
+39	:invoke	:cas	[1 1]
+40	:ok	:read	0
+39	:fail	:cas	[1 1]
+34	:invoke	:cas	[0 1]
+34	:fail	:cas	[0 1]
+39	:invoke	:write	4
+41	:invoke	:write	3
+39	:info	:write	4	Fail to set
+41	:info	:write	3	Fail to set
+40	:invoke	:cas	[0 0]
+40	:fail	:cas	[0 0]
+34	:invoke	:write	2
+34	:info	:write	2	Fail to set
+43	:invoke	:cas	[0 1]
+43	:fail	:cas	[0 1]
+45	:invoke	:write	0
+45	:info	:write	0	Fail to set
+38	:invoke	:cas	[0 1]
+38	:fail	:cas	[0 1]
+40	:invoke	:cas	[2 3]
+43	:invoke	:cas	[2 3]
+40	:fail	:cas	[2 3]
+43	:fail	:cas	[2 3]
+38	:invoke	:read	nil
+38	:ok	:read	0
+49	:invoke	:cas	[0 2]
+49	:fail	:cas	[0 2]
+40	:invoke	:write	2
+40	:info	:write	2	Fail to set
+43	:invoke	:write	0
+43	:info	:write	0	Fail to set
+38	:invoke	:read	nil
+49	:invoke	:read	nil
+38	:ok	:read	0
+49	:ok	:read	0
+47	:invoke	:read	nil
+47	:ok	:read	0
+44	:invoke	:read	nil
+44	:ok	:read	0
+38	:invoke	:read	nil
+49	:invoke	:cas	[0 4]
+38	:ok	:read	0
+49	:fail	:cas	[0 4]
+47	:invoke	:cas	[2 3]
+47	:fail	:cas	[2 3]
+44	:invoke	:cas	[2 1]
+38	:invoke	:read	nil
+44	:fail	:cas	[2 1]
+38	:ok	:read	0
+49	:invoke	:cas	[1 1]
+49	:fail	:cas	[1 1]
+47	:invoke	:cas	[0 0]
+47	:fail	:cas	[0 0]
+44	:invoke	:write	2
+44	:info	:write	2	Fail to set
+38	:invoke	:read	nil
+38	:ok	:read	0
+47	:invoke	:cas	[3 2]
+47	:fail	:cas	[3 2]
+48	:invoke	:write	1
+49	:invoke	:read	nil
+48	:info	:write	1	Fail to set
+49	:ok	:read	0
+38	:invoke	:write	2
+38	:info	:write	2	Fail to set
+49	:invoke	:write	1
+49	:info	:write	1	Fail to set
+47	:invoke	:read	nil
+52	:invoke	:read	nil
+47	:ok	:read	0
+52	:ok	:read	0
+42	:invoke	:cas	[2 4]
+42	:fail	:cas	[2 4]
+53	:invoke	:write	1
+53	:info	:write	1	Fail to set
+52	:invoke	:cas	[3 2]
+52	:fail	:cas	[3 2]
+47	:invoke	:cas	[2 4]
+47	:fail	:cas	[2 4]
+42	:invoke	:read	nil
+57	:invoke	:read	nil
+42	:ok	:read	0
+57	:ok	:read	0
+52	:invoke	:read	nil
+42	:invoke	:read	nil
+52	:ok	:read	0
+42	:ok	:read	0
+47	:invoke	:write	2
+47	:info	:write	2	Fail to set
+57	:invoke	:cas	[4 1]
+57	:fail	:cas	[4 1]
+:nemesis	:info	:stop	nil
+52	:invoke	:write	1
+42	:invoke	:cas	[3 2]
+52	:info	:write	1	Fail to set
+42	:fail	:cas	[3 2]
+51	:invoke	:read	nil
+51	:ok	:read	0
+57	:invoke	:read	nil
+57	:ok	:read	0
+42	:invoke	:write	1
+51	:invoke	:read	nil
+42	:info	:write	1	Fail to set
+51	:ok	:read	0
+56	:invoke	:read	nil
+56	:ok	:read	0
+:nemesis	:info	:stop	{"jraft.host5" [:restarted "jraft.host5"], "jraft.host3" [:restarted "jraft.host3"], "jraft.host1" [:restarted "jraft.host1"]}
+57	:invoke	:cas	[0 0]
+57	:fail	:cas	[0 0]
+46	:invoke	:cas	[1 0]
+46	:fail	:cas	[1 0]
+56	:invoke	:write	1
+56	:info	:write	1	Fail to set
+51	:invoke	:write	1
+51	:info	:write	1	Fail to set
+46	:invoke	:cas	[1 2]
+60	:invoke	:read	nil
+46	:fail	:cas	[1 2]
+60	:ok	:read	0
+57	:invoke	:cas	[2 4]
+57	:fail	:cas	[2 4]
+55	:invoke	:read	nil
+55	:ok	:read	0
+60	:invoke	:read	nil
+60	:ok	:read	0
+46	:invoke	:cas	[1 1]
+46	:fail	:cas	[1 1]
+57	:invoke	:read	nil
+57	:ok	:read	0
+55	:invoke	:write	4
+55	:info	:write	4	Fail to set
+46	:invoke	:write	2
+46	:info	:write	2	Fail to set
+60	:invoke	:read	nil
+60	:ok	:read	0
+59	:invoke	:cas	[4 3]
+59	:fail	:cas	[4 3]
+60	:invoke	:read	nil
+60	:ok	:read	0
+57	:invoke	:read	nil
+50	:invoke	:write	2
+57	:ok	:read	0
+59	:invoke	:read	nil
+59	:ok	:read	0
+50	:info	:write	2	Fail to set
+60	:invoke	:cas	[0 3]
+60	:fail	:cas	[0 3]
+57	:invoke	:read	nil
+57	:ok	:read	0
+59	:invoke	:cas	[1 3]
+60	:invoke	:read	nil
+59	:fail	:cas	[1 3]
+60	:ok	:read	0
+54	:invoke	:write	1
+54	:info	:write	1	Fail to set
+57	:invoke	:read	nil
+57	:ok	:read	0
+59	:invoke	:read	nil
+57	:invoke	:cas	[4 0]
+59	:ok	:read	0
+57	:fail	:cas	[4 0]
+60	:invoke	:read	nil
+60	:ok	:read	0
+58	:invoke	:write	1
+58	:info	:write	1	Fail to set
+57	:invoke	:cas	[0 3]
+57	:fail	:cas	[0 3]
+62	:invoke	:read	nil
+62	:ok	:read	0
+59	:invoke	:read	nil
+59	:ok	:read	0
+60	:invoke	:read	nil
+60	:ok	:read	0
+57	:invoke	:cas	[3 4]
+57	:fail	:cas	[3 4]
+62	:invoke	:read	nil
+62	:ok	:read	0
+60	:invoke	:write	1
+60	:info	:write	1	Fail to set
+59	:invoke	:cas	[4 1]
+59	:fail	:cas	[4 1]
+62	:invoke	:cas	[1 2]
+57	:invoke	:write	2
+62	:fail	:cas	[1 2]
+57	:info	:write	2	Fail to set
+59	:invoke	:cas	[4 3]
+59	:fail	:cas	[4 3]
+64	:invoke	:cas	[1 0]
+64	:fail	:cas	[1 0]
+61	:invoke	:read	nil
+61	:ok	:read	0
+64	:invoke	:cas	[3 2]
+64	:fail	:cas	[3 2]
+59	:invoke	:write	3
+59	:info	:write	3	Fail to set
+62	:invoke	:write	4
+62	:info	:write	4	Fail to set
+61	:invoke	:write	1
+61	:info	:write	1	Fail to set
+64	:invoke	:read	nil
+64	:ok	:read	0
+66	:invoke	:write	3
+66	:info	:write	3	Fail to set
+63	:invoke	:write	0
+63	:info	:write	0	Fail to set
+65	:invoke	:cas	[2 2]
+65	:fail	:cas	[2 2]
+64	:invoke	:write	1
+64	:info	:write	1	Fail to set
+70	:invoke	:cas	[4 2]
+70	:fail	:cas	[4 2]
+67	:invoke	:read	nil
+67	:ok	:read	0
+65	:invoke	:write	0
+65	:info	:write	0	Fail to set
+68	:invoke	:write	4
+68	:info	:write	4	Fail to set
+67	:invoke	:write	1
+67	:info	:write	1	Fail to set
+70	:invoke	:read	nil
+70	:ok	:read	0
+69	:invoke	:write	2
+69	:info	:write	2	Fail to set
+72	:invoke	:read	nil
+72	:ok	:read	0
+70	:invoke	:read	nil
+73	:invoke	:read	nil
+70	:ok	:read	0
+73	:ok	:read	0
+71	:invoke	:write	1
+71	:info	:write	1	Fail to set
+72	:invoke	:write	4
+72	:info	:write	4	Fail to set
+76	:invoke	:cas	[0 4]
+73	:invoke	:write	0
+75	:invoke	:write	0
+70	:invoke	:write	0
+73	:info	:write	0	Fail to set
+75	:info	:write	0	Fail to set
+76	:fail	:cas	[0 4]
+70	:info	:write	0	Fail to set
+74	:invoke	:read	nil
+74	:ok	:read	0
+79	:invoke	:write	2
+76	:invoke	:cas	[3 1]
+77	:invoke	:cas	[0 3]
+74	:invoke	:write	1
+79	:info	:write	2	Fail to set
+76	:fail	:cas	[3 1]
+74	:info	:write	1	Fail to set
+77	:fail	:cas	[0 3]
+77	:invoke	:cas	[4 2]
+83	:invoke	:read	nil
+77	:fail	:cas	[4 2]
+83	:ok	:read	0
+78	:invoke	:read	nil
+76	:invoke	:write	1
+78	:ok	:read	0
+76	:info	:write	1	Fail to set
+83	:invoke	:write	1
+83	:ok	:write	1
+78	:invoke	:write	0
+78	:ok	:write	0
+80	:invoke	:write	0
+80	:ok	:write	0
+77	:invoke	:read	nil
+77	:ok	:read	0
+83	:invoke	:read	nil
+83	:ok	:read	0
+78	:invoke	:write	2
+78	:ok	:write	2
+77	:invoke	:write	0
+80	:invoke	:cas	[4 2]
+77	:ok	:write	0
+80	:fail	:cas	[4 2]
+78	:invoke	:cas	[3 1]
+83	:invoke	:read	nil
+83	:ok	:read	0
+78	:fail	:cas	[3 1]
+80	:invoke	:read	nil
+80	:ok	:read	0
+77	:invoke	:cas	[2 1]
+77	:fail	:cas	[2 1]
+83	:invoke	:read	nil
+83	:ok	:read	0
+78	:invoke	:write	3
+78	:ok	:write	3
+77	:invoke	:write	4
+80	:invoke	:read	nil
+77	:ok	:write	4
+80	:ok	:read	4
+83	:invoke	:read	nil
+83	:ok	:read	4
+77	:invoke	:write	1
+80	:invoke	:cas	[3 1]
+77	:ok	:write	1
+80	:fail	:cas	[3 1]
+78	:invoke	:read	nil
+78	:ok	:read	1
+83	:invoke	:cas	[4 3]
+83	:fail	:cas	[4 3]
+80	:invoke	:write	0
+80	:ok	:write	0
+77	:invoke	:read	nil
+77	:ok	:read	0
+78	:invoke	:write	0
+78	:ok	:write	0
+80	:invoke	:read	nil
+80	:ok	:read	0
+83	:invoke	:read	nil
+83	:ok	:read	0
+77	:invoke	:read	nil
+77	:ok	:read	0
+78	:invoke	:cas	[4 3]
+78	:fail	:cas	[4 3]
+83	:invoke	:write	0
+83	:ok	:write	0
+80	:invoke	:cas	[0 1]
+80	:ok	:cas	[0 1]
+78	:invoke	:cas	[4 3]
+78	:fail	:cas	[4 3]
+83	:invoke	:read	nil
+83	:ok	:read	1
+77	:invoke	:write	0
+77	:ok	:write	0
+80	:invoke	:read	nil
+80	:ok	:read	0
+78	:invoke	:write	1
+78	:ok	:write	1
+77	:invoke	:cas	[1 3]
+83	:invoke	:write	2
+80	:invoke	:write	2
+77	:ok	:cas	[1 3]
+83	:ok	:write	2
+80	:ok	:write	2
+78	:invoke	:cas	[2 4]
+78	:ok	:cas	[2 4]
+77	:invoke	:cas	[3 3]
+77	:fail	:cas	[3 3]
+80	:invoke	:read	nil
+80	:ok	:read	4
+83	:invoke	:read	nil
+83	:ok	:read	4
+78	:invoke	:cas	[4 0]
+78	:ok	:cas	[4 0]
+77	:invoke	:write	1
+80	:invoke	:cas	[3 2]
+77	:ok	:write	1
+80	:fail	:cas	[3 2]
+83	:invoke	:cas	[2 2]
+83	:fail	:cas	[2 2]
+80	:invoke	:cas	[3 3]
+80	:fail	:cas	[3 3]
+78	:invoke	:read	nil
+78	:ok	:read	1
+77	:invoke	:write	1
+77	:ok	:write	1
+83	:invoke	:cas	[3 3]
+83	:fail	:cas	[3 3]
+77	:invoke	:cas	[3 0]
+77	:fail	:cas	[3 0]
+80	:invoke	:cas	[0 4]
+83	:invoke	:write	1
+78	:invoke	:write	4
+80	:fail	:cas	[0 4]
+83	:ok	:write	1
+78	:ok	:write	4
+77	:invoke	:cas	[1 4]
+77	:fail	:cas	[1 4]
+80	:invoke	:cas	[4 4]
+80	:ok	:cas	[4 4]
+78	:invoke	:write	0
+83	:invoke	:write	1
+78	:ok	:write	0
+77	:invoke	:read	nil
+83	:ok	:write	1
+77	:ok	:read	1
+80	:invoke	:read	nil
+80	:ok	:read	1
+78	:invoke	:read	nil
+78	:ok	:read	1
+80	:invoke	:cas	[2 4]
+80	:fail	:cas	[2 4]
+83	:invoke	:read	nil
+77	:invoke	:read	nil
+83	:ok	:read	1
+77	:ok	:read	1
+78	:invoke	:write	0
+78	:ok	:write	0
+80	:invoke	:read	nil
+80	:ok	:read	0
+83	:invoke	:cas	[1 0]
+77	:invoke	:write	2
+83	:fail	:cas	[1 0]
+77	:ok	:write	2
+78	:invoke	:write	2
+78	:ok	:write	2
+80	:invoke	:write	0
+80	:ok	:write	0
+78	:invoke	:read	nil
+78	:ok	:read	0
+83	:invoke	:cas	[0 3]
+83	:ok	:cas	[0 3]
+77	:invoke	:write	3
+77	:ok	:write	3
+80	:invoke	:read	nil
+80	:ok	:read	3
+77	:invoke	:write	0
+83	:invoke	:cas	[0 4]
+77	:ok	:write	0
+83	:ok	:cas	[0 4]
+78	:invoke	:read	nil
+78	:ok	:read	4
+80	:invoke	:write	4
+80	:ok	:write	4
+77	:invoke	:cas	[2 3]
+77	:fail	:cas	[2 3]
+83	:invoke	:write	2
+83	:ok	:write	2
+78	:invoke	:write	2
+78	:ok	:write	2
+83	:invoke	:cas	[2 3]
+80	:invoke	:cas	[3 3]
+83	:ok	:cas	[2 3]
+80	:ok	:cas	[3 3]
+77	:invoke	:cas	[1 2]
+77	:fail	:cas	[1 2]
+83	:invoke	:read	nil
+83	:ok	:read	3
+78	:invoke	:cas	[4 3]
+78	:fail	:cas	[4 3]
+80	:invoke	:cas	[4 3]
+80	:fail	:cas	[4 3]
+83	:invoke	:read	nil
+83	:ok	:read	3
+77	:invoke	:cas	[3 3]
+77	:ok	:cas	[3 3]
+78	:invoke	:cas	[0 1]
+80	:invoke	:write	2
+78	:fail	:cas	[0 1]
+80	:ok	:write	2
+77	:invoke	:read	nil
+77	:ok	:read	2
+83	:invoke	:cas	[1 1]
+83	:fail	:cas	[1 1]
+80	:invoke	:read	nil
+80	:ok	:read	2
+78	:invoke	:read	nil
+78	:ok	:read	2
+77	:invoke	:cas	[3 2]
+77	:fail	:cas	[3 2]
+80	:invoke	:cas	[3 1]
+83	:invoke	:cas	[1 1]
+80	:fail	:cas	[3 1]
+83	:fail	:cas	[1 1]
+78	:invoke	:cas	[2 4]
+78	:ok	:cas	[2 4]
+77	:invoke	:cas	[0 3]
+77	:fail	:cas	[0 3]
+83	:invoke	:read	nil
+83	:ok	:read	4
+80	:invoke	:read	nil
+80	:ok	:read	4
+78	:invoke	:read	nil
+77	:invoke	:cas	[1 0]
+78	:ok	:read	4
+77	:fail	:cas	[1 0]
+83	:invoke	:cas	[0 0]
+83	:fail	:cas	[0 0]
+77	:invoke	:read	nil
+77	:ok	:read	4
+80	:invoke	:read	nil
+80	:ok	:read	4
+78	:invoke	:write	0
+78	:ok	:write	0
+:nemesis	:info	:start	nil
+83	:invoke	:cas	[3 3]
+83	:fail	:cas	[3 3]
+77	:invoke	:read	nil
+77	:ok	:read	0
+80	:invoke	:write	0
+78	:invoke	:read	nil
+78	:ok	:read	0
+80	:ok	:write	0
+83	:invoke	:read	nil
+83	:ok	:read	0
+78	:invoke	:read	nil
+77	:invoke	:read	nil
+80	:invoke	:read	nil
+83	:invoke	:read	nil
+:nemesis	:info	:start	{"jraft.host1" [:killed "jraft.host1"], "jraft.host3" [:killed "jraft.host3"], "jraft.host2" [:killed "jraft.host2"], "jraft.host5" [:killed "jraft.host5"]}
+77	:fail	:read	nil	Remoting error:Connection closed! the address is 172.18.0.3:8609
+78	:fail	:read	nil	Remoting error:Connection closed! the address is 172.18.0.3:8609
+83	:fail	:read	nil	:disconnected
+80	:fail	:read	nil	:disconnected
+77	:invoke	:read	nil
+77	:fail	:read	nil	:disconnected
+78	:invoke	:write	4
+78	:info	:write	4	:disconnected
+83	:invoke	:cas	[4 4]
+83	:info	:cas	[4 4]	:disconnected
+77	:invoke	:read	nil
+77	:fail	:read	nil	:disconnected
+80	:invoke	:cas	[2 2]
+80	:info	:cas	[2 2]	:disconnected
+82	:invoke	:cas	[1 3]
+82	:info	:cas	[1 3]	:disconnected
+84	:invoke	:read	nil
+87	:invoke	:read	nil
+84	:fail	:read	nil	:disconnected
+87	:fail	:read	nil	:disconnected
+77	:invoke	:write	3
+77	:info	:write	3	:disconnected
+86	:invoke	:cas	[1 2]
+86	:info	:cas	[1 2]	:disconnected
+87	:invoke	:write	4
+87	:info	:write	4	:disconnected
+84	:invoke	:read	nil
+84	:fail	:read	nil	:disconnected
+81	:invoke	:read	nil
+81	:fail	:read	nil	:disconnected
+90	:invoke	:cas	[2 4]
+81	:invoke	:cas	[0 4]
+81	:info	:cas	[0 4]	:disconnected
+90	:info	:cas	[2 4]	:disconnected
+84	:invoke	:write	3
+84	:info	:write	3	:disconnected
+91	:invoke	:write	0
+91	:info	:write	0	:disconnected
+85	:invoke	:write	4
+85	:info	:write	4	:disconnected
+88	:invoke	:cas	[3 3]
+88	:info	:cas	[3 3]	:disconnected
+94	:invoke	:read	nil
+94	:fail	:read	nil	:disconnected
+92	:invoke	:read	nil
+92	:fail	:read	nil	:disconnected
+94	:invoke	:write	1
+94	:info	:write	1	:disconnected
+95	:invoke	:cas	[4 1]
+89	:invoke	:write	4
+95	:info	:cas	[4 1]	:disconnected
+89	:info	:write	4	:disconnected
+92	:invoke	:read	nil
+92	:fail	:read	nil	:disconnected
+99	:invoke	:cas	[3 3]
+99	:info	:cas	[3 3]	:disconnected
+98	:invoke	:read	nil
+98	:fail	:read	nil	:disconnected
+93	:invoke	:write	1
+93	:info	:write	1	:disconnected
+103	:invoke	:cas	[0 0]
+92	:invoke	:read	nil
+103	:info	:cas	[0 0]	:disconnected
+92	:fail	:read	nil	:disconnected
+98	:invoke	:write	4
+98	:info	:write	4	:disconnected
+92	:invoke	:write	0
+92	:info	:write	0	:disconnected
+102	:invoke	:cas	[4 3]
+102	:info	:cas	[4 3]	:disconnected
+97	:invoke	:cas	[4 0]
+97	:info	:cas	[4 0]	:disconnected
+107	:invoke	:read	nil
+107	:fail	:read	nil	:disconnected
+96	:invoke	:cas	[2 4]
+96	:info	:cas	[2 4]	:disconnected
+107	:invoke	:read	nil
+107	:fail	:read	nil	:disconnected
+106	:invoke	:read	nil
+106	:fail	:read	nil	:disconnected
+100	:invoke	:read	nil
+100	:fail	:read	nil	:disconnected
+101	:invoke	:write	4
+101	:info	:write	4	:disconnected
+105	:invoke	:write	0
+105	:info	:write	0	:disconnected
+106	:invoke	:cas	[3 2]
+107	:invoke	:cas	[2 2]
+106	:info	:cas	[3 2]	:disconnected
+107	:info	:cas	[2 2]	:disconnected
+100	:invoke	:cas	[1 1]
+100	:info	:cas	[1 1]	:disconnected
+110	:invoke	:cas	[4 3]
+110	:info	:cas	[4 3]	:disconnected
+109	:invoke	:write	1
+109	:info	:write	1	:disconnected
+111	:invoke	:write	0
+111	:info	:write	0	:disconnected
+114	:invoke	:cas	[4 1]
+114	:info	:cas	[4 1]	:disconnected
+104	:invoke	:read	nil
+104	:fail	:read	nil	:disconnected
+113	:invoke	:cas	[1 1]
+113	:info	:cas	[1 1]	:disconnected
+115	:invoke	:read	nil
+115	:fail	:read	nil	:disconnected
+118	:invoke	:read	nil
+118	:fail	:read	nil	:disconnected
+115	:invoke	:read	nil
+104	:invoke	:write	2
+104	:info	:write	2	:disconnected
+117	:invoke	:read	nil
+115	:fail	:read	nil	:disconnected
+117	:fail	:read	nil	:disconnected
+108	:invoke	:write	3
+118	:invoke	:write	3
+108	:info	:write	3	:disconnected
+118	:info	:write	3	:disconnected
+117	:invoke	:write	0
+117	:info	:write	0	:disconnected
+115	:invoke	:read	nil
+115	:fail	:read	nil	:disconnected
+112	:invoke	:write	0
+112	:info	:write	0	:disconnected
+122	:invoke	:read	nil
+122	:fail	:read	nil	:disconnected
+115	:invoke	:read	nil
+115	:fail	:read	nil	:disconnected
+116	:invoke	:write	3
+116	:info	:write	3	:disconnected
+115	:invoke	:cas	[0 2]
+115	:info	:cas	[0 2]	:disconnected
+121	:invoke	:read	nil
+122	:invoke	:read	nil
+121	:fail	:read	nil	:disconnected
+122	:fail	:read	nil	:disconnected
+120	:invoke	:cas	[2 1]
+120	:info	:cas	[2 1]	:disconnected
+119	:invoke	:read	nil
+121	:invoke	:read	nil
+119	:fail	:read	nil	:disconnected
+121	:fail	:read	nil	:disconnected
+122	:invoke	:cas	[2 1]
+124	:invoke	:write	1
+119	:invoke	:write	4
+122	:info	:cas	[2 1]	:disconnected
+124	:info	:write	1	:disconnected
+119	:info	:write	4	:disconnected
+121	:invoke	:cas	[4 2]
+121	:info	:cas	[4 2]	:disconnected
+128	:invoke	:write	1
+126	:invoke	:cas	[4 1]
+128	:info	:write	1	:disconnected
+126	:info	:cas	[4 1]	:disconnected
+123	:invoke	:cas	[3 3]
+123	:info	:cas	[3 3]	:disconnected
+132	:invoke	:read	nil
+132	:fail	:read	nil	:disconnected
+125	:invoke	:write	3
+125	:info	:write	3	:disconnected
+127	:invoke	:read	nil
+127	:fail	:read	nil	:disconnected
+130	:invoke	:write	1
+130	:info	:write	1	:disconnected
+129	:invoke	:read	nil
+129	:fail	:read	nil	:disconnected
+132	:invoke	:write	4
+132	:info	:write	4	:disconnected
+127	:invoke	:cas	[0 4]
+127	:info	:cas	[0 4]	:disconnected
+134	:invoke	:cas	[2 0]
+134	:info	:cas	[2 0]	:disconnected
+129	:invoke	:cas	[0 0]
+129	:info	:cas	[0 0]	:disconnected
+136	:invoke	:cas	[2 3]
+136	:info	:cas	[2 3]	:disconnected
+131	:invoke	:cas	[3 1]
+131	:info	:cas	[3 1]	:disconnected
+138	:invoke	:read	nil
+138	:fail	:read	nil	:disconnected
+133	:invoke	:cas	[1 4]
+133	:info	:cas	[1 4]	:disconnected
+140	:invoke	:cas	[4 3]
+140	:info	:cas	[4 3]	:disconnected
+135	:invoke	:write	4
+135	:info	:write	4	:disconnected
+137	:invoke	:cas	[1 1]
+137	:info	:cas	[1 1]	:disconnected
+139	:invoke	:write	3
+139	:info	:write	3	:disconnected
+138	:invoke	:read	nil
+138	:fail	:read	nil	:disconnected
+144	:invoke	:read	nil
+144	:fail	:read	nil	:disconnected
+141	:invoke	:write	3
+141	:info	:write	3	:disconnected
+143	:invoke	:cas	[1 4]
+143	:info	:cas	[1 4]	:disconnected
+138	:invoke	:read	nil
+138	:fail	:read	nil	:disconnected
+144	:invoke	:write	3
+144	:info	:write	3	:disconnected
+147	:invoke	:write	1
+147	:info	:write	1	:disconnected
+145	:invoke	:read	nil
+145	:fail	:read	nil	:disconnected
+138	:invoke	:write	0
+138	:info	:write	0	:disconnected
+148	:invoke	:read	nil
+148	:fail	:read	nil	:disconnected
+145	:invoke	:read	nil
+145	:fail	:read	nil	:disconnected
+151	:invoke	:read	nil
+151	:fail	:read	nil	:disconnected
+148	:invoke	:write	4
+148	:info	:write	4	:disconnected
+142	:invoke	:cas	[3 2]
+142	:info	:cas	[3 2]	:disconnected
+145	:invoke	:cas	[1 3]
+145	:info	:cas	[1 3]	:disconnected
+151	:invoke	:cas	[3 2]
+151	:info	:cas	[3 2]	:disconnected
+152	:invoke	:read	nil
+149	:invoke	:write	1
+152	:fail	:read	nil	:disconnected
+149	:info	:write	1	:disconnected
+146	:invoke	:cas	[0 3]
+155	:invoke	:read	nil
+146	:info	:cas	[0 3]	:disconnected
+155	:fail	:read	nil	:disconnected
+155	:invoke	:write	3
+155	:info	:write	3	:disconnected
+152	:invoke	:write	1
+152	:info	:write	1	:disconnected
+153	:invoke	:read	nil
+153	:fail	:read	nil	:disconnected
+150	:invoke	:cas	[1 2]
+150	:info	:cas	[1 2]	:disconnected
+159	:invoke	:write	3
+153	:invoke	:cas	[2 4]
+159	:info	:write	3	:disconnected
+153	:info	:cas	[2 4]	:disconnected
+154	:invoke	:cas	[0 3]
+154	:info	:cas	[0 3]	:disconnected
+156	:invoke	:cas	[2 2]
+156	:info	:cas	[2 2]	:disconnected
+157	:invoke	:write	4
+157	:info	:write	4	:disconnected
+163	:invoke	:read	nil
+163	:fail	:read	nil	:disconnected
+158	:invoke	:cas	[3 2]
+158	:info	:cas	[3 2]	:disconnected
+160	:invoke	:write	2
+160	:info	:write	2	:disconnected
+161	:invoke	:read	nil
+162	:invoke	:cas	[2 2]
+161	:fail	:read	nil	:disconnected
+162	:info	:cas	[2 2]	:disconnected
+163	:invoke	:cas	[3 0]
+163	:info	:cas	[3 0]	:disconnected
+161	:invoke	:read	nil
+161	:fail	:read	nil	:disconnected
+166	:invoke	:cas	[2 3]
+166	:info	:cas	[2 3]	:disconnected
+164	:invoke	:read	nil
+164	:fail	:read	nil	:disconnected
+167	:invoke	:write	2
+167	:info	:write	2	:disconnected
+161	:invoke	:read	nil
+161	:fail	:read	nil	:disconnected
+170	:invoke	:read	nil
+170	:fail	:read	nil	:disconnected
+164	:invoke	:write	3
+164	:info	:write	3	:disconnected
+170	:invoke	:write	3
+170	:info	:write	3	:disconnected
+171	:invoke	:cas	[3 1]
+171	:info	:cas	[3 1]	:disconnected
+168	:invoke	:read	nil
+161	:invoke	:write	0
+168	:fail	:read	nil	:disconnected
+161	:info	:write	0	:disconnected
+174	:invoke	:read	nil
+174	:fail	:read	nil	:disconnected
+175	:invoke	:write	1
+175	:info	:write	1	:disconnected
+174	:invoke	:write	1
+174	:info	:write	1	:disconnected
+168	:invoke	:read	nil
+179	:invoke	:write	2
+168	:fail	:read	nil	:disconnected
+179	:info	:write	2	:disconnected
+165	:invoke	:cas	[2 4]
+165	:info	:cas	[2 4]	:disconnected
+183	:invoke	:write	2
+178	:invoke	:cas	[2 3]
+183	:info	:write	2	:disconnected
+178	:info	:cas	[2 3]	:disconnected
+168	:invoke	:write	2
+168	:info	:write	2	:disconnected
+169	:invoke	:cas	[4 2]
+169	:info	:cas	[4 2]	:disconnected
+172	:invoke	:cas	[2 4]
+172	:info	:cas	[2 4]	:disconnected
+182	:invoke	:write	4
+182	:info	:write	4	:disconnected
+187	:invoke	:cas	[2 0]
+187	:info	:cas	[2 0]	:disconnected
+176	:invoke	:read	nil
+176	:fail	:read	nil	:disconnected
+173	:invoke	:read	nil
+173	:fail	:read	nil	:disconnected
+176	:invoke	:read	nil
+176	:fail	:read	nil	:disconnected
+186	:invoke	:write	4
+186	:info	:write	4	:disconnected
+191	:invoke	:cas	[3 3]
+191	:info	:cas	[3 3]	:disconnected
+176	:invoke	:cas	[3 2]
+176	:info	:cas	[3 2]	:disconnected
+173	:invoke	:write	4
+173	:info	:write	4	:disconnected
+190	:invoke	:read	nil
+190	:fail	:read	nil	:disconnected
+195	:invoke	:cas	[2 1]
+195	:info	:cas	[2 1]	:disconnected
+177	:invoke	:cas	[4 1]
+177	:info	:cas	[4 1]	:disconnected
+190	:invoke	:read	nil
+180	:invoke	:cas	[3 2]
+190	:fail	:read	nil	:disconnected
+180	:info	:cas	[3 2]	:disconnected
+181	:invoke	:cas	[3 2]
+181	:info	:cas	[3 2]	:disconnected
+199	:invoke	:read	nil
+199	:fail	:read	nil	:disconnected
+184	:invoke	:cas	[1 3]
+184	:info	:cas	[1 3]	:disconnected
+190	:invoke	:cas	[0 0]
+190	:info	:cas	[0 0]	:disconnected
+188	:invoke	:read	nil
+188	:fail	:read	nil	:disconnected
+185	:invoke	:write	4
+185	:info	:write	4	:disconnected
+199	:invoke	:cas	[0 3]
+199	:info	:cas	[0 3]	:disconnected
+194	:invoke	:write	1
+194	:info	:write	1	:disconnected
+188	:invoke	:read	nil
+188	:fail	:read	nil	:disconnected
+198	:invoke	:read	nil
+198	:fail	:read	nil	:disconnected
+203	:invoke	:cas	[3 2]
+203	:info	:cas	[3 2]	:disconnected
+189	:invoke	:cas	[4 4]
+189	:info	:cas	[4 4]	:disconnected
+198	:invoke	:write	1
+198	:info	:write	1	:disconnected
+188	:invoke	:cas	[0 3]
+188	:info	:cas	[0 3]	:disconnected
+193	:invoke	:write	4
+193	:info	:write	4	:disconnected
+202	:invoke	:cas	[1 2]
+202	:info	:cas	[1 2]	:disconnected
+207	:invoke	:write	0
+207	:info	:write	0	:disconnected
+:nemesis	:info	:stop	nil
+192	:invoke	:write	1
+192	:info	:write	1	:disconnected
+197	:invoke	:cas	[2 2]
+197	:info	:cas	[2 2]	:disconnected
+206	:invoke	:write	2
+206	:info	:write	2	:disconnected
+196	:invoke	:read	nil
+196	:fail	:read	nil	:disconnected
+211	:invoke	:read	nil
+211	:fail	:read	nil	:disconnected
+201	:invoke	:cas	[2 2]
+201	:info	:cas	[2 2]	:disconnected
+196	:invoke	:cas	[3 3]
+196	:info	:cas	[3 3]	:disconnected
+211	:invoke	:cas	[0 2]
+210	:invoke	:write	2
+211	:info	:cas	[0 2]	:disconnected
+210	:info	:write	2	:disconnected
+:nemesis	:info	:stop	{"jraft.host1" [:restarted "jraft.host1"], "jraft.host3" [:restarted "jraft.host3"], "jraft.host2" [:restarted "jraft.host2"], "jraft.host5" [:restarted "jraft.host5"]}
+205	:invoke	:cas	[3 0]
+205	:info	:cas	[3 0]	:disconnected
+200	:invoke	:cas	[4 3]
+200	:info	:cas	[4 3]	:disconnected
+215	:invoke	:cas	[1 1]
+215	:info	:cas	[1 1]	:disconnected
+214	:invoke	:write	2
+214	:info	:write	2	:disconnected
+204	:invoke	:read	nil
+219	:invoke	:write	1
+219	:info	:write	1	:disconnected
+204	:fail	:read	nil	:disconnected
+209	:invoke	:write	0
+209	:info	:write	0	:disconnected
+204	:invoke	:write	0
+204	:info	:write	0	:disconnected
+223	:invoke	:cas	[0 0]
+223	:info	:cas	[0 0]	:disconnected
+218	:invoke	:cas	[1 1]
+218	:info	:cas	[1 1]	:disconnected
+213	:invoke	:write	1
+213	:info	:write	1	:disconnected
+208	:invoke	:read	nil
+208	:fail	:read	nil	:disconnected
+222	:invoke	:read	nil
+227	:invoke	:read	nil
+222	:fail	:read	nil	:disconnected
+227	:fail	:read	nil	:disconnected
+217	:invoke	:write	1
+217	:info	:write	1	:disconnected
+208	:invoke	:read	nil
+227	:invoke	:write	1
+227	:info	:write	1	:disconnected
+208	:fail	:read	nil	:disconnected
+222	:invoke	:write	4
+222	:info	:write	4	:disconnected
+221	:invoke	:read	nil
+221	:fail	:read	nil	:disconnected
+208	:invoke	:cas	[1 2]
+208	:info	:cas	[1 2]	:disconnected
+231	:invoke	:read	nil
+226	:invoke	:cas	[2 1]
+226	:info	:cas	[2 1]	:disconnected
+231	:fail	:read	nil	:disconnected
+212	:invoke	:read	nil
+212	:fail	:read	nil	:disconnected
+221	:invoke	:cas	[4 0]
+221	:info	:cas	[4 0]	:disconnected
+231	:invoke	:write	3
+231	:info	:write	3	:disconnected
+230	:invoke	:cas	[4 3]
+230	:info	:cas	[4 3]	:disconnected
+225	:invoke	:write	0
+225	:info	:write	0	:disconnected
+212	:invoke	:write	4
+212	:info	:write	4	:disconnected
+235	:invoke	:write	0
+235	:info	:write	0	:disconnected
+234	:invoke	:write	4
+234	:info	:write	4	:disconnected
+229	:invoke	:cas	[3 0]
+229	:info	:cas	[3 0]	:disconnected
+216	:invoke	:cas	[0 2]
+216	:info	:cas	[0 2]	:disconnected
+239	:invoke	:cas	[1 1]
+239	:info	:cas	[1 1]	:disconnected
+233	:invoke	:write	3
+233	:info	:write	3	:disconnected
+220	:invoke	:cas	[0 3]
+220	:info	:cas	[0 3]	:disconnected
+238	:invoke	:read	nil
+238	:fail	:read	nil	:disconnected
+224	:invoke	:write	1
+224	:info	:write	1	:disconnected
+243	:invoke	:cas	[2 0]
+243	:info	:cas	[2 0]	:disconnected
+238	:invoke	:write	2
+238	:info	:write	2	:disconnected
+237	:invoke	:write	3
+237	:info	:write	3	:disconnected
+228	:invoke	:read	nil
+228	:fail	:read	nil	:disconnected
+247	:invoke	:cas	[3 0]
+247	:info	:cas	[3 0]	:disconnected
+241	:invoke	:read	nil
+242	:invoke	:cas	[3 2]
+241	:fail	:read	nil	:disconnected
+242	:info	:cas	[3 2]	:disconnected
+228	:invoke	:write	1
+228	:info	:write	1	:disconnected
+246	:invoke	:write	3
+246	:info	:write	3	:disconnected
+241	:invoke	:write	0
+241	:info	:write	0	:disconnected
+251	:invoke	:write	1
+251	:info	:write	1	:disconnected
+250	:invoke	:read	nil
+250	:fail	:read	nil	:disconnected
+232	:invoke	:write	1
+232	:info	:write	1	:disconnected
+255	:invoke	:write	2
+245	:invoke	:write	0
+255	:info	:write	2	:disconnected
+245	:info	:write	0	:disconnected
+250	:invoke	:write	2
+250	:info	:write	2	:disconnected
+236	:invoke	:cas	[0 2]
+236	:info	:cas	[0 2]	:disconnected
+249	:invoke	:write	2
+249	:info	:write	2	:disconnected
+259	:invoke	:write	3
+259	:info	:write	3	:disconnected
+254	:invoke	:read	nil
+254	:fail	:read	nil	:disconnected
+240	:invoke	:cas	[0 3]
+240	:info	:cas	[0 3]	:disconnected
+263	:invoke	:write	3
+263	:info	:write	3	:disconnected
+253	:invoke	:write	1
+253	:info	:write	1	:disconnected
+254	:invoke	:read	nil
+254	:fail	:read	nil	:disconnected
+267	:invoke	:write	4
+267	:info	:write	4	:disconnected
+244	:invoke	:read	nil
+244	:fail	:read	nil	:disconnected
+257	:invoke	:cas	[1 2]
+257	:info	:cas	[1 2]	:disconnected
+271	:invoke	:write	3
+271	:info	:write	3	:disconnected
+254	:invoke	:write	3
+254	:info	:write	3	:disconnected
+244	:invoke	:write	1
+244	:info	:write	1	:disconnected
+261	:invoke	:write	1
+261	:info	:write	1	:disconnected
+275	:invoke	:read	nil
+275	:fail	:read	nil	:disconnected
+248	:invoke	:read	nil
+248	:fail	:read	nil	:disconnected
+265	:invoke	:write	4
+265	:info	:write	4	:disconnected
+258	:invoke	:read	nil
+258	:fail	:read	nil	:disconnected
+248	:invoke	:write	0
+248	:info	:write	0	:disconnected
+275	:invoke	:cas	[2 4]
+269	:invoke	:write	2
+275	:info	:cas	[2 4]	:disconnected
+269	:info	:write	2	:disconnected
+258	:invoke	:read	nil
+258	:fail	:read	nil	:disconnected
+252	:invoke	:write	1
+252	:info	:write	1	:disconnected
+273	:invoke	:cas	[0 2]
+279	:invoke	:write	2
+279	:info	:write	2	:disconnected
+273	:info	:cas	[0 2]	:disconnected
+258	:invoke	:cas	[0 4]
+258	:info	:cas	[0 4]	:disconnected
+256	:invoke	:read	nil
+256	:fail	:read	nil	:disconnected
+277	:invoke	:read	nil
+277	:fail	:read	nil	:disconnected
+262	:invoke	:read	nil
+283	:invoke	:read	nil
+262	:fail	:read	nil	:disconnected
+283	:fail	:read	nil	:disconnected
+256	:invoke	:read	nil
+256	:fail	:read	nil	:disconnected
+283	:invoke	:read	nil
+277	:invoke	:cas	[0 1]
+256	:invoke	:write	4
+262	:invoke	:read	nil
+256	:info	:write	4	:disconnected
+277	:info	:cas	[0 1]	:disconnected
+262	:fail	:read	nil	:disconnected
+283	:fail	:read	nil	:disconnected
+260	:invoke	:write	0
+262	:invoke	:cas	[2 0]
+281	:invoke	:read	nil
+283	:invoke	:read	nil
+260	:info	:write	0	Fail to set
+262	:fail	:cas	[2 0]
+283	:ok	:read	0
+281	:ok	:read	0
+281	:invoke	:write	2
+264	:invoke	:read	nil
+283	:invoke	:read	nil
+262	:invoke	:write	3
+264	:ok	:read	0
+283	:ok	:read	0
+281	:ok	:write	2
+262	:ok	:write	3
+281	:invoke	:cas	[3 3]
+281	:ok	:cas	[3 3]
+283	:invoke	:cas	[1 2]
+283	:fail	:cas	[1 2]
+264	:invoke	:read	nil
+264	:ok	:read	3
+262	:invoke	:read	nil
+262	:ok	:read	3
+283	:invoke	:cas	[2 1]
+281	:invoke	:write	4
+283	:fail	:cas	[2 1]
+281	:ok	:write	4
+264	:invoke	:cas	[4 4]
+264	:ok	:cas	[4 4]
+262	:invoke	:cas	[1 4]
+262	:fail	:cas	[1 4]
+281	:invoke	:write	0
+281	:ok	:write	0
+283	:invoke	:write	3
+262	:invoke	:read	nil
+283	:ok	:write	3
+264	:invoke	:read	nil
+262	:ok	:read	3
+264	:ok	:read	3
+283	:invoke	:read	nil
+283	:ok	:read	3
+262	:invoke	:write	2
+281	:invoke	:write	1
+264	:invoke	:read	nil
+262	:ok	:write	2
+281	:ok	:write	1
+264	:ok	:read	1
+283	:invoke	:read	nil
+283	:ok	:read	1
+262	:invoke	:write	4
+262	:ok	:write	4
+283	:invoke	:write	4
+281	:invoke	:read	nil
+283	:ok	:write	4
+281	:ok	:read	4
+264	:invoke	:read	nil
+264	:ok	:read	4
+281	:invoke	:write	4
+281	:ok	:write	4
+283	:invoke	:read	nil
+283	:ok	:read	4
+281	:invoke	:write	0
+262	:invoke	:read	nil
+262	:ok	:read	4
+264	:invoke	:write	1
+281	:ok	:write	0
+264	:ok	:write	1
+283	:invoke	:cas	[0 4]
+283	:fail	:cas	[0 4]
+281	:invoke	:cas	[0 1]
+281	:fail	:cas	[0 1]
+264	:invoke	:cas	[1 1]
+262	:invoke	:read	nil
+264	:ok	:cas	[1 1]
+262	:ok	:read	1
+283	:invoke	:cas	[3 3]
+283	:fail	:cas	[3 3]
+281	:invoke	:read	nil
+281	:ok	:read	1
+283	:invoke	:cas	[1 1]
+283	:ok	:cas	[1 1]
+262	:invoke	:cas	[4 4]
+264	:invoke	:cas	[4 1]
+262	:fail	:cas	[4 4]
+264	:fail	:cas	[4 1]
+281	:invoke	:write	3
+281	:ok	:write	3
+283	:invoke	:write	3
+283	:ok	:write	3
+264	:invoke	:write	2
+264	:ok	:write	2
+262	:invoke	:read	nil
+262	:ok	:read	2
+283	:invoke	:cas	[1 3]
+281	:invoke	:read	nil
+281	:ok	:read	2
+283	:fail	:cas	[1 3]
+264	:invoke	:write	3
+264	:ok	:write	3
+262	:invoke	:cas	[1 3]
+262	:fail	:cas	[1 3]
+264	:invoke	:write	1
+264	:ok	:write	1
+281	:invoke	:write	1
+281	:ok	:write	1
+283	:invoke	:read	nil
+283	:ok	:read	1
+262	:invoke	:read	nil
+262	:ok	:read	1
+283	:invoke	:write	4
+283	:ok	:write	4
+264	:invoke	:read	nil
+264	:ok	:read	4
+281	:invoke	:write	3
+281	:ok	:write	3
+283	:invoke	:write	2
+283	:ok	:write	2
+262	:invoke	:cas	[3 3]
+262	:fail	:cas	[3 3]
+264	:invoke	:read	nil
+264	:ok	:read	2
+283	:invoke	:cas	[1 1]
+283	:fail	:cas	[1 1]
+281	:invoke	:write	4
+281	:ok	:write	4
+262	:invoke	:cas	[1 4]
+262	:fail	:cas	[1 4]
+264	:invoke	:write	3
+283	:invoke	:write	2
+264	:ok	:write	3
+281	:invoke	:write	3
+283	:ok	:write	2
+281	:ok	:write	3
+262	:invoke	:cas	[3 3]
+262	:ok	:cas	[3 3]
+283	:invoke	:cas	[2 0]
+264	:invoke	:cas	[4 0]
+283	:fail	:cas	[2 0]
+281	:invoke	:write	0
+264	:fail	:cas	[4 0]
+281	:ok	:write	0
+281	:invoke	:write	2
+281	:ok	:write	2
+262	:invoke	:read	nil
+262	:ok	:read	2
+283	:invoke	:cas	[1 0]
+283	:fail	:cas	[1 0]
+264	:invoke	:cas	[0 2]
+264	:fail	:cas	[0 2]
+281	:invoke	:read	nil
+281	:ok	:read	2
+262	:invoke	:write	0
+262	:ok	:write	0
+283	:invoke	:write	2
+283	:ok	:write	2
+264	:invoke	:cas	[4 3]
+264	:fail	:cas	[4 3]
+283	:invoke	:cas	[4 2]
+283	:fail	:cas	[4 2]
+262	:invoke	:read	nil
+262	:ok	:read	2
+281	:invoke	:read	nil
+281	:ok	:read	2
+264	:invoke	:cas	[1 4]
+264	:fail	:cas	[1 4]
+:nemesis	:info	:start	nil
+281	:invoke	:read	nil
+281	:ok	:read	2
+283	:invoke	:cas	[2 0]
+262	:invoke	:write	3
+264	:invoke	:read	nil
+:nemesis	:info	:start	{"jraft.host4" [:killed "jraft.host4"], "jraft.host2" [:killed "jraft.host2"], "jraft.host5" [:killed "jraft.host5"]}
+281	:invoke	:cas	[4 1]
+281	:info	:cas	[4 1]	Remoting error:Connection closed! the address is 172.18.0.5:8609
+262	:info	:write	3	Remoting error:Connection closed! the address is 172.18.0.5:8609
+283	:info	:cas	[2 0]	Remoting error:Connection closed! the address is 172.18.0.5:8609
+264	:fail	:read	nil	Remoting error:Connection closed! the address is 172.18.0.5:8609
+264	:invoke	:write	0
+264	:info	:write	0	:disconnected
+266	:invoke	:cas	[3 4]
+266	:info	:cas	[3 4]	:disconnected
+285	:invoke	:write	4
+285	:info	:write	4	:disconnected
+287	:invoke	:read	nil
+287	:fail	:read	nil	:disconnected
+268	:invoke	:cas	[0 0]
+268	:info	:cas	[0 0]	:disconnected
+270	:invoke	:write	1
+270	:info	:write	1	:disconnected
+287	:invoke	:cas	[0 2]
+287	:info	:cas	[0 2]	:disconnected
+289	:invoke	:write	4
+289	:info	:write	4	:disconnected
+272	:invoke	:cas	[2 0]
+272	:info	:cas	[2 0]	:disconnected
+274	:invoke	:read	nil
+274	:fail	:read	nil	:disconnected
+293	:invoke	:read	nil
+293	:fail	:read	nil	:disconnected
+276	:invoke	:read	nil
+291	:invoke	:write	2
+276	:fail	:read	nil	:disconnected
+291	:info	:write	2	:disconnected
+274	:invoke	:write	4
+274	:info	:write	4	:disconnected
+295	:invoke	:write	1
+295	:info	:write	1	:disconnected
+293	:invoke	:read	nil
+293	:fail	:read	nil	:disconnected
+276	:invoke	:cas	[0 1]
+276	:info	:cas	[0 1]	:disconnected
+299	:invoke	:read	nil
+299	:fail	:read	nil	:disconnected
+278	:invoke	:read	nil
+278	:fail	:read	nil	:disconnected
+293	:invoke	:read	nil
+293	:fail	:read	nil	:disconnected
+280	:invoke	:cas	[3 0]
+280	:info	:cas	[3 0]	:disconnected
+299	:invoke	:cas	[0 4]
+299	:info	:cas	[0 4]	:disconnected
+284	:invoke	:write	2
+284	:info	:write	2	:disconnected
+278	:invoke	:read	nil
+278	:fail	:read	nil	:disconnected
+293	:invoke	:write	4
+293	:info	:write	4	:disconnected
+303	:invoke	:read	nil
+303	:fail	:read	nil	:disconnected
+297	:invoke	:cas	[2 4]
+297	:info	:cas	[2 4]	:disconnected
+278	:invoke	:read	nil
+278	:fail	:read	nil	:disconnected
+288	:invoke	:cas	[3 2]
+288	:info	:cas	[3 2]	:disconnected
+303	:invoke	:write	4
+303	:info	:write	4	:disconnected
+278	:invoke	:read	nil
+278	:fail	:read	nil	:disconnected
+301	:invoke	:read	nil
+301	:fail	:read	nil	:disconnected
+292	:invoke	:write	4
+292	:info	:write	4	:disconnected
+278	:invoke	:cas	[2 2]
+278	:info	:cas	[2 2]	:disconnected
+307	:invoke	:write	1
+301	:invoke	:write	1
+307	:info	:write	1	:disconnected
+301	:info	:write	1	:disconnected
+296	:invoke	:write	0
+296	:info	:write	0	:disconnected
+305	:invoke	:cas	[4 1]
+305	:info	:cas	[4 1]	:disconnected
+282	:invoke	:cas	[3 1]
+282	:info	:cas	[3 1]	:disconnected
+311	:invoke	:cas	[0 4]
+300	:invoke	:read	nil
+300	:fail	:read	nil	:disconnected
+311	:info	:cas	[0 4]	:disconnected
+315	:invoke	:read	nil
+309	:invoke	:write	4
+286	:invoke	:read	nil
+315	:fail	:read	nil	:disconnected
+309	:info	:write	4	:disconnected
+286	:fail	:read	nil	:disconnected
+300	:invoke	:read	nil
+300	:fail	:read	nil	:disconnected
+315	:invoke	:write	0
+315	:info	:write	0	:disconnected
+313	:invoke	:cas	[0 2]
+313	:info	:cas	[0 2]	:disconnected
+286	:invoke	:cas	[3 1]
+286	:info	:cas	[3 1]	:disconnected
+300	:invoke	:write	1
+300	:info	:write	1	:disconnected
+317	:invoke	:cas	[3 1]
+319	:invoke	:read	nil
+317	:info	:cas	[3 1]	:disconnected
+319	:fail	:read	nil	:disconnected
+290	:invoke	:write	0
+290	:info	:write	0	:disconnected
+304	:invoke	:cas	[0 1]
+304	:info	:cas	[0 1]	:disconnected
+319	:invoke	:cas	[1 1]
+319	:info	:cas	[1 1]	:disconnected
+294	:invoke	:cas	[2 3]
+294	:info	:cas	[2 3]	:disconnected
+321	:invoke	:cas	[0 3]
+321	:info	:cas	[0 3]	:disconnected
+308	:invoke	:read	nil
+308	:fail	:read	nil	:disconnected
+323	:invoke	:write	2
+323	:info	:write	2	:disconnected
+325	:invoke	:write	4
+325	:info	:write	4	:disconnected
+298	:invoke	:write	3
+298	:info	:write	3	:disconnected
+327	:invoke	:read	nil
+327	:fail	:read	nil	:disconnected
+302	:invoke	:cas	[3 0]
+308	:invoke	:read	nil
+302	:info	:cas	[3 0]	:disconnected
+308	:fail	:read	nil	:disconnected
+329	:invoke	:read	nil
+329	:fail	:read	nil	:disconnected
+306	:invoke	:write	0
+306	:info	:write	0	:disconnected
+327	:invoke	:cas	[4 2]
+327	:info	:cas	[4 2]	:disconnected
+329	:invoke	:write	2
+329	:info	:write	2	:disconnected
+308	:invoke	:read	nil
+308	:fail	:read	nil	:disconnected
+331	:invoke	:write	2
+331	:info	:write	2	:disconnected
+310	:invoke	:read	nil
+310	:fail	:read	nil	:disconnected
+308	:invoke	:read	nil
+308	:fail	:read	nil	:disconnected
+333	:invoke	:cas	[0 0]
+333	:info	:cas	[0 0]	:disconnected
+335	:invoke	:read	nil
+335	:fail	:read	nil	:disconnected
+308	:invoke	:write	3
+308	:info	:write	3	:disconnected
+310	:invoke	:read	nil
+310	:fail	:read	nil	:disconnected
+337	:invoke	:write	2
+337	:info	:write	2	:disconnected
+335	:invoke	:cas	[1 3]
+335	:info	:cas	[1 3]	:disconnected
+312	:invoke	:write	1
+312	:info	:write	1	:disconnected
+310	:invoke	:cas	[3 3]
+310	:info	:cas	[3 3]	:disconnected
+341	:invoke	:write	2
+341	:info	:write	2	:disconnected
+339	:invoke	:write	3
+339	:info	:write	3	:disconnected
+314	:invoke	:write	3
+314	:info	:write	3	:disconnected
+316	:invoke	:read	nil
+316	:fail	:read	nil	:disconnected
+345	:invoke	:cas	[1 3]
+345	:info	:cas	[1 3]	:disconnected
+343	:invoke	:read	nil
+343	:fail	:read	nil	:disconnected
+318	:invoke	:write	4
+318	:info	:write	4	:disconnected
+316	:invoke	:write	1
+343	:invoke	:cas	[2 2]
+316	:info	:write	1	:disconnected
+343	:info	:cas	[2 2]	:disconnected
+349	:invoke	:write	4
+349	:info	:write	4	:disconnected
+347	:invoke	:cas	[3 2]
+322	:invoke	:read	nil
+347	:info	:cas	[3 2]	:disconnected
+322	:fail	:read	nil	:disconnected
+353	:invoke	:read	nil
+353	:fail	:read	nil	:disconnected
+322	:invoke	:write	4
+322	:info	:write	4	:disconnected
+320	:invoke	:read	nil
+320	:fail	:read	nil	:disconnected
+351	:invoke	:write	3
+351	:info	:write	3	:disconnected
+326	:invoke	:read	nil
+326	:fail	:read	nil	:disconnected
+320	:invoke	:read	nil
+353	:invoke	:read	nil
+320	:fail	:read	nil	:disconnected
+353	:fail	:read	nil	:disconnected
+355	:invoke	:read	nil
+355	:fail	:read	nil	:disconnected
+353	:invoke	:write	2
+353	:info	:write	2	:disconnected
+320	:invoke	:read	nil
+320	:fail	:read	nil	:disconnected
+326	:invoke	:cas	[0 4]
+326	:info	:cas	[0 4]	:disconnected
+320	:invoke	:read	nil
+320	:fail	:read	nil	:disconnected
+330	:invoke	:cas	[0 4]
+330	:info	:cas	[0 4]	:disconnected
+357	:invoke	:write	2
+357	:info	:write	2	:disconnected
+355	:invoke	:read	nil
+355	:fail	:read	nil	:disconnected
+361	:invoke	:read	nil
+361	:fail	:read	nil	:disconnected
+320	:invoke	:write	2
+320	:info	:write	2	:disconnected
+355	:invoke	:write	2
+355	:info	:write	2	:disconnected
+334	:invoke	:cas	[1 2]
+334	:info	:cas	[1 2]	:disconnected
+324	:invoke	:read	nil
+324	:fail	:read	nil	:disconnected
+361	:invoke	:cas	[1 0]
+361	:info	:cas	[1 0]	:disconnected
+338	:invoke	:write	2
+338	:info	:write	2	:disconnected
+324	:invoke	:write	1
+324	:info	:write	1	:disconnected
+359	:invoke	:write	1
+359	:info	:write	1	:disconnected
+342	:invoke	:write	3
+342	:info	:write	3	:disconnected
+363	:invoke	:read	nil
+365	:invoke	:write	3
+363	:fail	:read	nil	:disconnected
+365	:info	:write	3	:disconnected
+328	:invoke	:read	nil
+328	:fail	:read	nil	:disconnected
+346	:invoke	:cas	[4 4]
+346	:info	:cas	[4 4]	:disconnected
+363	:invoke	:write	2
+363	:info	:write	2	:disconnected
+369	:invoke	:write	1
+369	:info	:write	1	:disconnected
+350	:invoke	:read	nil
+350	:fail	:read	nil	:disconnected
+328	:invoke	:cas	[4 0]
+328	:info	:cas	[4 0]	:disconnected
+367	:invoke	:read	nil
+367	:fail	:read	nil	:disconnected
+350	:invoke	:write	3
+350	:info	:write	3	:disconnected
+332	:invoke	:cas	[4 4]
+332	:info	:cas	[4 4]	:disconnected
+373	:invoke	:read	nil
+373	:fail	:read	nil	:disconnected
+354	:invoke	:read	nil
+354	:fail	:read	nil	:disconnected
+336	:invoke	:read	nil
+336	:fail	:read	nil	:disconnected
+367	:invoke	:cas	[1 3]
+367	:info	:cas	[1 3]	:disconnected
+354	:invoke	:write	2
+354	:info	:write	2	:disconnected
+373	:invoke	:read	nil
+371	:invoke	:write	2
+373	:fail	:read	nil	:disconnected
+371	:info	:write	2	:disconnected
+358	:invoke	:cas	[4 0]
+358	:info	:cas	[4 0]	:disconnected
+336	:invoke	:read	nil
+336	:fail	:read	nil	:disconnected
+373	:invoke	:write	4
+373	:info	:write	4	:disconnected
+375	:invoke	:write	1
+362	:invoke	:read	nil
+375	:info	:write	1	:disconnected
+336	:invoke	:cas	[1 2]
+362	:fail	:read	nil	:disconnected
+336	:info	:cas	[1 2]	:disconnected
+377	:invoke	:read	nil
+377	:fail	:read	nil	:disconnected
+379	:invoke	:write	0
+379	:info	:write	0	:disconnected
+340	:invoke	:read	nil
+340	:fail	:read	nil	:disconnected
+377	:invoke	:cas	[4 0]
+377	:info	:cas	[4 0]	:disconnected
+362	:invoke	:cas	[1 4]
+362	:info	:cas	[1 4]	:disconnected
+383	:invoke	:write	4
+383	:info	:write	4	:disconnected
+381	:invoke	:read	nil
+381	:fail	:read	nil	:disconnected
+340	:invoke	:read	nil
+366	:invoke	:read	nil
+387	:invoke	:cas	[1 4]
+340	:fail	:read	nil	:disconnected
+366	:fail	:read	nil	:disconnected
+387	:info	:cas	[1 4]	:disconnected
+381	:invoke	:write	1
+381	:info	:write	1	:disconnected
+340	:invoke	:read	nil
+340	:fail	:read	nil	:disconnected
+391	:invoke	:write	2
+391	:info	:write	2	:disconnected
+385	:invoke	:read	nil
+366	:invoke	:read	nil
+385	:fail	:read	nil	:disconnected
+366	:fail	:read	nil	:disconnected
+340	:invoke	:read	nil
+340	:fail	:read	nil	:disconnected
+395	:invoke	:read	nil
+395	:fail	:read	nil	:disconnected
+385	:invoke	:write	3
+366	:invoke	:write	1
+340	:invoke	:read	nil
+385	:info	:write	3	:disconnected
+366	:info	:write	1	:disconnected
+340	:fail	:read	nil	:disconnected
+395	:invoke	:write	2
+395	:info	:write	2	:disconnected
+389	:invoke	:write	4
+370	:invoke	:read	nil
+389	:info	:write	4	:disconnected
+399	:invoke	:read	nil
+370	:fail	:read	nil	:disconnected
+399	:fail	:read	nil	:disconnected
+340	:invoke	:write	3
+340	:info	:write	3	:disconnected
+399	:invoke	:cas	[4 3]
+399	:info	:cas	[4 3]	:disconnected
+344	:invoke	:write	3
+344	:info	:write	3	:disconnected
+393	:invoke	:read	nil
+370	:invoke	:read	nil
+393	:fail	:read	nil	:disconnected
+370	:fail	:read	nil	:disconnected
+403	:invoke	:write	3
+403	:info	:write	3	:disconnected
+393	:invoke	:cas	[1 1]
+393	:info	:cas	[1 1]	:disconnected
+348	:invoke	:read	nil
+348	:fail	:read	nil	:disconnected
+407	:invoke	:write	3
+407	:info	:write	3	:disconnected
+370	:invoke	:read	nil
+370	:fail	:read	nil	:disconnected
+348	:invoke	:cas	[0 0]
+348	:info	:cas	[0 0]	:disconnected
+397	:invoke	:write	1
+397	:info	:write	1	:disconnected
+411	:invoke	:cas	[0 0]
+:nemesis	:info	:stop	nil
+411	:info	:cas	[0 0]	:disconnected
+370	:invoke	:read	nil
+370	:fail	:read	nil	:disconnected
+415	:invoke	:write	1
+415	:info	:write	1	:disconnected
+352	:invoke	:cas	[0 4]
+352	:info	:cas	[0 4]	:disconnected
+401	:invoke	:cas	[0 4]
+401	:info	:cas	[0 4]	:disconnected
+370	:invoke	:read	nil
+370	:fail	:read	nil	:disconnected
+405	:invoke	:cas	[3 2]
+419	:invoke	:write	1
+405	:info	:cas	[3 2]	:disconnected
+419	:info	:write	1	:disconnected
+:nemesis	:info	:stop	{"jraft.host4" [:restarted "jraft.host4"], "jraft.host2" [:restarted "jraft.host2"], "jraft.host5" [:restarted "jraft.host5"]}
+356	:invoke	:cas	[3 1]
+356	:info	:cas	[3 1]	:disconnected
+370	:invoke	:read	nil
+370	:fail	:read	nil	:disconnected
+423	:invoke	:read	nil
+423	:fail	:read	nil	:disconnected
+409	:invoke	:cas	[0 3]
+409	:info	:cas	[0 3]	:disconnected
+423	:invoke	:read	nil
+423	:fail	:read	nil	:disconnected
+360	:invoke	:write	4
+360	:info	:write	4	:disconnected
+370	:invoke	:write	3
+370	:info	:write	3	:disconnected
+413	:invoke	:read	nil
+413	:fail	:read	nil	:disconnected
+423	:invoke	:write	3
+423	:info	:write	3	:disconnected
+364	:invoke	:cas	[4 1]
+364	:info	:cas	[4 1]	:disconnected
+374	:invoke	:write	1
+374	:info	:write	1	:disconnected
+413	:invoke	:write	2
+413	:info	:write	2	:disconnected
+368	:invoke	:read	nil
+368	:fail	:read	nil	:disconnected
+427	:invoke	:write	4
+427	:info	:write	4	:disconnected
+417	:invoke	:read	nil
+417	:fail	:read	nil	:disconnected
+378	:invoke	:write	1
+378	:info	:write	1	:disconnected
+431	:invoke	:read	nil
+431	:fail	:read	nil	:disconnected
+417	:invoke	:read	nil
+417	:fail	:read	nil	:disconnected
+368	:invoke	:write	0
+368	:info	:write	0	:disconnected
+382	:invoke	:read	nil
+382	:fail	:read	nil	:disconnected
+372	:invoke	:read	nil
+372	:fail	:read	nil	:disconnected
+431	:invoke	:read	nil
+431	:fail	:read	nil	:disconnected
+417	:invoke	:read	nil
+417	:fail	:read	nil	:disconnected
+382	:invoke	:write	3
+382	:info	:write	3	:disconnected
+372	:invoke	:read	nil
+372	:fail	:read	nil	:disconnected
+431	:invoke	:write	1
+386	:invoke	:read	nil
+431	:info	:write	1	:disconnected
+386	:fail	:read	nil	:disconnected
+417	:invoke	:write	0
+417	:info	:write	0	:disconnected
+435	:invoke	:cas	[2 2]
+435	:info	:cas	[2 2]	:disconnected
+386	:invoke	:write	1
+386	:info	:write	1	:disconnected
+372	:invoke	:write	0
+421	:invoke	:read	nil
+372	:info	:write	0	:disconnected
+421	:fail	:read	nil	:disconnected
+390	:invoke	:cas	[3 4]
+390	:info	:cas	[3 4]	:disconnected
+376	:invoke	:cas	[3 0]
+439	:invoke	:write	1
+376	:info	:cas	[3 0]	:disconnected
+421	:invoke	:cas	[1 4]
+439	:info	:write	1	:disconnected
+421	:info	:cas	[1 4]	:disconnected
+394	:invoke	:write	2
+394	:info	:write	2	:disconnected
+380	:invoke	:cas	[0 4]
+380	:info	:cas	[0 4]	:disconnected
+443	:invoke	:read	nil
+443	:fail	:read	nil	:disconnected
+425	:invoke	:read	nil
+398	:invoke	:write	4
+398	:info	:write	4	:disconnected
+425	:fail	:read	nil	:disconnected
+443	:invoke	:write	0
+443	:info	:write	0	:disconnected
+384	:invoke	:write	2
+384	:info	:write	2	:disconnected
+425	:invoke	:write	0
+425	:info	:write	0	:disconnected
+402	:invoke	:write	2
+402	:info	:write	2	:disconnected
+388	:invoke	:cas	[4 3]
+388	:info	:cas	[4 3]	:disconnected
+429	:invoke	:cas	[3 3]
+429	:info	:cas	[3 3]	:disconnected
+447	:invoke	:cas	[1 0]
+447	:info	:cas	[1 0]	:disconnected
+406	:invoke	:write	3
+406	:info	:write	3	:disconnected
+392	:invoke	:read	nil
+451	:invoke	:read	nil
+392	:fail	:read	nil	:disconnected
+451	:fail	:read	nil	:disconnected
+433	:invoke	:cas	[4 4]
+433	:info	:cas	[4 4]	:disconnected
+410	:invoke	:cas	[3 4]
+451	:invoke	:read	nil
+410	:info	:cas	[3 4]	:disconnected
+451	:fail	:read	nil	:disconnected
+392	:invoke	:read	nil
+392	:fail	:read	nil	:disconnected
+437	:invoke	:cas	[1 0]
+437	:info	:cas	[1 0]	:disconnected
+414	:invoke	:read	nil
+392	:invoke	:read	nil
+451	:invoke	:write	0
+441	:invoke	:cas	[2 2]
+451	:info	:write	0	:disconnected
+392	:fail	:read	nil	:disconnected
+441	:info	:cas	[2 2]	:disconnected
+414	:fail	:read	nil	:disconnected
+455	:invoke	:read	nil
+414	:invoke	:cas	[0 1]
+455	:ok	:read	2
+414	:fail	:cas	[0 1]
+445	:invoke	:write	2
+445	:info	:write	2	Fail to set
+392	:invoke	:write	0
+392	:ok	:write	0
+414	:invoke	:read	nil
+414	:ok	:read	0
+455	:invoke	:cas	[3 4]
+449	:invoke	:read	nil
+449	:ok	:read	0
+392	:invoke	:write	3
+455	:fail	:cas	[3 4]
+414	:invoke	:write	1
+392	:ok	:write	3
+414	:ok	:write	1
+449	:invoke	:read	nil
+449	:ok	:read	1
+455	:invoke	:read	nil
+455	:ok	:read	1
+392	:invoke	:read	nil
+392	:ok	:read	1
+449	:invoke	:read	nil
+414	:invoke	:read	nil
+449	:ok	:read	1
+414	:ok	:read	1
+455	:invoke	:cas	[4 2]
+455	:fail	:cas	[4 2]
+449	:invoke	:cas	[0 4]
+449	:fail	:cas	[0 4]
+414	:invoke	:write	0
+392	:invoke	:write	4
+455	:invoke	:cas	[4 0]
+414	:ok	:write	0
+392	:ok	:write	4
+455	:ok	:cas	[4 0]
+414	:invoke	:cas	[4 0]
+414	:fail	:cas	[4 0]
+392	:invoke	:read	nil
+392	:ok	:read	0
+449	:invoke	:read	nil
+449	:ok	:read	0
+455	:invoke	:write	3
+455	:ok	:write	3
+449	:invoke	:cas	[0 4]
+449	:fail	:cas	[0 4]
+392	:invoke	:read	nil
+392	:ok	:read	3
+455	:invoke	:write	2
+414	:invoke	:cas	[2 0]
+455	:ok	:write	2
+449	:invoke	:cas	[1 4]
+414	:ok	:cas	[2 0]
+449	:fail	:cas	[1 4]
+414	:invoke	:cas	[1 0]
+414	:fail	:cas	[1 0]
+455	:invoke	:write	0
+392	:invoke	:read	nil
+455	:ok	:write	0
+392	:ok	:read	0
+449	:invoke	:write	3
+449	:ok	:write	3
+392	:invoke	:write	4
+392	:ok	:write	4
+455	:invoke	:write	1
+455	:ok	:write	1
+449	:invoke	:read	nil
+449	:ok	:read	1
+414	:invoke	:read	nil
+414	:ok	:read	1
+392	:invoke	:read	nil
+392	:ok	:read	1
+455	:invoke	:write	3
+455	:ok	:write	3
+449	:invoke	:read	nil
+449	:ok	:read	3
+414	:invoke	:write	1
+414	:ok	:write	1
+392	:invoke	:write	2
+392	:ok	:write	2
+455	:invoke	:read	nil
+455	:ok	:read	2
+414	:invoke	:read	nil
+414	:ok	:read	2
+449	:invoke	:read	nil
+449	:ok	:read	2
+392	:invoke	:read	nil
+392	:ok	:read	2
+449	:invoke	:read	nil
+449	:ok	:read	2
+455	:invoke	:read	nil
+455	:ok	:read	2
+414	:invoke	:cas	[4 3]
+414	:fail	:cas	[4 3]
+392	:invoke	:write	0
+392	:ok	:write	0
+455	:invoke	:read	nil
+455	:ok	:read	0
+414	:invoke	:write	2
+449	:invoke	:write	1
+414	:ok	:write	2
+449	:ok	:write	1
+392	:invoke	:write	0
+392	:ok	:write	0
+449	:invoke	:cas	[4 4]
+414	:invoke	:cas	[4 1]
+449	:fail	:cas	[4 4]
+414	:fail	:cas	[4 1]
+455	:invoke	:read	nil
+455	:ok	:read	0
+392	:invoke	:cas	[1 1]
+392	:fail	:cas	[1 1]
+449	:invoke	:write	0
+449	:ok	:write	0
+414	:invoke	:read	nil
+414	:ok	:read	0
+392	:invoke	:cas	[0 4]
+392	:ok	:cas	[0 4]
+455	:invoke	:cas	[3 3]
+455	:fail	:cas	[3 3]
+449	:invoke	:read	nil
+449	:ok	:read	4
+414	:invoke	:read	nil
+414	:ok	:read	4
+392	:invoke	:cas	[3 2]
+392	:fail	:cas	[3 2]
+449	:invoke	:write	4
+455	:invoke	:cas	[2 4]
+449	:ok	:write	4
+455	:fail	:cas	[2 4]
+414	:invoke	:read	nil
+414	:ok	:read	4
+449	:invoke	:cas	[2 0]
+449	:fail	:cas	[2 0]
+392	:invoke	:write	4
+414	:invoke	:write	4
+392	:ok	:write	4
+414	:ok	:write	4
+455	:invoke	:write	0
+455	:ok	:write	0
+449	:invoke	:read	nil
+449	:ok	:read	0
+414	:invoke	:read	nil
+414	:ok	:read	0
+392	:invoke	:write	0
+392	:ok	:write	0
+449	:invoke	:cas	[1 1]
+449	:fail	:cas	[1 1]
+455	:invoke	:write	2
+455	:ok	:write	2
+414	:invoke	:read	nil
+414	:ok	:read	2
+449	:invoke	:read	nil
+449	:ok	:read	2
+392	:invoke	:read	nil
+392	:ok	:read	2
+455	:invoke	:cas	[0 3]
+455	:fail	:cas	[0 3]
+455	:invoke	:read	nil
+455	:ok	:read	2
+414	:invoke	:read	nil
+414	:ok	:read	2
+392	:invoke	:cas	[4 0]
+392	:fail	:cas	[4 0]
+449	:invoke	:read	nil
+449	:ok	:read	2
+449	:invoke	:cas	[0 0]
+449	:fail	:cas	[0 0]
+455	:invoke	:write	4
+455	:ok	:write	4
+392	:invoke	:read	nil
+392	:ok	:read	4
+414	:invoke	:write	4
+414	:ok	:write	4
+449	:invoke	:read	nil
+449	:ok	:read	4
+414	:invoke	:cas	[0 1]
+414	:fail	:cas	[0 1]
+392	:invoke	:write	0
+392	:ok	:write	0
+455	:invoke	:read	nil
+455	:ok	:read	0
+449	:invoke	:cas	[0 2]
+449	:ok	:cas	[0 2]
+392	:invoke	:write	4
+392	:ok	:write	4
+414	:invoke	:read	nil
+414	:ok	:read	4
+449	:invoke	:write	4
+455	:invoke	:write	4
+449	:ok	:write	4
+455	:ok	:write	4
+392	:invoke	:read	nil
+392	:ok	:read	4
+414	:invoke	:cas	[0 4]
+414	:fail	:cas	[0 4]
+449	:invoke	:write	4
+449	:ok	:write	4
+455	:invoke	:write	4
+392	:invoke	:read	nil
+455	:ok	:write	4
+392	:ok	:read	4
+414	:invoke	:read	nil
+414	:ok	:read	4
+455	:invoke	:write	2
+455	:ok	:write	2
+414	:invoke	:cas	[4 2]
+449	:invoke	:read	nil
+449	:ok	:read	2
+414	:fail	:cas	[4 2]
+392	:invoke	:write	2
+392	:ok	:write	2
+455	:invoke	:cas	[0 3]
+455	:fail	:cas	[0 3]
+392	:invoke	:read	nil
+392	:ok	:read	2
+414	:invoke	:write	0
+414	:ok	:write	0
+449	:invoke	:read	nil
+449	:ok	:read	0
+392	:invoke	:write	1
+392	:ok	:write	1
+449	:invoke	:write	4
+455	:invoke	:cas	[3 2]
+414	:invoke	:write	3
+449	:ok	:write	4
+455	:fail	:cas	[3 2]
+414	:ok	:write	3
+392	:invoke	:cas	[0 1]
+392	:fail	:cas	[0 1]
+449	:invoke	:cas	[2 0]
+449	:fail	:cas	[2 0]
+455	:invoke	:write	3
+455	:ok	:write	3
+392	:invoke	:read	nil
+392	:ok	:read	3
+414	:invoke	:read	nil
+414	:ok	:read	3
+449	:invoke	:cas	[3 4]
+449	:ok	:cas	[3 4]
+455	:invoke	:read	nil
+455	:ok	:read	4
+:nemesis	:info	:start	nil
+392	:invoke	:read	nil
+392	:ok	:read	4
+414	:invoke	:read	nil
+414	:ok	:read	4
+449	:invoke	:cas	[1 0]
+449	:fail	:cas	[1 0]
+455	:invoke	:cas	[1 0]
+455	:fail	:cas	[1 0]
+392	:invoke	:cas	[2 4]
+392	:fail	:cas	[2 4]
+449	:invoke	:read	nil
+414	:invoke	:cas	[3 4]
+455	:invoke	:read	nil
+392	:invoke	:write	4
+:nemesis	:info	:start	{"jraft.host5" [:killed "jraft.host5"], "jraft.host2" [:killed "jraft.host2"], "jraft.host1" [:killed "jraft.host1"], "jraft.host3" [:killed "jraft.host3"]}
+449	:fail	:read	nil	Remoting error:Connection closed! the address is 172.18.0.4:8609
+392	:info	:write	4	:disconnected
+414	:info	:cas	[3 4]	:disconnected
+455	:fail	:read	nil	:disconnected
+449	:invoke	:read	nil
+449	:fail	:read	nil	:disconnected
+455	:invoke	:cas	[3 3]
+455	:info	:cas	[3 3]	:disconnected
+418	:invoke	:read	nil
+418	:fail	:read	nil	:disconnected
+396	:invoke	:read	nil
+449	:invoke	:write	4
+396	:fail	:read	nil	:disconnected
+449	:info	:write	4	:disconnected
+459	:invoke	:write	3
+459	:info	:write	3	:disconnected
+418	:invoke	:cas	[1 0]
+418	:info	:cas	[1 0]	:disconnected
+396	:invoke	:read	nil
+396	:fail	:read	nil	:disconnected
+453	:invoke	:write	4
+453	:info	:write	4	:disconnected
+463	:invoke	:cas	[2 0]
+463	:info	:cas	[2 0]	:disconnected
+422	:invoke	:cas	[0 4]
+422	:info	:cas	[0 4]	:disconnected
+457	:invoke	:write	1
+457	:info	:write	1	:disconnected
+467	:invoke	:read	nil
+467	:fail	:read	nil	:disconnected
+396	:invoke	:write	3
+396	:info	:write	3	:disconnected
+426	:invoke	:read	nil
+426	:fail	:read	nil	:disconnected
+461	:invoke	:read	nil
+461	:fail	:read	nil	:disconnected
+467	:invoke	:read	nil
+467	:fail	:read	nil	:disconnected
+400	:invoke	:cas	[0 0]
+400	:info	:cas	[0 0]	:disconnected
+426	:invoke	:cas	[0 3]
+426	:info	:cas	[0 3]	:disconnected
+461	:invoke	:write	2
+461	:info	:write	2	:disconnected
+467	:invoke	:write	4
+467	:info	:write	4	:disconnected
+404	:invoke	:read	nil
+430	:invoke	:read	nil
+404	:fail	:read	nil	:disconnected
+430	:fail	:read	nil	:disconnected
+404	:invoke	:read	nil
+404	:fail	:read	nil	:disconnected
+465	:invoke	:read	nil
+465	:fail	:read	nil	:disconnected
+471	:invoke	:cas	[3 4]
+471	:info	:cas	[3 4]	:disconnected
+404	:invoke	:write	0
+465	:invoke	:cas	[2 0]
+404	:info	:write	0	:disconnected
+430	:invoke	:write	3
+465	:info	:cas	[2 0]	:disconnected
+430	:info	:write	3	:disconnected
+475	:invoke	:read	nil
+475	:fail	:read	nil	:disconnected
+434	:invoke	:read	nil
+434	:fail	:read	nil	:disconnected
+408	:invoke	:cas	[3 2]
+408	:info	:cas	[3 2]	:disconnected
+469	:invoke	:cas	[3 1]
+469	:info	:cas	[3 1]	:disconnected
+475	:invoke	:cas	[1 0]
+475	:info	:cas	[1 0]	:disconnected
+473	:invoke	:read	nil
+473	:fail	:read	nil	:disconnected
+412	:invoke	:read	nil
+412	:fail	:read	nil	:disconnected
+434	:invoke	:read	nil
+434	:fail	:read	nil	:disconnected
+473	:invoke	:cas	[1 4]
+473	:info	:cas	[1 4]	:disconnected
+479	:invoke	:cas	[0 1]
+479	:info	:cas	[0 1]	:disconnected
+434	:invoke	:read	nil
+434	:fail	:read	nil	:disconnected
+412	:invoke	:read	nil
+412	:fail	:read	nil	:disconnected
+477	:invoke	:read	nil
+477	:fail	:read	nil	:disconnected
+434	:invoke	:write	1
+434	:info	:write	1	:disconnected
+483	:invoke	:read	nil
+483	:fail	:read	nil	:disconnected
+412	:invoke	:cas	[4 4]
+412	:info	:cas	[4 4]	:disconnected
+477	:invoke	:cas	[2 3]
+438	:invoke	:cas	[4 0]
+477	:info	:cas	[2 3]	:disconnected
+438	:info	:cas	[4 0]	:disconnected
+483	:invoke	:write	3
+481	:invoke	:cas	[4 1]
+483	:info	:write	3	:disconnected
+416	:invoke	:read	nil
+481	:info	:cas	[4 1]	:disconnected
+416	:fail	:read	nil	:disconnected
+442	:invoke	:cas	[1 4]
+442	:info	:cas	[1 4]	:disconnected
+485	:invoke	:cas	[1 4]
+485	:info	:cas	[1 4]	:disconnected
+416	:invoke	:write	0
+416	:info	:write	0	:disconnected
+446	:invoke	:cas	[2 3]
+446	:info	:cas	[2 3]	:disconnected
+487	:invoke	:read	nil
+487	:fail	:read	nil	:disconnected
+489	:invoke	:read	nil
+489	:fail	:read	nil	:disconnected
+420	:invoke	:cas	[4 3]
+420	:info	:cas	[4 3]	:disconnected
+489	:invoke	:cas	[0 1]
+489	:info	:cas	[0 1]	:disconnected
+450	:invoke	:read	nil
+450	:fail	:read	nil	:disconnected
+487	:invoke	:cas	[2 3]
+424	:invoke	:cas	[3 2]
+487	:info	:cas	[2 3]	:disconnected
+424	:info	:cas	[3 2]	:disconnected
+450	:invoke	:read	nil
+450	:fail	:read	nil	:disconnected
+428	:invoke	:write	3
+428	:info	:write	3	:disconnected
+491	:invoke	:cas	[0 3]
+491	:info	:cas	[0 3]	:disconnected
+493	:invoke	:read	nil
+493	:fail	:read	nil	:disconnected
+450	:invoke	:read	nil
+450	:fail	:read	nil	:disconnected
+432	:invoke	:cas	[0 3]
+432	:info	:cas	[0 3]	:disconnected
+495	:invoke	:cas	[2 3]
+495	:info	:cas	[2 3]	:disconnected
+493	:invoke	:write	2
+493	:info	:write	2	:disconnected
+450	:invoke	:cas	[4 4]
+450	:info	:cas	[4 4]	:disconnected
+499	:invoke	:read	nil
+499	:fail	:read	nil	:disconnected
+497	:invoke	:read	nil
+497	:fail	:read	nil	:disconnected
+436	:invoke	:cas	[3 0]
+436	:info	:cas	[3 0]	:disconnected
+497	:invoke	:cas	[4 3]
+497	:info	:cas	[4 3]	:disconnected
+440	:invoke	:cas	[1 1]
+440	:info	:cas	[1 1]	:disconnected
+454	:invoke	:write	0
+454	:info	:write	0	:disconnected
+499	:invoke	:read	nil
+499	:fail	:read	nil	:disconnected
+501	:invoke	:write	4
+499	:invoke	:write	4
+501	:info	:write	4	:disconnected
+499	:info	:write	4	:disconnected
+458	:invoke	:write	3
+444	:invoke	:read	nil
+458	:info	:write	3	:disconnected
+444	:fail	:read	nil	:disconnected
+444	:invoke	:read	nil
+444	:fail	:read	nil	:disconnected
+462	:invoke	:write	4
+462	:info	:write	4	:disconnected
+503	:invoke	:cas	[4 0]
+503	:info	:cas	[4 0]	:disconnected
+505	:invoke	:write	1
+505	:info	:write	1	:disconnected
+444	:invoke	:read	nil
+444	:fail	:read	nil	:disconnected
+466	:invoke	:cas	[4 2]
+466	:info	:cas	[4 2]	:disconnected
+509	:invoke	:read	nil
+509	:fail	:read	nil	:disconnected
+507	:invoke	:cas	[0 3]
+507	:info	:cas	[0 3]	:disconnected
+470	:invoke	:cas	[0 0]
+444	:invoke	:read	nil
+470	:info	:cas	[0 0]	:disconnected
+444	:fail	:read	nil	:disconnected
+509	:invoke	:read	nil
+509	:fail	:read	nil	:disconnected
+474	:invoke	:write	1
+474	:info	:write	1	:disconnected
+511	:invoke	:read	nil
+511	:fail	:read	nil	:disconnected
+444	:invoke	:cas	[3 4]
+444	:info	:cas	[3 4]	:disconnected
+448	:invoke	:read	nil
+448	:fail	:read	nil	:disconnected
+509	:invoke	:write	1
+509	:info	:write	1	:disconnected
+478	:invoke	:write	4
+478	:info	:write	4	:disconnected
+511	:invoke	:read	nil
+511	:fail	:read	nil	:disconnected
+448	:invoke	:read	nil
+448	:fail	:read	nil	:disconnected
+513	:invoke	:read	nil
+513	:fail	:read	nil	:disconnected
+482	:invoke	:write	1
+482	:info	:write	1	:disconnected
+511	:invoke	:cas	[0 2]
+511	:info	:cas	[0 2]	:disconnected
+513	:invoke	:cas	[1 3]
+513	:info	:cas	[1 3]	:disconnected
+448	:invoke	:write	0
+486	:invoke	:cas	[0 1]
+515	:invoke	:cas	[1 4]
+448	:info	:write	0	:disconnected
+486	:info	:cas	[0 1]	:disconnected
+515	:info	:cas	[1 4]	:disconnected
+452	:invoke	:read	nil
+517	:invoke	:cas	[4 1]
+452	:fail	:read	nil	:disconnected
+517	:info	:cas	[4 1]	:disconnected
+519	:invoke	:write	1
+519	:info	:write	1	:disconnected
+490	:invoke	:cas	[4 3]
+490	:info	:cas	[4 3]	:disconnected
+452	:invoke	:write	2
+452	:info	:write	2	:disconnected
+523	:invoke	:read	nil
+523	:fail	:read	nil	:disconnected
+521	:invoke	:cas	[3 0]
+521	:info	:cas	[3 0]	:disconnected
+494	:invoke	:cas	[4 2]
+494	:info	:cas	[4 2]	:disconnected
+456	:invoke	:write	3
+456	:info	:write	3	:disconnected
+523	:invoke	:cas	[0 3]
+523	:info	:cas	[0 3]	:disconnected
+525	:invoke	:cas	[3 0]
+525	:info	:cas	[3 0]	:disconnected
+498	:invoke	:read	nil
+498	:fail	:read	nil	:disconnected
+460	:invoke	:write	1
+460	:info	:write	1	:disconnected
+529	:invoke	:write	4
+529	:info	:write	4	:disconnected
+498	:invoke	:read	nil
+527	:invoke	:write	4
+498	:fail	:read	nil	:disconnected
+527	:info	:write	4	:disconnected
+464	:invoke	:cas	[2 3]
+464	:info	:cas	[2 3]	:disconnected
+533	:invoke	:cas	[4 3]
+533	:info	:cas	[4 3]	:disconnected
+531	:invoke	:write	3
+468	:invoke	:write	2
+498	:invoke	:cas	[4 3]
+531	:info	:write	3	:disconnected
+468	:info	:write	2	:disconnected
+498	:info	:cas	[4 3]	:disconnected
+535	:invoke	:write	4
+535	:info	:write	4	:disconnected
+537	:invoke	:cas	[1 1]
+537	:info	:cas	[1 1]	:disconnected
+472	:invoke	:cas	[2 3]
+472	:info	:cas	[2 3]	:disconnected
+502	:invoke	:read	nil
+502	:fail	:read	nil	:disconnected
+502	:invoke	:read	nil
+502	:fail	:read	nil	:disconnected
+541	:invoke	:write	1
+541	:info	:write	1	:disconnected
+539	:invoke	:cas	[1 3]
+476	:invoke	:read	nil
+539	:info	:cas	[1 3]	:disconnected
+476	:fail	:read	nil	:disconnected
+502	:invoke	:cas	[3 2]
+502	:info	:cas	[3 2]	:disconnected
+476	:invoke	:write	3
+476	:info	:write	3	:disconnected
+543	:invoke	:write	3
+543	:info	:write	3	:disconnected
+545	:invoke	:read	nil
+545	:fail	:read	nil	:disconnected
+506	:invoke	:write	4
+506	:info	:write	4	:disconnected
+547	:invoke	:write	2
+547	:info	:write	2	:disconnected
+480	:invoke	:cas	[2 4]
+480	:info	:cas	[2 4]	:disconnected
+545	:invoke	:write	0
+545	:info	:write	0	:disconnected
+510	:invoke	:cas	[2 2]
+510	:info	:cas	[2 2]	:disconnected
+551	:invoke	:read	nil
+551	:fail	:read	nil	:disconnected
+484	:invoke	:cas	[2 4]
+484	:info	:cas	[2 4]	:disconnected
+514	:invoke	:read	nil
+514	:fail	:read	nil	:disconnected
+551	:invoke	:write	2
+551	:info	:write	2	:disconnected
+488	:invoke	:write	1
+488	:info	:write	1	:disconnected
+549	:invoke	:cas	[2 3]
+549	:info	:cas	[2 3]	:disconnected
+553	:invoke	:write	0
+553	:info	:write	0	:disconnected
+555	:invoke	:read	nil
+555	:fail	:read	nil	:disconnected
+514	:invoke	:read	nil
+514	:fail	:read	nil	:disconnected
+492	:invoke	:write	0
+492	:info	:write	0	:disconnected
+557	:invoke	:cas	[1 1]
+557	:info	:cas	[1 1]	:disconnected
+514	:invoke	:write	0
+514	:info	:write	0	:disconnected
+555	:invoke	:read	nil
+555	:fail	:read	nil	:disconnected
+561	:invoke	:read	nil
+561	:fail	:read	nil	:disconnected
+496	:invoke	:write	4
+496	:info	:write	4	:disconnected
+518	:invoke	:write	1
+518	:info	:write	1	:disconnected
+555	:invoke	:read	nil
+555	:fail	:read	nil	:disconnected
+561	:invoke	:write	0
+561	:info	:write	0	:disconnected
+500	:invoke	:write	3
+500	:info	:write	3	:disconnected
+522	:invoke	:write	4
+555	:invoke	:write	0
+522	:info	:write	4	:disconnected
+555	:info	:write	0	:disconnected
+565	:invoke	:write	1
+565	:info	:write	1	:disconnected
+526	:invoke	:write	4
+504	:invoke	:read	nil
+526	:info	:write	4	:disconnected
+504	:fail	:read	nil	:disconnected
+569	:invoke	:write	1
+569	:info	:write	1	:disconnected
+559	:invoke	:read	nil
+559	:fail	:read	nil	:disconnected
+530	:invoke	:cas	[1 0]
+530	:info	:cas	[1 0]	:disconnected
+504	:invoke	:cas	[0 1]
+504	:info	:cas	[0 1]	:disconnected
+559	:invoke	:cas	[3 2]
+559	:info	:cas	[3 2]	:disconnected
+573	:invoke	:read	nil
+573	:fail	:read	nil	:disconnected
+534	:invoke	:cas	[3 0]
+534	:info	:cas	[3 0]	:disconnected
+563	:invoke	:write	3
+563	:info	:write	3	:disconnected
+508	:invoke	:read	nil
+508	:fail	:read	nil	:disconnected
+538	:invoke	:write	1
+538	:info	:write	1	:disconnected
+508	:invoke	:write	1
+508	:info	:write	1	:disconnected
+573	:invoke	:read	nil
+573	:fail	:read	nil	:disconnected
+542	:invoke	:write	4
+567	:invoke	:write	1
+542	:info	:write	4	:disconnected
+567	:info	:write	1	:disconnected
+:nemesis	:info	:stop	nil
+512	:invoke	:write	0
+512	:info	:write	0	:disconnected
+571	:invoke	:cas	[0 2]
+571	:info	:cas	[0 2]	:disconnected
+546	:invoke	:write	3
+546	:info	:write	3	:disconnected
+573	:invoke	:cas	[2 4]
+573	:info	:cas	[2 4]	:disconnected
+516	:invoke	:read	nil
+516	:fail	:read	nil	:disconnected
+550	:invoke	:write	1
+550	:info	:write	1	:disconnected
+575	:invoke	:cas	[1 1]
+575	:info	:cas	[1 1]	:disconnected
+554	:invoke	:cas	[2 1]
+577	:invoke	:cas	[0 2]
+554	:info	:cas	[2 1]	:disconnected
+577	:info	:cas	[0 2]	:disconnected
+:nemesis	:info	:stop	{"jraft.host5" [:restarted "jraft.host5"], "jraft.host2" [:restarted "jraft.host2"], "jraft.host1" [:restarted "jraft.host1"], "jraft.host3" [:restarted "jraft.host3"]}
+516	:invoke	:cas	[4 1]
+516	:info	:cas	[4 1]	:disconnected
+579	:invoke	:write	0
+579	:info	:write	0	:disconnected
+581	:invoke	:write	0
+581	:info	:write	0	:disconnected
+558	:invoke	:write	2
+558	:info	:write	2	:disconnected
+520	:invoke	:write	3
+520	:info	:write	3	:disconnected
+583	:invoke	:cas	[4 2]
+583	:info	:cas	[4 2]	:disconnected
+585	:invoke	:cas	[0 4]
+585	:info	:cas	[0 4]	:disconnected
+562	:invoke	:read	nil
+562	:fail	:read	nil	:disconnected
+587	:invoke	:read	nil
+587	:fail	:read	nil	:disconnected
+524	:invoke	:write	1
+524	:info	:write	1	:disconnected
+587	:invoke	:cas	[0 3]
+587	:info	:cas	[0 3]	:disconnected
+589	:invoke	:cas	[2 1]
+589	:info	:cas	[2 1]	:disconnected
+562	:invoke	:cas	[1 2]
+562	:info	:cas	[1 2]	:disconnected
+528	:invoke	:read	nil
+528	:fail	:read	nil	:disconnected
+591	:invoke	:read	nil
+591	:fail	:read	nil	:disconnected
+593	:invoke	:cas	[0 0]
+593	:info	:cas	[0 0]	:disconnected
+566	:invoke	:cas	[2 3]
+566	:info	:cas	[2 3]	:disconnected
+528	:invoke	:write	1
+528	:info	:write	1	:disconnected
+591	:invoke	:write	2
+591	:info	:write	2	:disconnected
+532	:invoke	:write	3
+532	:info	:write	3	:disconnected
+570	:invoke	:read	nil
+597	:invoke	:read	nil
+570	:fail	:read	nil	:disconnected
+597	:fail	:read	nil	:disconnected
+595	:invoke	:read	nil
+595	:fail	:read	nil	:disconnected
+536	:invoke	:cas	[3 4]
+536	:info	:cas	[3 4]	:disconnected
+597	:invoke	:read	nil
+597	:fail	:read	nil	:disconnected
+595	:invoke	:write	0
+570	:invoke	:read	nil
+570	:fail	:read	nil	:disconnected
+595	:info	:write	0	:disconnected
+540	:invoke	:read	nil
+540	:fail	:read	nil	:disconnected
+599	:invoke	:cas	[2 0]
+599	:info	:cas	[2 0]	:disconnected
+597	:invoke	:cas	[2 1]
+597	:info	:cas	[2 1]	:disconnected
+570	:invoke	:read	nil
+570	:fail	:read	nil	:disconnected
+540	:invoke	:cas	[1 3]
+540	:info	:cas	[1 3]	:disconnected
+603	:invoke	:write	0
+603	:info	:write	0	:disconnected
+544	:invoke	:read	nil
+544	:fail	:read	nil	:disconnected
+570	:invoke	:read	nil
+570	:fail	:read	nil	:disconnected
+607	:invoke	:write	1
+607	:info	:write	1	:disconnected
+601	:invoke	:cas	[1 0]
+601	:info	:cas	[1 0]	:disconnected
+544	:invoke	:cas	[1 2]
+544	:info	:cas	[1 2]	:disconnected
+605	:invoke	:write	4
+605	:info	:write	4	:disconnected
+570	:invoke	:read	nil
+611	:invoke	:cas	[2 1]
+570	:fail	:read	nil	:disconnected
+611	:info	:cas	[2 1]	:disconnected
+548	:invoke	:cas	[4 3]
+548	:info	:cas	[4 3]	:disconnected
+615	:invoke	:write	3
+615	:info	:write	3	:disconnected
+570	:invoke	:read	nil
+609	:invoke	:write	1
+552	:invoke	:read	nil
+570	:fail	:read	nil	:disconnected
+609	:info	:write	1	:disconnected
+552	:fail	:read	nil	:disconnected
+613	:invoke	:read	nil
+613	:fail	:read	nil	:disconnected
+570	:invoke	:read	nil
+552	:invoke	:cas	[1 0]
+570	:fail	:read	nil	:disconnected
+619	:invoke	:read	nil
+619	:fail	:read	nil	:disconnected
+552	:info	:cas	[1 0]	:disconnected
+613	:invoke	:cas	[0 1]
+613	:info	:cas	[0 1]	:disconnected
+619	:invoke	:write	4
+570	:invoke	:read	nil
+619	:info	:write	4	:disconnected
+570	:fail	:read	nil	:disconnected
+617	:invoke	:write	3
+617	:info	:write	3	:disconnected
+556	:invoke	:write	0
+556	:info	:write	0	:disconnected
+621	:invoke	:read	nil
+621	:fail	:read	nil	:disconnected
+623	:invoke	:write	4
+623	:info	:write	4	:disconnected
+570	:invoke	:read	nil
+570	:fail	:read	nil	:disconnected
+621	:invoke	:cas	[1 3]
+621	:info	:cas	[1 3]	:disconnected
+560	:invoke	:cas	[4 4]
+560	:info	:cas	[4 4]	:disconnected
+627	:invoke	:read	nil
+570	:invoke	:read	nil
+627	:fail	:read	nil	:disconnected
+570	:fail	:read	nil	:disconnected
+625	:invoke	:cas	[4 1]
+625	:info	:cas	[4 1]	:disconnected
+627	:invoke	:cas	[2 1]
+627	:info	:cas	[2 1]	:disconnected
+564	:invoke	:write	1
+564	:info	:write	1	:disconnected
+629	:invoke	:read	nil
+631	:invoke	:read	nil
+570	:invoke	:cas	[1 3]
+631	:fail	:read	nil	:disconnected
+570	:info	:cas	[1 3]	:disconnected
+629	:fail	:read	nil	:disconnected
+568	:invoke	:cas	[0 1]
+568	:info	:cas	[0 1]	:disconnected
+574	:invoke	:cas	[1 0]
+574	:info	:cas	[1 0]	:disconnected
+629	:invoke	:cas	[4 2]
+629	:info	:cas	[4 2]	:disconnected
+631	:invoke	:read	nil
+631	:fail	:read	nil	:disconnected
+572	:invoke	:write	4
+572	:info	:write	4	:disconnected
+578	:invoke	:cas	[1 2]
+578	:info	:cas	[1 2]	:disconnected
+633	:invoke	:read	nil
+633	:fail	:read	nil	:disconnected
+631	:invoke	:read	nil
+631	:fail	:read	nil	:disconnected
+582	:invoke	:cas	[2 4]
+582	:info	:cas	[2 4]	:disconnected
+633	:invoke	:cas	[4 4]
+576	:invoke	:cas	[1 4]
+633	:info	:cas	[4 4]	:disconnected
+576	:info	:cas	[1 4]	:disconnected
+631	:invoke	:read	nil
+631	:fail	:read	nil	:disconnected
+586	:invoke	:write	2
+586	:info	:write	2	:disconnected
+580	:invoke	:write	2
+637	:invoke	:cas	[2 3]
+590	:invoke	:read	nil
+631	:invoke	:write	0
+580	:info	:write	2	Fail to set
+637	:fail	:cas	[2 3]
+631	:info	:write	0	Fail to set
+590	:ok	:read	0
+590	:invoke	:write	2
+590	:info	:write	2	Fail to set
+635	:invoke	:write	3
+584	:invoke	:write	1
+637	:invoke	:read	nil
+635	:info	:write	3	Fail to set
+584	:info	:write	1	Fail to set
+637	:ok	:read	4
+639	:invoke	:cas	[4 1]
+639	:ok	:cas	[4 1]
+639	:invoke	:read	nil
+588	:invoke	:read	nil
+639	:ok	:read	1
+594	:invoke	:cas	[2 1]
+588	:ok	:read	1
+594	:fail	:cas	[2 1]
+637	:invoke	:cas	[3 0]
+637	:fail	:cas	[3 0]
+588	:invoke	:write	3
+588	:ok	:write	3
+594	:invoke	:write	0
+594	:ok	:write	0
+639	:invoke	:write	4
+639	:ok	:write	4
+594	:invoke	:cas	[2 1]
+637	:invoke	:read	nil
+637	:ok	:read	4
+594	:fail	:cas	[2 1]
+639	:invoke	:write	0
+639	:ok	:write	0
+588	:invoke	:cas	[4 2]
+588	:fail	:cas	[4 2]
+594	:invoke	:cas	[0 4]
+594	:ok	:cas	[0 4]
+637	:invoke	:cas	[3 0]
+637	:fail	:cas	[3 0]
+639	:invoke	:read	nil
+588	:invoke	:read	nil
+639	:ok	:read	4
+588	:ok	:read	4
+594	:invoke	:write	4
+594	:ok	:write	4
+588	:invoke	:cas	[1 0]
+588	:fail	:cas	[1 0]
+637	:invoke	:cas	[1 2]
+637	:fail	:cas	[1 2]
+639	:invoke	:cas	[0 1]
+639	:fail	:cas	[0 1]
+594	:invoke	:cas	[0 2]
+588	:invoke	:cas	[1 2]
+594	:fail	:cas	[0 2]
+588	:fail	:cas	[1 2]
+639	:invoke	:write	1
+639	:ok	:write	1
+594	:invoke	:cas	[3 4]
+594	:fail	:cas	[3 4]
+637	:invoke	:cas	[0 1]
+637	:fail	:cas	[0 1]
+639	:invoke	:write	3
+639	:ok	:write	3
+588	:invoke	:read	nil
+588	:ok	:read	3
+637	:invoke	:cas	[2 0]
+637	:fail	:cas	[2 0]
+594	:invoke	:cas	[4 2]
+594	:fail	:cas	[4 2]
+639	:invoke	:cas	[3 3]
+639	:ok	:cas	[3 3]
+588	:invoke	:write	4
+588	:ok	:write	4
+637	:invoke	:cas	[4 4]
+637	:ok	:cas	[4 4]
+639	:invoke	:read	nil
+639	:ok	:read	4
+588	:invoke	:write	4
+588	:ok	:write	4
+637	:invoke	:read	nil
+637	:ok	:read	4
+594	:invoke	:read	nil
+594	:ok	:read	4
+639	:invoke	:cas	[4 1]
+639	:ok	:cas	[4 1]
+637	:invoke	:write	2
+637	:ok	:write	2
+588	:invoke	:cas	[1 4]
+588	:fail	:cas	[1 4]
+639	:invoke	:write	2
+594	:invoke	:write	4
+639	:ok	:write	2
+594	:ok	:write	4
+588	:invoke	:read	nil
+588	:ok	:read	4
+637	:invoke	:write	3
+637	:ok	:write	3
+639	:invoke	:cas	[1 4]
+639	:fail	:cas	[1 4]
+594	:invoke	:read	nil
+594	:ok	:read	3
+588	:invoke	:read	nil
+588	:ok	:read	3
+637	:invoke	:read	nil
+637	:ok	:read	3
+588	:invoke	:cas	[2 1]
+594	:invoke	:read	nil
+594	:ok	:read	3
+588	:fail	:cas	[2 1]
+639	:invoke	:write	2
+639	:ok	:write	2
+637	:invoke	:read	nil
+637	:ok	:read	2
+594	:invoke	:write	3
+588	:invoke	:write	2
+639	:invoke	:write	3
+594	:ok	:write	3
+588	:ok	:write	2
+639	:ok	:write	3
+637	:invoke	:read	nil
+637	:ok	:read	3
+594	:invoke	:cas	[0 1]
+594	:fail	:cas	[0 1]
+639	:invoke	:write	0
+639	:ok	:write	0
+588	:invoke	:read	nil
+588	:ok	:read	0
+637	:invoke	:cas	[2 0]
+637	:fail	:cas	[2 0]
+594	:invoke	:write	4
+594	:ok	:write	4
+639	:invoke	:cas	[4 3]
+639	:ok	:cas	[4 3]
+594	:invoke	:write	2
+588	:invoke	:read	nil
+588	:ok	:read	3
+594	:ok	:write	2
+637	:invoke	:read	nil
+637	:ok	:read	2
+637	:invoke	:cas	[0 0]
+639	:invoke	:cas	[4 3]
+594	:invoke	:write	1
+637	:fail	:cas	[0 0]
+639	:fail	:cas	[4 3]
+594	:ok	:write	1
+588	:invoke	:cas	[0 2]
+588	:fail	:cas	[0 2]
+637	:invoke	:write	0
+639	:invoke	:cas	[1 4]
+637	:ok	:write	0
+594	:invoke	:cas	[1 4]
+588	:invoke	:write	4
+639	:fail	:cas	[1 4]
+588	:ok	:write	4
+594	:fail	:cas	[1 4]
+637	:invoke	:read	nil
+637	:ok	:read	4
+588	:invoke	:read	nil
+588	:ok	:read	4
+:nemesis	:info	:start	nil
+594	:invoke	:cas	[1 1]
+639	:invoke	:write	0
+594	:fail	:cas	[1 1]
+637	:invoke	:read	nil
+639	:ok	:write	0
+637	:ok	:read	0
+588	:invoke	:read	nil
+588	:ok	:read	0
+637	:invoke	:write	4
+594	:invoke	:write	2
+639	:invoke	:read	nil
+588	:invoke	:write	0
+:nemesis	:info	:start	{"jraft.host5" [:killed "jraft.host5"], "jraft.host4" [:killed "jraft.host4"], "jraft.host1" [:killed "jraft.host1"], "jraft.host2" [:killed "jraft.host2"]}
+637	:info	:write	4	Remoting error:Connection closed! the address is 172.18.0.5:8609
+639	:fail	:read	nil	Remoting error:Connection closed! the address is 172.18.0.5:8609
+594	:info	:write	2	Remoting error:Connection closed! the address is 172.18.0.5:8609
+588	:info	:write	0	:disconnected
+592	:invoke	:read	nil
+639	:invoke	:write	0
+592	:fail	:read	nil	:disconnected
+639	:info	:write	0	:disconnected
+641	:invoke	:cas	[0 3]
+598	:invoke	:write	0
+641	:info	:cas	[0 3]	:disconnected
+598	:info	:write	0	:disconnected
+592	:invoke	:write	1
+592	:info	:write	1	:disconnected
+643	:invoke	:write	2
+643	:info	:write	2	:disconnected
+645	:invoke	:read	nil
+602	:invoke	:write	2
+645	:fail	:read	nil	:disconnected
+596	:invoke	:cas	[3 4]
+602	:info	:write	2	:disconnected
+596	:info	:cas	[3 4]	:disconnected
+647	:invoke	:write	3
+645	:invoke	:read	nil
+647	:info	:write	3	:disconnected
+645	:fail	:read	nil	:disconnected
+606	:invoke	:cas	[3 3]
+606	:info	:cas	[3 3]	:disconnected
+600	:invoke	:write	0
+600	:info	:write	0	:disconnected
+651	:invoke	:read	nil
+645	:invoke	:write	2
+651	:fail	:read	nil	:disconnected
+645	:info	:write	2	:disconnected
+610	:invoke	:read	nil
+604	:invoke	:write	0
+610	:fail	:read	nil	:disconnected
+604	:info	:write	0	:disconnected
+651	:invoke	:read	nil
+651	:fail	:read	nil	:disconnected
+610	:invoke	:read	nil
+649	:invoke	:write	2
+651	:invoke	:write	0
+610	:fail	:read	nil	:disconnected
+649	:info	:write	2	:disconnected
+651	:info	:write	0	:disconnected
+608	:invoke	:write	3
+608	:info	:write	3	:disconnected
+655	:invoke	:write	2
+655	:info	:write	2	:disconnected
+653	:invoke	:cas	[2 3]
+653	:info	:cas	[2 3]	:disconnected
+610	:invoke	:write	2
+610	:info	:write	2	:disconnected
+612	:invoke	:cas	[0 0]
+612	:info	:cas	[0 0]	:disconnected
+614	:invoke	:cas	[3 4]
+614	:info	:cas	[3 4]	:disconnected
+616	:invoke	:cas	[1 3]
+659	:invoke	:read	nil
+616	:info	:cas	[1 3]	:disconnected
+657	:invoke	:read	nil
+659	:fail	:read	nil	:disconnected
+657	:fail	:read	nil	:disconnected
+620	:invoke	:write	2
+657	:invoke	:cas	[1 3]
+659	:invoke	:cas	[4 1]
+620	:info	:write	2	:disconnected
+657	:info	:cas	[1 3]	:disconnected
+659	:info	:cas	[4 1]	:disconnected
+618	:invoke	:read	nil
+618	:fail	:read	nil	:disconnected
+661	:invoke	:cas	[3 2]
+624	:invoke	:write	4
+661	:info	:cas	[3 2]	:disconnected
+624	:info	:write	4	:disconnected
+663	:invoke	:write	2
+663	:info	:write	2	:disconnected
+665	:invoke	:cas	[1 4]
+665	:info	:cas	[1 4]	:disconnected
+618	:invoke	:write	3
+618	:info	:write	3	:disconnected
+628	:invoke	:cas	[3 0]
+628	:info	:cas	[3 0]	:disconnected
+667	:invoke	:read	nil
+667	:fail	:read	nil	:disconnected
+622	:invoke	:write	0
+622	:info	:write	0	:disconnected
+669	:invoke	:read	nil
+669	:fail	:read	nil	:disconnected
+632	:invoke	:cas	[1 3]
+667	:invoke	:write	2
+632	:info	:cas	[1 3]	:disconnected
+667	:info	:write	2	:disconnected
+626	:invoke	:cas	[1 0]
+669	:invoke	:write	2
+669	:info	:write	2	:disconnected
+626	:info	:cas	[1 0]	:disconnected
+671	:invoke	:write	3
+636	:invoke	:write	4
+671	:info	:write	3	:disconnected
+636	:info	:write	4	:disconnected
+630	:invoke	:read	nil
+630	:fail	:read	nil	:disconnected
+673	:invoke	:write	4
+673	:info	:write	4	:disconnected
+640	:invoke	:write	4
+640	:info	:write	4	:disconnected
+630	:invoke	:cas	[4 3]
+630	:info	:cas	[4 3]	:disconnected
+675	:invoke	:read	nil
+675	:fail	:read	nil	:disconnected
+677	:invoke	:cas	[4 0]
+677	:info	:cas	[4 0]	:disconnected
+634	:invoke	:read	nil
+634	:fail	:read	nil	:disconnected
+644	:invoke	:cas	[3 1]
+681	:invoke	:cas	[1 0]
+644	:info	:cas	[3 1]	:disconnected
+681	:info	:cas	[1 0]	:disconnected
+675	:invoke	:cas	[0 0]
+675	:info	:cas	[0 0]	:disconnected
+685	:invoke	:write	0
+648	:invoke	:read	nil
+685	:info	:write	0	:disconnected
+648	:fail	:read	nil	:disconnected
+634	:invoke	:cas	[1 0]
+634	:info	:cas	[1 0]	:disconnected
+648	:invoke	:write	4
+648	:info	:write	4	:disconnected
+689	:invoke	:write	0
+689	:info	:write	0	:disconnected
+679	:invoke	:read	nil
+679	:fail	:read	nil	:disconnected
+652	:invoke	:cas	[3 4]
+652	:info	:cas	[3 4]	:disconnected
+693	:invoke	:write	3
+679	:invoke	:read	nil
+693	:info	:write	3	:disconnected
+638	:invoke	:cas	[0 1]
+679	:fail	:read	nil	:disconnected
+638	:info	:cas	[0 1]	:disconnected
+656	:invoke	:cas	[2 1]
+697	:invoke	:read	nil
+656	:info	:cas	[2 1]	:disconnected
+679	:invoke	:read	nil
+697	:fail	:read	nil	:disconnected
+679	:fail	:read	nil	:disconnected
+642	:invoke	:read	nil
+642	:fail	:read	nil	:disconnected
+660	:invoke	:cas	[1 0]
+660	:info	:cas	[1 0]	:disconnected
+679	:invoke	:write	2
+679	:info	:write	2	:disconnected
+664	:invoke	:write	4
+697	:invoke	:read	nil
+664	:info	:write	4	:disconnected
+697	:fail	:read	nil	:disconnected
+642	:invoke	:cas	[3 2]
+642	:info	:cas	[3 2]	:disconnected
+683	:invoke	:read	nil
+683	:fail	:read	nil	:disconnected
+697	:invoke	:write	3
+697	:info	:write	3	:disconnected
+668	:invoke	:cas	[3 3]
+668	:info	:cas	[3 3]	:disconnected
+683	:invoke	:write	4
+683	:info	:write	4	:disconnected
+646	:invoke	:cas	[2 1]
+646	:info	:cas	[2 1]	:disconnected
+701	:invoke	:cas	[4 4]
+701	:info	:cas	[4 4]	:disconnected
+672	:invoke	:write	3
+672	:info	:write	3	:disconnected
+650	:invoke	:write	0
+650	:info	:write	0	:disconnected
+687	:invoke	:write	3
+687	:info	:write	3	:disconnected
+705	:invoke	:write	1
+705	:info	:write	1	:disconnected
+654	:invoke	:write	1
+654	:info	:write	1	:disconnected
+676	:invoke	:write	0
+676	:info	:write	0	:disconnected
+691	:invoke	:cas	[0 1]
+691	:info	:cas	[0 1]	:disconnected
+709	:invoke	:write	2
+709	:info	:write	2	:disconnected
+658	:invoke	:read	nil
+658	:fail	:read	nil	:disconnected
+680	:invoke	:read	nil
+680	:fail	:read	nil	:disconnected
+713	:invoke	:read	nil
+713	:fail	:read	nil	:disconnected
+695	:invoke	:write	1
+695	:info	:write	1	:disconnected
+680	:invoke	:read	nil
+680	:fail	:read	nil	:disconnected
+658	:invoke	:read	nil
+658	:fail	:read	nil	:disconnected
+713	:invoke	:read	nil
+713	:fail	:read	nil	:disconnected
+699	:invoke	:write	4
+699	:info	:write	4	:disconnected
+680	:invoke	:read	nil
+680	:fail	:read	nil	:disconnected
+658	:invoke	:read	nil
+658	:fail	:read	nil	:disconnected
+713	:invoke	:read	nil
+713	:fail	:read	nil	:disconnected
+658	:invoke	:cas	[4 2]
+658	:info	:cas	[4 2]	:disconnected
+703	:invoke	:read	nil
+703	:fail	:read	nil	:disconnected
+680	:invoke	:write	3
+680	:info	:write	3	:disconnected
+662	:invoke	:write	2
+662	:info	:write	2	:disconnected
+713	:invoke	:read	nil
+713	:fail	:read	nil	:disconnected
+666	:invoke	:cas	[2 1]
+666	:info	:cas	[2 1]	:disconnected
+703	:invoke	:read	nil
+703	:fail	:read	nil	:disconnected
+684	:invoke	:read	nil
+684	:fail	:read	nil	:disconnected
+713	:invoke	:cas	[0 1]
+713	:info	:cas	[0 1]	:disconnected
+670	:invoke	:write	0
+670	:info	:write	0	:disconnected
+703	:invoke	:cas	[2 2]
+703	:info	:cas	[2 2]	:disconnected
+684	:invoke	:cas	[1 3]
+684	:info	:cas	[1 3]	:disconnected
+717	:invoke	:read	nil
+717	:fail	:read	nil	:disconnected
+674	:invoke	:write	0
+674	:info	:write	0	:disconnected
+707	:invoke	:cas	[2 2]
+688	:invoke	:cas	[4 4]
+707	:info	:cas	[2 2]	:disconnected
+688	:info	:cas	[4 4]	:disconnected
+678	:invoke	:write	2
+717	:invoke	:read	nil
+678	:info	:write	2	:disconnected
+717	:fail	:read	nil	:disconnected
+711	:invoke	:read	nil
+711	:fail	:read	nil	:disconnected
+717	:invoke	:cas	[4 0]
+717	:info	:cas	[4 0]	:disconnected
+692	:invoke	:cas	[0 0]
+692	:info	:cas	[0 0]	:disconnected
+711	:invoke	:write	2
+711	:info	:write	2	:disconnected
+682	:invoke	:read	nil
+682	:fail	:read	nil	:disconnected
+721	:invoke	:read	nil
+715	:invoke	:write	1
+721	:fail	:read	nil	:disconnected
+715	:info	:write	1	:disconnected
+696	:invoke	:cas	[4 4]
+696	:info	:cas	[4 4]	:disconnected
+719	:invoke	:read	nil
+719	:fail	:read	nil	:disconnected
+682	:invoke	:read	nil
+682	:fail	:read	nil	:disconnected
+721	:invoke	:write	1
+721	:info	:write	1	:disconnected
+719	:invoke	:read	nil
+700	:invoke	:cas	[1 0]
+719	:fail	:read	nil	:disconnected
+700	:info	:cas	[1 0]	:disconnected
+725	:invoke	:write	4
+725	:info	:write	4	:disconnected
+719	:invoke	:write	1
+682	:invoke	:write	2
+719	:info	:write	1	:disconnected
+682	:info	:write	2	:disconnected
+729	:invoke	:write	1
+729	:info	:write	1	:disconnected
+704	:invoke	:read	nil
+704	:fail	:read	nil	:disconnected
+723	:invoke	:read	nil
+723	:fail	:read	nil	:disconnected
+686	:invoke	:write	1
+686	:info	:write	1	:disconnected
+733	:invoke	:cas	[3 2]
+733	:info	:cas	[3 2]	:disconnected
+704	:invoke	:write	1
+704	:info	:write	1	:disconnected
+690	:invoke	:cas	[1 4]
+690	:info	:cas	[1 4]	:disconnected
+723	:invoke	:write	1
+723	:info	:write	1	:disconnected
+737	:invoke	:read	nil
+737	:fail	:read	nil	:disconnected
+708	:invoke	:cas	[0 4]
+708	:info	:cas	[0 4]	:disconnected
+737	:invoke	:read	nil
+737	:fail	:read	nil	:disconnected
+694	:invoke	:cas	[2 3]
+712	:invoke	:cas	[2 3]
+694	:info	:cas	[2 3]	:disconnected
+712	:info	:cas	[2 3]	:disconnected
+727	:invoke	:cas	[1 1]
+727	:info	:cas	[1 1]	:disconnected
+737	:invoke	:write	4
+737	:info	:write	4	:disconnected
+731	:invoke	:write	3
+731	:info	:write	3	:disconnected
+698	:invoke	:cas	[3 4]
+698	:info	:cas	[3 4]	:disconnected
+716	:invoke	:write	2
+716	:info	:write	2	:disconnected
+741	:invoke	:read	nil
+741	:fail	:read	nil	:disconnected
+735	:invoke	:cas	[1 3]
+735	:info	:cas	[1 3]	:disconnected
+702	:invoke	:cas	[1 3]
+702	:info	:cas	[1 3]	:disconnected
+720	:invoke	:write	1
+720	:info	:write	1	:disconnected
+741	:invoke	:cas	[4 0]
+724	:invoke	:write	1
+741	:info	:cas	[4 0]	:disconnected
+724	:info	:write	1	:disconnected
+739	:invoke	:write	4
+739	:info	:write	4	:disconnected
+706	:invoke	:read	nil
+706	:fail	:read	nil	:disconnected
+743	:invoke	:cas	[3 0]
+743	:info	:cas	[3 0]	:disconnected
+728	:invoke	:write	1
+728	:info	:write	1	:disconnected
+745	:invoke	:write	2
+745	:info	:write	2	:disconnected
+706	:invoke	:write	3
+706	:info	:write	3	:disconnected
+747	:invoke	:read	nil
+747	:fail	:read	nil	:disconnected
+732	:invoke	:cas	[2 2]
+732	:info	:cas	[2 2]	:disconnected
+749	:invoke	:write	0
+749	:info	:write	0	:disconnected
+747	:invoke	:write	1
+747	:info	:write	1	:disconnected
+710	:invoke	:read	nil
+710	:fail	:read	nil	:disconnected
+753	:invoke	:read	nil
+753	:fail	:read	nil	:disconnected
+751	:invoke	:cas	[3 0]
+751	:info	:cas	[3 0]	:disconnected
+736	:invoke	:write	0
+736	:info	:write	0	:disconnected
+710	:invoke	:cas	[2 4]
+710	:info	:cas	[2 4]	:disconnected
+714	:invoke	:read	nil
+753	:invoke	:read	nil
+714	:fail	:read	nil	:disconnected
+753	:fail	:read	nil	:disconnected
+:nemesis	:info	:stop	nil
+755	:invoke	:read	nil
+755	:fail	:read	nil	:disconnected
+714	:invoke	:write	2
+714	:info	:write	2	:disconnected
+740	:invoke	:read	nil
+740	:fail	:read	nil	:disconnected
+753	:invoke	:read	nil
+753	:fail	:read	nil	:disconnected
+718	:invoke	:write	1
+718	:info	:write	1	:disconnected
+753	:invoke	:read	nil
+753	:fail	:read	nil	:disconnected
+755	:invoke	:cas	[1 4]
+755	:info	:cas	[1 4]	:disconnected
+722	:invoke	:read	nil
+740	:invoke	:write	1
+740	:info	:write	1	:disconnected
+722	:fail	:read	nil	:disconnected
+753	:invoke	:write	3
+753	:info	:write	3	:disconnected
+:nemesis	:info	:stop	{"jraft.host5" [:restarted "jraft.host5"], "jraft.host4" [:restarted "jraft.host4"], "jraft.host1" [:restarted "jraft.host1"], "jraft.host2" [:restarted "jraft.host2"]}
+744	:invoke	:write	2
+744	:info	:write	2	:disconnected
+722	:invoke	:read	nil
+722	:fail	:read	nil	:disconnected
+759	:invoke	:write	3
+759	:info	:write	3	:disconnected
+748	:invoke	:read	nil
+748	:fail	:read	nil	:disconnected
+757	:invoke	:cas	[2 2]
+757	:info	:cas	[2 2]	:disconnected
+763	:invoke	:write	4
+763	:info	:write	4	:disconnected
+761	:invoke	:write	4
+761	:info	:write	4	:disconnected
+722	:invoke	:write	3
+748	:invoke	:cas	[0 3]
+722	:info	:write	3	:disconnected
+748	:info	:cas	[0 3]	:disconnected
+752	:invoke	:cas	[0 2]
+752	:info	:cas	[0 2]	:disconnected
+765	:invoke	:write	0
+765	:info	:write	0	:disconnected
+767	:invoke	:write	2
+767	:info	:write	2	:disconnected
+756	:invoke	:cas	[0 1]
+756	:info	:cas	[0 1]	:disconnected
+726	:invoke	:cas	[0 2]
+726	:info	:cas	[0 2]	:disconnected
+771	:invoke	:read	nil
+771	:fail	:read	nil	:disconnected
+769	:invoke	:read	nil
+769	:fail	:read	nil	:disconnected
+760	:invoke	:write	3
+760	:info	:write	3	:disconnected
+730	:invoke	:cas	[2 0]
+730	:info	:cas	[2 0]	:disconnected
+771	:invoke	:cas	[2 3]
+771	:info	:cas	[2 3]	:disconnected
+764	:invoke	:write	1
+769	:invoke	:write	1
+764	:info	:write	1	:disconnected
+769	:info	:write	1	:disconnected
+773	:invoke	:write	1
+773	:info	:write	1	:disconnected
+775	:invoke	:read	nil
+734	:invoke	:write	2
+775	:fail	:read	nil	:disconnected
+734	:info	:write	2	:disconnected
+768	:invoke	:cas	[3 0]
+768	:info	:cas	[3 0]	:disconnected
+775	:invoke	:cas	[2 2]
+775	:info	:cas	[2 2]	:disconnected
+738	:invoke	:write	4
+738	:info	:write	4	:disconnected
+777	:invoke	:read	nil
+777	:fail	:read	nil	:disconnected
+742	:invoke	:cas	[4 3]
+742	:info	:cas	[4 3]	:disconnected
+772	:invoke	:write	0
+772	:info	:write	0	:disconnected
+777	:invoke	:read	nil
+777	:fail	:read	nil	:disconnected
+779	:invoke	:cas	[4 0]
+779	:info	:cas	[4 0]	:disconnected
+746	:invoke	:write	1
+746	:info	:write	1	:disconnected
+776	:invoke	:write	3
+776	:info	:write	3	:disconnected
+783	:invoke	:read	nil
+783	:fail	:read	nil	:disconnected
+777	:invoke	:read	nil
+777	:fail	:read	nil	:disconnected
+750	:invoke	:write	0
+750	:info	:write	0	:disconnected
+780	:invoke	:write	4
+780	:info	:write	4	:disconnected
+783	:invoke	:write	4
+783	:info	:write	4	:disconnected
+784	:invoke	:write	2
+754	:invoke	:cas	[4 2]
+784	:info	:write	2	:disconnected
+777	:invoke	:read	nil
+777	:fail	:read	nil	:disconnected
+754	:info	:cas	[4 2]	:disconnected
+787	:invoke	:read	nil
+787	:fail	:read	nil	:disconnected
+777	:invoke	:write	1
+777	:info	:write	1	:disconnected
+758	:invoke	:cas	[3 3]
+758	:info	:cas	[3 3]	:disconnected
+788	:invoke	:read	nil
+788	:fail	:read	nil	:disconnected
+787	:invoke	:write	1
+787	:info	:write	1	:disconnected
+781	:invoke	:write	3
+781	:info	:write	3	:disconnected
+762	:invoke	:write	1
+762	:info	:write	1	:disconnected
+788	:invoke	:cas	[0 3]
+788	:info	:cas	[0 3]	:disconnected
+766	:invoke	:read	nil
+766	:fail	:read	nil	:disconnected
+791	:invoke	:read	nil
+792	:invoke	:read	nil
+785	:invoke	:write	3
+791	:fail	:read	nil	:disconnected
+792	:fail	:read	nil	:disconnected
+785	:info	:write	3	:disconnected
+766	:invoke	:cas	[4 4]
+766	:info	:cas	[4 4]	:disconnected
+789	:invoke	:cas	[3 3]
+789	:info	:cas	[3 3]	:disconnected
+792	:invoke	:read	nil
+792	:fail	:read	nil	:disconnected
+791	:invoke	:cas	[3 1]
+791	:info	:cas	[3 1]	:disconnected
+770	:invoke	:cas	[1 4]
+770	:info	:cas	[1 4]	:disconnected
+793	:invoke	:write	3
+793	:info	:write	3	:disconnected
+797	:invoke	:read	nil
+792	:invoke	:read	nil
+792	:fail	:read	nil	:disconnected
+797	:fail	:read	nil	:disconnected
+774	:invoke	:read	nil
+774	:fail	:read	nil	:disconnected
+795	:invoke	:read	nil
+795	:fail	:read	nil	:disconnected
+797	:invoke	:read	nil
+797	:fail	:read	nil	:disconnected
+792	:invoke	:cas	[4 3]
+792	:info	:cas	[4 3]	:disconnected
+795	:invoke	:cas	[3 1]
+797	:invoke	:write	2
+795	:info	:cas	[3 1]	:disconnected
+797	:info	:write	2	:disconnected
+774	:invoke	:read	nil
+774	:fail	:read	nil	:disconnected
+796	:invoke	:write	3
+796	:info	:write	3	:disconnected
+799	:invoke	:read	nil
+799	:fail	:read	nil	:disconnected
+801	:invoke	:cas	[4 2]
+801	:info	:cas	[4 2]	:disconnected
+774	:invoke	:read	nil
+774	:fail	:read	nil	:disconnected
+800	:invoke	:write	1
+800	:info	:write	1	:disconnected
+799	:invoke	:write	4
+799	:info	:write	4	:disconnected
+805	:invoke	:cas	[4 4]
+805	:info	:cas	[4 4]	:disconnected
+774	:invoke	:write	3
+804	:invoke	:cas	[2 4]
+774	:info	:write	3	:disconnected
+804	:info	:cas	[2 4]	:disconnected
+803	:invoke	:read	nil
+803	:fail	:read	nil	:disconnected
+808	:invoke	:cas	[2 1]
+808	:info	:cas	[2 1]	:disconnected
+803	:invoke	:write	4
+803	:info	:write	4	:disconnected
+778	:invoke	:write	2
+778	:info	:write	2	:disconnected
+809	:invoke	:write	2
+809	:info	:write	2	:disconnected
+807	:invoke	:read	nil
+812	:invoke	:read	nil
+813	:invoke	:read	nil
+782	:invoke	:cas	[3 4]
+782	:fail	:cas	[3 4]
+812	:ok	:read	0
+813	:ok	:read	0
+807	:ok	:read	0
+782	:invoke	:read	nil
+813	:invoke	:cas	[0 1]
+807	:invoke	:write	2
+812	:invoke	:write	1
+812	:info	:write	1	Fail to set
+782	:ok	:read	0
+807	:ok	:write	2
+813	:fail	:cas	[0 1]
+816	:invoke	:read	nil
+816	:ok	:read	2
+782	:invoke	:read	nil
+782	:ok	:read	2
+813	:invoke	:read	nil
+813	:ok	:read	2
+807	:invoke	:cas	[3 2]
+807	:fail	:cas	[3 2]
+816	:invoke	:read	nil
+816	:ok	:read	2
+782	:invoke	:write	4
+813	:invoke	:read	nil
+782	:ok	:write	4
+813	:ok	:read	4
+807	:invoke	:write	4
+807	:ok	:write	4
+816	:invoke	:read	nil
+816	:ok	:read	4
+813	:invoke	:read	nil
+813	:ok	:read	4
+782	:invoke	:cas	[0 2]
+782	:fail	:cas	[0 2]
+807	:invoke	:write	1
+807	:ok	:write	1
+816	:invoke	:cas	[0 1]
+816	:fail	:cas	[0 1]
+782	:invoke	:write	2
+782	:ok	:write	2
+813	:invoke	:write	4
+813	:ok	:write	4
+807	:invoke	:write	2
+807	:ok	:write	2
+816	:invoke	:write	4
+816	:ok	:write	4
+782	:invoke	:write	2
+813	:invoke	:read	nil
+813	:ok	:read	4
+782	:ok	:write	2
+807	:invoke	:cas	[2 2]
+782	:invoke	:read	nil
+782	:ok	:read	2
+807	:ok	:cas	[2 2]
+816	:invoke	:read	nil
+816	:ok	:read	2
+813	:invoke	:write	2
+813	:ok	:write	2
+782	:invoke	:read	nil
+782	:ok	:read	2
+807	:invoke	:read	nil
+807	:ok	:read	2
+816	:invoke	:read	nil
+816	:ok	:read	2
+807	:invoke	:cas	[3 0]
+813	:invoke	:cas	[3 2]
+807	:fail	:cas	[3 0]
+813	:fail	:cas	[3 2]
+782	:invoke	:read	nil
+782	:ok	:read	2
+816	:invoke	:read	nil
+816	:ok	:read	2
+813	:invoke	:write	4
+813	:ok	:write	4
+807	:invoke	:read	nil
+807	:ok	:read	4
+782	:invoke	:read	nil
+782	:ok	:read	4
+807	:invoke	:write	1
+807	:ok	:write	1
+816	:invoke	:write	0
+816	:ok	:write	0
+813	:invoke	:write	0
+813	:ok	:write	0
+782	:invoke	:read	nil
+782	:ok	:read	0
+813	:invoke	:read	nil
+813	:ok	:read	0
+807	:invoke	:cas	[3 1]
+782	:invoke	:read	nil
+816	:invoke	:cas	[0 1]
+807	:fail	:cas	[3 1]
+782	:ok	:read	0
+816	:ok	:cas	[0 1]
+782	:invoke	:cas	[3 4]
+782	:fail	:cas	[3 4]
+807	:invoke	:read	nil
+807	:ok	:read	1
+813	:invoke	:write	4
+813	:ok	:write	4
+782	:invoke	:write	3
+807	:invoke	:cas	[1 1]
+816	:invoke	:read	nil
+782	:ok	:write	3
+816	:ok	:read	3
+807	:fail	:cas	[1 1]
+813	:invoke	:cas	[4 1]
+813	:fail	:cas	[4 1]
+807	:invoke	:read	nil
+807	:ok	:read	3
+816	:invoke	:read	nil
+782	:invoke	:cas	[0 2]
+816	:ok	:read	3
+782	:fail	:cas	[0 2]
+813	:invoke	:cas	[3 1]
+813	:ok	:cas	[3 1]
+807	:invoke	:read	nil
+807	:ok	:read	1
+782	:invoke	:read	nil
+816	:invoke	:write	4
+782	:ok	:read	1
+816	:ok	:write	4
+782	:invoke	:write	3
+782	:ok	:write	3
+816	:invoke	:read	nil
+816	:ok	:read	3
+807	:invoke	:cas	[2 1]
+813	:invoke	:read	nil
+813	:ok	:read	3
+807	:fail	:cas	[2 1]
+782	:invoke	:write	0
+782	:ok	:write	0
+816	:invoke	:cas	[4 2]
+816	:fail	:cas	[4 2]
+813	:invoke	:read	nil
+813	:ok	:read	0
+782	:invoke	:cas	[0 4]
+807	:invoke	:write	1
+782	:ok	:cas	[0 4]
+807	:ok	:write	1
+816	:invoke	:read	nil
+816	:ok	:read	1
+813	:invoke	:read	nil
+813	:ok	:read	1
+807	:invoke	:cas	[3 1]
+813	:invoke	:read	nil
+813	:ok	:read	1
+807	:fail	:cas	[3 1]
+782	:invoke	:cas	[1 3]
+782	:ok	:cas	[1 3]
+816	:invoke	:cas	[0 1]
+807	:invoke	:write	0
+816	:fail	:cas	[0 1]
+807	:ok	:write	0
+813	:invoke	:read	nil
+813	:ok	:read	0
+782	:invoke	:write	4
+782	:ok	:write	4
+807	:invoke	:cas	[2 0]
+813	:invoke	:cas	[3 0]
+807	:fail	:cas	[2 0]
+813	:fail	:cas	[3 0]
+816	:invoke	:cas	[3 0]
+816	:fail	:cas	[3 0]
+:nemesis	:info	:start	nil
+813	:invoke	:write	1
+782	:invoke	:write	2
+813	:ok	:write	1
+782	:ok	:write	2
+807	:invoke	:read	nil
+807	:ok	:read	2
+816	:invoke	:cas	[1 1]
+816	:fail	:cas	[1 1]
+807	:invoke	:read	nil
+:nemesis	:info	:start	{"jraft.host4" [:killed "jraft.host4"], "jraft.host1" [:killed "jraft.host1"]}
+782	:invoke	:write	4
+816	:invoke	:cas	[4 4]
+813	:invoke	:write	2
+807	:ok	:read	2
+782	:ok	:write	4
+816	:ok	:cas	[4 4]
+813	:ok	:write	2
+813	:invoke	:write	2
+782	:invoke	:write	3
+807	:invoke	:write	3
+813	:ok	:write	2
+782	:ok	:write	3
+807	:ok	:write	3
+816	:invoke	:read	nil
+816	:ok	:read	3
+813	:invoke	:write	2
+813	:ok	:write	2
+782	:invoke	:read	nil
+782	:ok	:read	2
+807	:invoke	:write	2
+816	:invoke	:read	nil
+816	:ok	:read	2
+807	:ok	:write	2
+813	:invoke	:cas	[1 0]
+782	:invoke	:read	nil
+782	:ok	:read	2
+813	:fail	:cas	[1 0]
+816	:invoke	:write	4
+807	:invoke	:cas	[0 1]
+816	:ok	:write	4
+807	:fail	:cas	[0 1]
+782	:invoke	:cas	[2 4]
+782	:fail	:cas	[2 4]
+813	:invoke	:write	0
+813	:ok	:write	0
+807	:invoke	:write	3
+807	:ok	:write	3
+816	:invoke	:cas	[1 0]
+782	:invoke	:write	1
+816	:fail	:cas	[1 0]
+782	:ok	:write	1
+813	:invoke	:cas	[2 3]
+813	:fail	:cas	[2 3]
+816	:invoke	:write	0
+807	:invoke	:read	nil
+816	:ok	:write	0
+807	:ok	:read	0
+813	:invoke	:write	2
+782	:invoke	:cas	[1 4]
+813	:ok	:write	2
+782	:fail	:cas	[1 4]
+807	:invoke	:cas	[4 1]
+807	:fail	:cas	[4 1]
+816	:invoke	:cas	[1 3]
+816	:fail	:cas	[1 3]
+813	:invoke	:write	4
+813	:ok	:write	4
+782	:invoke	:read	nil
+782	:ok	:read	4
+807	:invoke	:read	nil
+807	:ok	:read	4
+816	:invoke	:cas	[2 1]
+816	:fail	:cas	[2 1]
+782	:invoke	:read	nil
+782	:ok	:read	4
+813	:invoke	:read	nil
+813	:ok	:read	4
+807	:invoke	:cas	[4 1]
+807	:ok	:cas	[4 1]
+816	:invoke	:read	nil
+816	:ok	:read	1
+782	:invoke	:cas	[3 2]
+782	:fail	:cas	[3 2]
+813	:invoke	:cas	[4 2]
+813	:fail	:cas	[4 2]
+816	:invoke	:cas	[1 0]
+816	:ok	:cas	[1 0]
+782	:invoke	:read	nil
+807	:invoke	:read	nil
+782	:ok	:read	0
+807	:ok	:read	0
+813	:invoke	:read	nil
+813	:ok	:read	0
+816	:invoke	:read	nil
+816	:ok	:read	0
+813	:invoke	:cas	[3 2]
+782	:invoke	:read	nil
+782	:ok	:read	0
+816	:invoke	:write	3
+807	:invoke	:read	nil
+813	:fail	:cas	[3 2]
+807	:ok	:read	0
+816	:ok	:write	3
+782	:invoke	:read	nil
+782	:ok	:read	3
+816	:invoke	:write	4
+816	:ok	:write	4
+807	:invoke	:cas	[3 1]
+807	:fail	:cas	[3 1]
+813	:invoke	:write	1
+813	:ok	:write	1
+816	:invoke	:read	nil
+816	:ok	:read	1
+782	:invoke	:write	1
+782	:ok	:write	1
+807	:invoke	:write	0
+807	:ok	:write	0
+813	:invoke	:read	nil
+813	:ok	:read	0
+782	:invoke	:read	nil
+782	:ok	:read	0
+816	:invoke	:read	nil
+816	:ok	:read	0
+807	:invoke	:cas	[3 1]
+807	:fail	:cas	[3 1]
+782	:invoke	:read	nil
+782	:ok	:read	0
+816	:invoke	:cas	[2 2]
+816	:fail	:cas	[2 2]
+813	:invoke	:read	nil
+813	:ok	:read	0
+807	:invoke	:write	4
+807	:ok	:write	4
+816	:invoke	:write	4
+782	:invoke	:cas	[2 2]
+813	:invoke	:cas	[0 4]
+816	:ok	:write	4
+782	:fail	:cas	[2 2]
+813	:fail	:cas	[0 4]
+807	:invoke	:read	nil
+807	:ok	:read	4
+813	:invoke	:write	1
+813	:ok	:write	1
+816	:invoke	:write	3
+816	:ok	:write	3
+782	:invoke	:read	nil
+782	:ok	:read	3
+807	:invoke	:cas	[0 1]
+813	:invoke	:write	2
+807	:fail	:cas	[0 1]
+816	:invoke	:cas	[2 0]
+782	:invoke	:read	nil
+813	:ok	:write	2
+782	:ok	:read	2
+816	:ok	:cas	[2 0]
+782	:invoke	:write	3
+816	:invoke	:write	2
+782	:ok	:write	3
+816	:ok	:write	2
+807	:invoke	:write	0
+807	:ok	:write	0
+813	:invoke	:write	3
+813	:ok	:write	3
+807	:invoke	:write	3
+807	:ok	:write	3
+813	:invoke	:read	nil
+816	:invoke	:cas	[3 4]
+813	:ok	:read	3
+816	:ok	:cas	[3 4]
+782	:invoke	:read	nil
+782	:ok	:read	4
+816	:invoke	:cas	[4 4]
+816	:ok	:cas	[4 4]
+782	:invoke	:read	nil
+807	:invoke	:read	nil
+782	:ok	:read	4
+807	:ok	:read	4
+813	:invoke	:read	nil
+813	:ok	:read	4
+782	:invoke	:cas	[2 2]
+782	:fail	:cas	[2 2]
+816	:invoke	:read	nil
+816	:ok	:read	4
+807	:invoke	:read	nil
+807	:ok	:read	4
+813	:invoke	:read	nil
+813	:ok	:read	4
+813	:invoke	:read	nil
+813	:ok	:read	4
+807	:invoke	:cas	[3 4]
+807	:fail	:cas	[3 4]
+782	:invoke	:read	nil
+782	:ok	:read	4
+816	:invoke	:cas	[3 0]
+816	:fail	:cas	[3 0]
+813	:invoke	:write	3
+813	:ok	:write	3
+807	:invoke	:write	3
+807	:ok	:write	3
+:nemesis	:info	:stop	nil
+:nemesis	:info	:stop	{"jraft.host4" [:restarted "jraft.host4"], "jraft.host1" [:restarted "jraft.host1"]}
+:nemesis	:info	:stop	nil
+:nemesis	:info	:stop	:not-started
+782	:invoke	:read	nil
+782	:ok	:read	3

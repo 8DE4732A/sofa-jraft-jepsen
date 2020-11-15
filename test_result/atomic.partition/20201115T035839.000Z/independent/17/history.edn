@@ -1,0 +1,224 @@
+{:type :info, :f :start, :process :nemesis, :time 5284147830, :index 277}
+{:type :info, :f :start, :process :nemesis, :time 5716245019, :value [:isolated {"jraft.host3" #{"jraft.host5" "jraft.host2" "jraft.host4"}, "jraft.host1" #{"jraft.host5" "jraft.host2" "jraft.host4"}, "jraft.host5" #{"jraft.host3" "jraft.host1"}, "jraft.host2" #{"jraft.host3" "jraft.host1"}, "jraft.host4" #{"jraft.host3" "jraft.host1"}}], :index 307}
+{:type :info, :f :stop, :process :nemesis, :time 10730574795, :index 676}
+{:type :info, :f :stop, :process :nemesis, :time 10990747834, :value :network-healed, :index 691}
+{:type :info, :f :start, :process :nemesis, :time 15991070680, :index 1040}
+{:type :info, :f :start, :process :nemesis, :time 16148128722, :value [:isolated {"jraft.host3" #{"jraft.host2" "jraft.host4" "jraft.host1"}, "jraft.host5" #{"jraft.host2" "jraft.host4" "jraft.host1"}, "jraft.host2" #{"jraft.host3" "jraft.host5"}, "jraft.host4" #{"jraft.host3" "jraft.host5"}, "jraft.host1" #{"jraft.host3" "jraft.host5"}}], :index 1053}
+{:type :info, :f :stop, :process :nemesis, :time 21148522309, :index 1425}
+{:type :info, :f :stop, :process :nemesis, :time 21377917467, :value :network-healed, :index 1441}
+{:type :info, :f :start, :process :nemesis, :time 26378215382, :index 1797}
+{:type :info, :f :start, :process :nemesis, :time 26534895974, :value [:isolated {"jraft.host3" #{"jraft.host5" "jraft.host2" "jraft.host4"}, "jraft.host1" #{"jraft.host5" "jraft.host2" "jraft.host4"}, "jraft.host5" #{"jraft.host3" "jraft.host1"}, "jraft.host2" #{"jraft.host3" "jraft.host1"}, "jraft.host4" #{"jraft.host3" "jraft.host1"}}], :index 1811}
+{:type :info, :f :stop, :process :nemesis, :time 31535336835, :index 2183}
+{:type :info, :f :stop, :process :nemesis, :time 31773919576, :value :network-healed, :index 2193}
+{:type :info, :f :start, :process :nemesis, :time 36774342502, :index 2592}
+{:type :info, :f :start, :process :nemesis, :time 36882889089, :value [:isolated {"jraft.host3" #{"jraft.host5" "jraft.host2" "jraft.host4"}, "jraft.host1" #{"jraft.host5" "jraft.host2" "jraft.host4"}, "jraft.host5" #{"jraft.host3" "jraft.host1"}, "jraft.host2" #{"jraft.host3" "jraft.host1"}, "jraft.host4" #{"jraft.host3" "jraft.host1"}}], :index 2597}
+{:type :info, :f :stop, :process :nemesis, :time 41883702740, :index 2968}
+{:type :info, :f :stop, :process :nemesis, :time 42134097969, :value :network-healed, :index 2985}
+{:type :info, :f :start, :process :nemesis, :time 47134571192, :index 3370}
+{:type :info, :f :start, :process :nemesis, :time 47259027600, :value [:isolated {"jraft.host2" #{"jraft.host3" "jraft.host5" "jraft.host4"}, "jraft.host1" #{"jraft.host3" "jraft.host5" "jraft.host4"}, "jraft.host3" #{"jraft.host2" "jraft.host1"}, "jraft.host5" #{"jraft.host2" "jraft.host1"}, "jraft.host4" #{"jraft.host2" "jraft.host1"}}], :index 3376}
+{:type :invoke, :f :write, :value 4, :process 4, :time 49043455880, :index 3414}
+{:type :info, :f :write, :value 4, :process 4, :time 49045192934, :error "Fail to set", :index 3415}
+{:type :invoke, :f :write, :value 1, :process 9, :time 49094574584, :index 3418}
+{:type :info, :f :write, :value 1, :process 9, :time 49096262443, :error "Fail to set", :index 3419}
+{:type :invoke, :f :write, :value 3, :process 8, :time 49150824949, :index 3420}
+{:type :info, :f :write, :value 3, :process 8, :time 49152661540, :error "Fail to set", :index 3421}
+{:type :invoke, :f :cas, :value [0 0], :process 13, :time 49239373059, :index 3424}
+{:type :fail, :f :cas, :value [0 0], :process 13, :time 49243110120, :index 3425}
+{:type :invoke, :f :read, :value nil, :process 19, :time 49264922206, :index 3426}
+{:type :ok, :f :read, :value 0, :process 19, :time 49268246259, :index 3427}
+{:type :invoke, :f :cas, :value [4 1], :process 12, :time 49307009014, :index 3428}
+{:type :fail, :f :cas, :value [4 1], :process 12, :time 49310794735, :index 3429}
+{:type :invoke, :f :read, :value nil, :process 19, :time 49352824443, :index 3430}
+{:type :invoke, :f :write, :value 0, :process 13, :time 49352873579, :index 3431}
+{:type :info, :f :write, :value 0, :process 13, :time 49355544320, :error "Fail to set", :index 3432}
+{:type :ok, :f :read, :value 0, :process 19, :time 49355595736, :index 3433}
+{:type :invoke, :f :write, :value 3, :process 14, :time 49366590890, :index 3434}
+{:type :info, :f :write, :value 3, :process 14, :time 49370399871, :error "Fail to set", :index 3435}
+{:type :invoke, :f :write, :value 3, :process 12, :time 49395371107, :index 3436}
+{:type :info, :f :write, :value 3, :process 12, :time 49396708325, :error "Fail to set", :index 3437}
+{:type :invoke, :f :cas, :value [2 1], :process 18, :time 49411320498, :index 3438}
+{:type :fail, :f :cas, :value [2 1], :process 18, :time 49413405188, :index 3439}
+{:type :invoke, :f :read, :value nil, :process 16, :time 49436202230, :index 3440}
+{:type :ok, :f :read, :value 0, :process 16, :time 49438152132, :index 3441}
+{:type :invoke, :f :read, :value nil, :process 17, :time 49506242332, :index 3442}
+{:type :ok, :f :read, :value 0, :process 17, :time 49508538319, :index 3443}
+{:type :invoke, :f :write, :value 3, :process 19, :time 49516212779, :index 3444}
+{:type :info, :f :write, :value 3, :process 19, :time 49522066504, :error "Fail to set", :index 3445}
+{:type :invoke, :f :write, :value 3, :process 16, :time 49550632337, :index 3446}
+{:type :info, :f :write, :value 3, :process 16, :time 49553661224, :error "Fail to set", :index 3447}
+{:type :invoke, :f :cas, :value [0 1], :process 18, :time 49572808907, :index 3448}
+{:type :fail, :f :cas, :value [0 1], :process 18, :time 49575924520, :index 3449}
+{:type :invoke, :f :write, :value 1, :process 17, :time 49630983765, :index 3450}
+{:type :info, :f :write, :value 1, :process 17, :time 49634166705, :error "Fail to set", :index 3451}
+{:type :invoke, :f :write, :value 1, :process 20, :time 49655010306, :index 3452}
+{:type :info, :f :write, :value 1, :process 20, :time 49657825234, :error "Fail to set", :index 3453}
+{:type :invoke, :f :cas, :value [4 0], :process 23, :time 49700831753, :index 3454}
+{:type :fail, :f :cas, :value [4 0], :process 23, :time 49703858225, :index 3455}
+{:type :invoke, :f :write, :value 2, :process 18, :time 49730493182, :index 3456}
+{:type :info, :f :write, :value 2, :process 18, :time 49733542679, :error "Fail to set", :index 3457}
+{:type :invoke, :f :write, :value 2, :process 21, :time 49738348332, :index 3458}
+{:type :info, :f :write, :value 2, :process 21, :time 49742143200, :error "Fail to set", :index 3459}
+{:type :invoke, :f :write, :value 4, :process 24, :time 49755696764, :index 3460}
+{:type :info, :f :write, :value 4, :process 24, :time 49760124051, :error "Fail to set", :index 3461}
+{:type :invoke, :f :write, :value 0, :process 23, :time 49803421938, :index 3462}
+{:type :info, :f :write, :value 0, :process 23, :time 49804937016, :error "Fail to set", :index 3463}
+{:type :invoke, :f :cas, :value [1 3], :process 22, :time 49924826769, :index 3464}
+{:type :invoke, :f :write, :value 3, :process 28, :time 49926041896, :index 3465}
+{:type :fail, :f :cas, :value [1 3], :process 22, :time 49928329949, :index 3466}
+{:type :info, :f :write, :value 3, :process 28, :time 49930180534, :error "Fail to set", :index 3467}
+{:type :invoke, :f :cas, :value [1 0], :process 25, :time 49936379723, :index 3468}
+{:type :invoke, :f :cas, :value [4 3], :process 22, :time 49939095346, :index 3469}
+{:type :fail, :f :cas, :value [1 0], :process 25, :time 49942943343, :index 3470}
+{:type :fail, :f :cas, :value [4 3], :process 22, :time 49942943625, :index 3471}
+{:type :invoke, :f :write, :value 1, :process 27, :time 49973523829, :index 3472}
+{:type :info, :f :write, :value 1, :process 27, :time 49977311014, :error "Fail to set", :index 3473}
+{:type :invoke, :f :read, :value nil, :process 22, :time 49992615817, :index 3474}
+{:type :ok, :f :read, :value 0, :process 22, :time 49996784334, :index 3475}
+{:type :invoke, :f :cas, :value [0 0], :process 32, :time 50007142717, :index 3476}
+{:type :fail, :f :cas, :value [0 0], :process 32, :time 50010023297, :index 3477}
+{:type :invoke, :f :write, :value 1, :process 32, :time 50086393412, :index 3478}
+{:type :info, :f :write, :value 1, :process 32, :time 50089493792, :error "Fail to set", :index 3479}
+{:type :invoke, :f :write, :value 4, :process 25, :time 50103062253, :index 3480}
+{:type :info, :f :write, :value 4, :process 25, :time 50108348586, :error "Fail to set", :index 3481}
+{:type :invoke, :f :write, :value 4, :process 22, :time 50151410803, :index 3482}
+{:type :info, :f :write, :value 4, :process 22, :time 50154543593, :error "Fail to set", :index 3483}
+{:type :invoke, :f :write, :value 1, :process 31, :time 50159438922, :index 3484}
+{:type :info, :f :write, :value 1, :process 31, :time 50162980679, :error "Fail to set", :index 3485}
+{:type :invoke, :f :write, :value 0, :process 36, :time 50203677114, :index 3486}
+{:type :info, :f :write, :value 0, :process 36, :time 50206706923, :error "Fail to set", :index 3487}
+{:type :invoke, :f :read, :value nil, :process 40, :time 50211949923, :index 3488}
+{:type :ok, :f :read, :value 0, :process 40, :time 50214164823, :index 3489}
+{:type :invoke, :f :write, :value 4, :process 35, :time 50244952958, :index 3490}
+{:type :info, :f :write, :value 4, :process 35, :time 50247191339, :error "Fail to set", :index 3491}
+{:type :invoke, :f :read, :value nil, :process 26, :time 50254392660, :index 3492}
+{:type :ok, :f :read, :value 0, :process 26, :time 50256838944, :index 3493}
+{:type :invoke, :f :cas, :value [1 4], :process 40, :time 50278580625, :index 3494}
+{:type :fail, :f :cas, :value [1 4], :process 40, :time 50281443525, :index 3495}
+{:type :invoke, :f :cas, :value [3 3], :process 29, :time 50287448264, :index 3496}
+{:type :fail, :f :cas, :value [3 3], :process 29, :time 50290266788, :index 3497}
+{:type :invoke, :f :cas, :value [4 1], :process 39, :time 50344800343, :index 3498}
+{:type :fail, :f :cas, :value [4 1], :process 39, :time 50346480480, :index 3499}
+{:type :invoke, :f :read, :value nil, :process 26, :time 50408249670, :index 3500}
+{:type :ok, :f :read, :value 0, :process 26, :time 50409509822, :index 3501}
+{:type :invoke, :f :write, :value 4, :process 29, :time 50417866394, :index 3502}
+{:type :info, :f :write, :value 4, :process 29, :time 50419221582, :error "Fail to set", :index 3503}
+{:type :invoke, :f :read, :value nil, :process 40, :time 50477034214, :index 3504}
+{:type :ok, :f :read, :value 0, :process 40, :time 50480126194, :index 3505}
+{:type :invoke, :f :cas, :value [4 2], :process 40, :time 50510660625, :index 3506}
+{:type :fail, :f :cas, :value [4 2], :process 40, :time 50513470516, :index 3507}
+{:type :invoke, :f :read, :value nil, :process 39, :time 50514863637, :index 3508}
+{:type :invoke, :f :write, :value 3, :process 26, :time 50515802249, :index 3509}
+{:type :ok, :f :read, :value 0, :process 39, :time 50517313207, :index 3510}
+{:type :info, :f :write, :value 3, :process 26, :time 50518358767, :error "Fail to set", :index 3511}
+{:type :invoke, :f :read, :value nil, :process 40, :time 50522997223, :index 3512}
+{:type :ok, :f :read, :value 0, :process 40, :time 50525901904, :index 3513}
+{:type :invoke, :f :cas, :value [2 1], :process 33, :time 50587798082, :index 3514}
+{:type :fail, :f :cas, :value [2 1], :process 33, :time 50589307544, :index 3515}
+{:type :invoke, :f :read, :value nil, :process 40, :time 50590358108, :index 3516}
+{:type :ok, :f :read, :value 0, :process 40, :time 50591446182, :index 3517}
+{:type :invoke, :f :cas, :value [0 2], :process 30, :time 50596120789, :index 3518}
+{:type :fail, :f :cas, :value [0 2], :process 30, :time 50597327189, :index 3519}
+{:type :invoke, :f :read, :value nil, :process 33, :time 50603641941, :index 3520}
+{:type :ok, :f :read, :value 0, :process 33, :time 50605276737, :index 3521}
+{:type :invoke, :f :cas, :value [1 4], :process 40, :time 50619765048, :index 3522}
+{:type :fail, :f :cas, :value [1 4], :process 40, :time 50621892832, :index 3523}
+{:type :invoke, :f :read, :value nil, :process 30, :time 50657615279, :index 3524}
+{:type :invoke, :f :cas, :value [1 3], :process 39, :time 50659980768, :index 3525}
+{:type :ok, :f :read, :value 0, :process 30, :time 50661539540, :index 3526}
+{:type :fail, :f :cas, :value [1 3], :process 39, :time 50663563867, :index 3527}
+{:type :invoke, :f :read, :value nil, :process 30, :time 50674048855, :index 3528}
+{:type :ok, :f :read, :value 0, :process 30, :time 50676857534, :index 3529}
+{:type :invoke, :f :write, :value 3, :process 33, :time 50719646617, :index 3530}
+{:type :info, :f :write, :value 3, :process 33, :time 50722768230, :error "Fail to set", :index 3531}
+{:type :invoke, :f :cas, :value [1 1], :process 40, :time 50757375218, :index 3532}
+{:type :fail, :f :cas, :value [1 1], :process 40, :time 50760676822, :index 3533}
+{:type :invoke, :f :write, :value 3, :process 30, :time 50828541380, :index 3534}
+{:type :info, :f :write, :value 3, :process 30, :time 50831673595, :error "Fail to set", :index 3535}
+{:type :invoke, :f :read, :value nil, :process 39, :time 50834138670, :index 3536}
+{:type :ok, :f :read, :value 0, :process 39, :time 50837055942, :index 3537}
+{:type :invoke, :f :read, :value nil, :process 39, :time 50848690668, :index 3538}
+{:type :ok, :f :read, :value 0, :process 39, :time 50851556368, :index 3539}
+{:type :invoke, :f :cas, :value [3 2], :process 39, :time 50856929996, :index 3540}
+{:type :fail, :f :cas, :value [3 2], :process 39, :time 50860744985, :index 3541}
+{:type :invoke, :f :read, :value nil, :process 40, :time 50906230297, :index 3542}
+{:type :ok, :f :read, :value 0, :process 40, :time 50909408212, :index 3543}
+{:type :invoke, :f :write, :value 4, :process 37, :time 50919548682, :index 3544}
+{:type :info, :f :write, :value 4, :process 37, :time 50922454907, :error "Fail to set", :index 3545}
+{:type :invoke, :f :write, :value 4, :process 34, :time 50948584327, :index 3546}
+{:type :info, :f :write, :value 4, :process 34, :time 50951886930, :error "Fail to set", :index 3547}
+{:type :invoke, :f :read, :value nil, :process 38, :time 50955795375, :index 3548}
+{:type :ok, :f :read, :value 0, :process 38, :time 50958717755, :index 3549}
+{:type :invoke, :f :cas, :value [4 2], :process 38, :time 51003509964, :index 3550}
+{:type :fail, :f :cas, :value [4 2], :process 38, :time 51006411925, :index 3551}
+{:type :invoke, :f :cas, :value [0 1], :process 41, :time 51006343493, :index 3552}
+{:type :fail, :f :cas, :value [0 1], :process 41, :time 51010160845, :index 3553}
+{:type :invoke, :f :read, :value nil, :process 39, :time 51058252825, :index 3554}
+{:type :invoke, :f :read, :value nil, :process 40, :time 51060920993, :index 3555}
+{:type :ok, :f :read, :value 0, :process 39, :time 51061299309, :index 3556}
+{:type :ok, :f :read, :value 0, :process 40, :time 51064082402, :index 3557}
+{:type :invoke, :f :write, :value 2, :process 38, :time 51081346359, :index 3558}
+{:type :info, :f :write, :value 2, :process 38, :time 51084243611, :error "Fail to set", :index 3559}
+{:type :invoke, :f :read, :value nil, :process 39, :time 51095771763, :index 3560}
+{:type :ok, :f :read, :value 0, :process 39, :time 51098978813, :index 3561}
+{:type :invoke, :f :cas, :value [2 3], :process 41, :time 51122838260, :index 3562}
+{:type :invoke, :f :cas, :value [3 3], :process 42, :time 51138082848, :index 3563}
+{:type :invoke, :f :read, :value nil, :process 40, :time 51163550422, :index 3564}
+{:type :ok, :f :read, :value 0, :process 40, :time 51166728732, :index 3565}
+{:type :fail, :f :cas, :value [2 3], :process 41, :time 51170251583, :index 3566}
+{:type :fail, :f :cas, :value [3 3], :process 42, :time 51170251472, :index 3567}
+{:type :invoke, :f :cas, :value [4 4], :process 39, :time 51215543146, :index 3568}
+{:type :invoke, :f :write, :value 2, :process 42, :time 51222617777, :index 3569}
+{:type :fail, :f :cas, :value [4 4], :process 39, :time 51229344449, :index 3570}
+{:type :ok, :f :write, :value 2, :process 42, :time 51238543265, :index 3571}
+{:type :invoke, :f :cas, :value [2 3], :process 41, :time 51286651652, :index 3572}
+{:type :invoke, :f :cas, :value [4 1], :process 42, :time 51297276712, :index 3573}
+{:type :ok, :f :cas, :value [2 3], :process 41, :time 51306805895, :index 3574}
+{:type :fail, :f :cas, :value [4 1], :process 42, :time 51312437838, :index 3575}
+{:type :invoke, :f :cas, :value [1 1], :process 40, :time 51315075900, :index 3576}
+{:type :fail, :f :cas, :value [1 1], :process 40, :time 51330247882, :index 3577}
+{:type :invoke, :f :read, :value nil, :process 40, :time 51369792715, :index 3578}
+{:type :ok, :f :read, :value 3, :process 40, :time 51375054297, :index 3579}
+{:type :invoke, :f :cas, :value [4 0], :process 39, :time 51383976617, :index 3580}
+{:type :invoke, :f :write, :value 4, :process 41, :time 51395433693, :index 3581}
+{:type :fail, :f :cas, :value [4 0], :process 39, :time 51398924359, :index 3582}
+{:type :ok, :f :write, :value 4, :process 41, :time 51414800358, :index 3583}
+{:type :invoke, :f :cas, :value [3 4], :process 41, :time 51437352130, :index 3584}
+{:type :fail, :f :cas, :value [3 4], :process 41, :time 51445960355, :index 3585}
+{:type :invoke, :f :read, :value nil, :process 40, :time 51477596462, :index 3586}
+{:type :invoke, :f :cas, :value [1 1], :process 42, :time 51478924939, :index 3587}
+{:type :ok, :f :read, :value 4, :process 40, :time 51480340412, :index 3588}
+{:type :fail, :f :cas, :value [1 1], :process 42, :time 51484911088, :index 3589}
+{:type :invoke, :f :cas, :value [2 2], :process 39, :time 51506517677, :index 3590}
+{:type :fail, :f :cas, :value [2 2], :process 39, :time 51516748347, :index 3591}
+{:type :invoke, :f :write, :value 4, :process 40, :time 51556747100, :index 3592}
+{:type :ok, :f :write, :value 4, :process 40, :time 51570555757, :index 3593}
+{:type :invoke, :f :read, :value nil, :process 41, :time 51573430013, :index 3594}
+{:type :ok, :f :read, :value 4, :process 41, :time 51581987253, :index 3595}
+{:type :invoke, :f :cas, :value [1 0], :process 42, :time 51598227574, :index 3596}
+{:type :fail, :f :cas, :value [1 0], :process 42, :time 51605957516, :index 3597}
+{:type :invoke, :f :write, :value 0, :process 42, :time 51623312852, :index 3598}
+{:type :ok, :f :write, :value 0, :process 42, :time 51634821858, :index 3599}
+{:type :invoke, :f :read, :value nil, :process 39, :time 51665175530, :index 3600}
+{:type :ok, :f :read, :value 0, :process 39, :time 51672434319, :index 3601}
+{:type :invoke, :f :write, :value 0, :process 40, :time 51688530038, :index 3602}
+{:type :ok, :f :write, :value 0, :process 40, :time 51701043045, :index 3603}
+{:type :invoke, :f :write, :value 3, :process 42, :time 51702428335, :index 3604}
+{:type :ok, :f :write, :value 3, :process 42, :time 51719788403, :index 3605}
+{:type :invoke, :f :cas, :value [0 0], :process 41, :time 51755661852, :index 3606}
+{:type :fail, :f :cas, :value [0 0], :process 41, :time 51762203165, :index 3607}
+{:type :invoke, :f :cas, :value [3 0], :process 40, :time 51786662198, :index 3608}
+{:type :ok, :f :cas, :value [3 0], :process 40, :time 51799508793, :index 3609}
+{:type :invoke, :f :read, :value nil, :process 42, :time 51804572776, :index 3610}
+{:type :ok, :f :read, :value 0, :process 42, :time 51811314283, :index 3611}
+{:type :invoke, :f :read, :value nil, :process 39, :time 51836763001, :index 3614}
+{:type :ok, :f :read, :value 0, :process 39, :time 51843646752, :index 3615}
+{:type :invoke, :f :cas, :value [4 1], :process 41, :time 51921517831, :index 3618}
+{:type :fail, :f :cas, :value [4 1], :process 41, :time 51926658713, :index 3619}
+{:type :invoke, :f :cas, :value [1 3], :process 40, :time 51952125081, :index 3622}
+{:type :fail, :f :cas, :value [1 3], :process 40, :time 51982932682, :index 3626}
+{:type :info, :f :stop, :process :nemesis, :time 52259480102, :index 3646}
+{:type :info, :f :stop, :process :nemesis, :time 52475984231, :value :network-healed, :index 3661}
+{:type :info, :f :start, :process :nemesis, :time 57476516994, :index 4006}
+{:type :info, :f :start, :process :nemesis, :time 57599675038, :value [:isolated {"jraft.host5" #{"jraft.host3" "jraft.host4" "jraft.host1"}, "jraft.host2" #{"jraft.host3" "jraft.host4" "jraft.host1"}, "jraft.host3" #{"jraft.host5" "jraft.host2"}, "jraft.host4" #{"jraft.host5" "jraft.host2"}, "jraft.host1" #{"jraft.host5" "jraft.host2"}}], :index 4017}
+{:type :info, :f :stop, :process :nemesis, :time 62600562023, :index 4214}
+{:type :info, :f :stop, :process :nemesis, :time 62827768325, :value :network-healed, :index 4215}

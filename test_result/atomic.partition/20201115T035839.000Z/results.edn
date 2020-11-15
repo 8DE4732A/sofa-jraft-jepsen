@@ -1,0 +1,787 @@
+{:perf
+ {:latency-graph {:valid? true},
+  :rate-graph {:valid? true},
+  :valid? true},
+ :indep
+ {:valid? true,
+  :results
+  {0
+   {:timeline {:valid? true},
+    :linear
+    {:valid? true,
+     :configs
+     ({:model {:value 0},
+       :last-op
+       {:process 3,
+        :type :ok,
+        :f :read,
+        :value 0,
+        :index 199,
+        :time 4257457359},
+       :pending []}),
+     :final-paths ()},
+    :valid? true},
+   7
+   {:timeline {:valid? true},
+    :linear
+    {:valid? true,
+     :configs
+     ({:model {:value 4},
+       :last-op
+       {:process 1,
+        :type :ok,
+        :f :read,
+        :value 4,
+        :index 1611,
+        :time 23611368826},
+       :pending []}),
+     :final-paths ()},
+    :valid? true},
+   20
+   {:timeline {:valid? true},
+    :linear
+    {:valid? true,
+     :configs
+     ({:model {:value 2},
+       :last-op
+       {:process 41,
+        :type :ok,
+        :f :write,
+        :value 2,
+        :index 4213,
+        :time 60407976606},
+       :pending []}),
+     :final-paths ()},
+    :valid? true},
+   1
+   {:timeline {:valid? true},
+    :linear
+    {:valid? true,
+     :configs
+     ({:model {:value 4},
+       :last-op
+       {:process 0,
+        :type :ok,
+        :f :read,
+        :value 4,
+        :index 403,
+        :time 7005869427},
+       :pending []}),
+     :final-paths ()},
+    :valid? true},
+   4
+   {:timeline {:valid? true},
+    :linear
+    {:valid? true,
+     :configs
+     ({:model {:value 4},
+       :last-op
+       {:process 0,
+        :type :ok,
+        :f :cas,
+        :value [3 4],
+        :index 997,
+        :time 15381221256},
+       :pending []}),
+     :final-paths ()},
+    :valid? true},
+   15
+   {:timeline {:valid? true},
+    :linear
+    {:valid? true,
+     :configs
+     ({:model {:value 3},
+       :last-op
+       {:process 3,
+        :type :ok,
+        :f :cas,
+        :value [4 3],
+        :index 3224,
+        :time 45157526536},
+       :pending []}),
+     :final-paths ()},
+    :valid? true},
+   13
+   {:timeline {:valid? true},
+    :linear
+    {:valid? true,
+     :configs
+     ({:model {:value 0},
+       :last-op
+       {:process 3,
+        :type :ok,
+        :f :read,
+        :value 0,
+        :index 2822,
+        :time 39818314278},
+       :pending []}),
+     :final-paths ()},
+    :valid? true},
+   6
+   {:timeline {:valid? true},
+    :linear
+    {:valid? true,
+     :configs
+     ({:model {:value 2},
+       :last-op
+       {:process 0,
+        :type :ok,
+        :f :read,
+        :value 2,
+        :index 1409,
+        :time 20960326587},
+       :pending []}),
+     :final-paths ()},
+    :valid? true},
+   17
+   {:timeline {:valid? true},
+    :linear
+    {:valid? true, :model {:value 0}, :final-paths (), :configs ()},
+    :valid? true},
+   3
+   {:timeline {:valid? true},
+    :linear
+    {:valid? true,
+     :configs
+     ({:model {:value 0},
+       :last-op
+       {:process 3,
+        :type :ok,
+        :f :read,
+        :value 0,
+        :index 801,
+        :time 12567087349},
+       :pending []}),
+     :final-paths ()},
+    :valid? true},
+   12
+   {:timeline {:valid? true},
+    :linear
+    {:valid? true,
+     :configs
+     ({:model {:value 1},
+       :last-op
+       {:process 1,
+        :type :ok,
+        :f :write,
+        :value 1,
+        :index 2617,
+        :time 37145454827},
+       :pending []}),
+     :final-paths ()},
+    :valid? true},
+   2
+   {:timeline {:valid? true},
+    :linear
+    {:valid? true,
+     :configs
+     ({:model {:value 0},
+       :last-op
+       {:process 3,
+        :type :ok,
+        :f :write,
+        :value 0,
+        :index 601,
+        :time 9750700110},
+       :pending []}),
+     :final-paths ()},
+    :valid? true},
+   19
+   {:timeline {:valid? true},
+    :linear
+    {:valid? true,
+     :configs
+     ({:model {:value 2},
+       :last-op
+       {:process 41,
+        :type :ok,
+        :f :write,
+        :value 2,
+        :index 4023,
+        :time 57646979471},
+       :pending []}),
+     :final-paths ()},
+    :valid? true},
+   11
+   {:timeline {:valid? true},
+    :linear
+    {:valid? true,
+     :configs
+     ({:model {:value 2},
+       :last-op
+       {:process 3,
+        :type :ok,
+        :f :cas,
+        :value [1 2],
+        :index 2409,
+        :time 34554699662},
+       :pending []}),
+     :final-paths ()},
+    :valid? true},
+   9
+   {:timeline {:valid? true},
+    :linear
+    {:valid? true,
+     :configs
+     ({:model {:value 3},
+       :last-op
+       {:process 0,
+        :type :ok,
+        :f :cas,
+        :value [0 3],
+        :index 2005,
+        :time 29191663615},
+       :pending []}),
+     :final-paths ()},
+    :valid? true},
+   5
+   {:timeline {:valid? true},
+    :linear
+    {:valid? true,
+     :configs
+     ({:model {:value 1},
+       :last-op
+       {:process 1,
+        :type :ok,
+        :f :write,
+        :value 1,
+        :index 1209,
+        :time 18214111810},
+       :pending []}),
+     :final-paths ()},
+    :valid? true},
+   14
+   {:timeline {:valid? true},
+    :linear
+    {:valid? true,
+     :configs
+     ({:model {:value 4},
+       :last-op
+       {:process 1,
+        :type :ok,
+        :f :read,
+        :value 4,
+        :index 3015,
+        :time 42446962585},
+       :pending []}),
+     :final-paths ()},
+    :valid? true},
+   16
+   {:timeline {:valid? true},
+    :linear
+    {:valid? true,
+     :configs
+     ({:model {:value 2},
+       :last-op
+       {:process 6,
+        :type :ok,
+        :f :read,
+        :value 2,
+        :index 3405,
+        :time 48951536623},
+       :pending
+       [{:process 1,
+         :type :invoke,
+         :f :write,
+         :value 3,
+         :index 3372,
+         :time 47174910510}
+        {:process 2,
+         :type :invoke,
+         :f :write,
+         :value 1,
+         :index 3386,
+         :time 48713580173}
+        {:process 5,
+         :type :invoke,
+         :f :write,
+         :value 4,
+         :index 3412,
+         :time 49028603550}
+        {:process 6,
+         :type :invoke,
+         :f :write,
+         :value 3,
+         :index 3406,
+         :time 48979103969}
+        {:process 10,
+         :type :invoke,
+         :f :write,
+         :value 1,
+         :index 3422,
+         :time 49203705458}
+        {:process 11,
+         :type :invoke,
+         :f :write,
+         :value 0,
+         :index 3400,
+         :time 48908950754}
+        {:process 15,
+         :type :invoke,
+         :f :write,
+         :value 4,
+         :index 3416,
+         :time 49065078476}]}
+      {:model {:value 2},
+       :last-op
+       {:process 6,
+        :type :ok,
+        :f :read,
+        :value 2,
+        :index 3405,
+        :time 48951536623},
+       :pending
+       [{:process 0,
+         :type :invoke,
+         :f :write,
+         :value 4,
+         :index 3398,
+         :time 48896818776}
+        {:process 1,
+         :type :invoke,
+         :f :write,
+         :value 3,
+         :index 3372,
+         :time 47174910510}
+        {:process 5,
+         :type :invoke,
+         :f :write,
+         :value 4,
+         :index 3412,
+         :time 49028603550}
+        {:process 6,
+         :type :invoke,
+         :f :write,
+         :value 3,
+         :index 3406,
+         :time 48979103969}
+        {:process 10,
+         :type :invoke,
+         :f :write,
+         :value 1,
+         :index 3422,
+         :time 49203705458}
+        {:process 15,
+         :type :invoke,
+         :f :write,
+         :value 4,
+         :index 3416,
+         :time 49065078476}]}
+      {:model {:value 2},
+       :last-op
+       {:process 6,
+        :type :ok,
+        :f :read,
+        :value 2,
+        :index 3405,
+        :time 48951536623},
+       :pending
+       [{:process 5,
+         :type :invoke,
+         :f :write,
+         :value 4,
+         :index 3412,
+         :time 49028603550}
+        {:process 6,
+         :type :invoke,
+         :f :write,
+         :value 3,
+         :index 3406,
+         :time 48979103969}
+        {:process 10,
+         :type :invoke,
+         :f :write,
+         :value 1,
+         :index 3422,
+         :time 49203705458}
+        {:process 15,
+         :type :invoke,
+         :f :write,
+         :value 4,
+         :index 3416,
+         :time 49065078476}]}
+      {:model {:value 2},
+       :last-op
+       {:process 6,
+        :type :ok,
+        :f :read,
+        :value 2,
+        :index 3405,
+        :time 48951536623},
+       :pending
+       [{:process 0,
+         :type :invoke,
+         :f :write,
+         :value 4,
+         :index 3398,
+         :time 48896818776}
+        {:process 1,
+         :type :invoke,
+         :f :write,
+         :value 3,
+         :index 3372,
+         :time 47174910510}
+        {:process 2,
+         :type :invoke,
+         :f :write,
+         :value 1,
+         :index 3386,
+         :time 48713580173}
+        {:process 3,
+         :type :invoke,
+         :f :write,
+         :value 3,
+         :index 3384,
+         :time 48650374370}
+        {:process 5,
+         :type :invoke,
+         :f :write,
+         :value 4,
+         :index 3412,
+         :time 49028603550}
+        {:process 6,
+         :type :invoke,
+         :f :write,
+         :value 3,
+         :index 3406,
+         :time 48979103969}
+        {:process 10,
+         :type :invoke,
+         :f :write,
+         :value 1,
+         :index 3422,
+         :time 49203705458}
+        {:process 15,
+         :type :invoke,
+         :f :write,
+         :value 4,
+         :index 3416,
+         :time 49065078476}]}
+      {:model {:value 2},
+       :last-op
+       {:process 6,
+        :type :ok,
+        :f :read,
+        :value 2,
+        :index 3405,
+        :time 48951536623},
+       :pending
+       [{:process 1,
+         :type :invoke,
+         :f :write,
+         :value 3,
+         :index 3372,
+         :time 47174910510}
+        {:process 3,
+         :type :invoke,
+         :f :write,
+         :value 3,
+         :index 3384,
+         :time 48650374370}
+        {:process 5,
+         :type :invoke,
+         :f :write,
+         :value 4,
+         :index 3412,
+         :time 49028603550}
+        {:process 6,
+         :type :invoke,
+         :f :write,
+         :value 3,
+         :index 3406,
+         :time 48979103969}
+        {:process 10,
+         :type :invoke,
+         :f :write,
+         :value 1,
+         :index 3422,
+         :time 49203705458}
+        {:process 15,
+         :type :invoke,
+         :f :write,
+         :value 4,
+         :index 3416,
+         :time 49065078476}]}
+      {:model {:value 2},
+       :last-op
+       {:process 6,
+        :type :ok,
+        :f :read,
+        :value 2,
+        :index 3405,
+        :time 48951536623},
+       :pending
+       [{:process 2,
+         :type :invoke,
+         :f :write,
+         :value 1,
+         :index 3386,
+         :time 48713580173}
+        {:process 3,
+         :type :invoke,
+         :f :write,
+         :value 3,
+         :index 3384,
+         :time 48650374370}
+        {:process 5,
+         :type :invoke,
+         :f :write,
+         :value 4,
+         :index 3412,
+         :time 49028603550}
+        {:process 6,
+         :type :invoke,
+         :f :write,
+         :value 3,
+         :index 3406,
+         :time 48979103969}
+        {:process 10,
+         :type :invoke,
+         :f :write,
+         :value 1,
+         :index 3422,
+         :time 49203705458}
+        {:process 11,
+         :type :invoke,
+         :f :write,
+         :value 0,
+         :index 3400,
+         :time 48908950754}
+        {:process 15,
+         :type :invoke,
+         :f :write,
+         :value 4,
+         :index 3416,
+         :time 49065078476}]}
+      {:model {:value 2},
+       :last-op
+       {:process 6,
+        :type :ok,
+        :f :read,
+        :value 2,
+        :index 3405,
+        :time 48951536623},
+       :pending
+       [{:process 3,
+         :type :invoke,
+         :f :write,
+         :value 3,
+         :index 3384,
+         :time 48650374370}
+        {:process 5,
+         :type :invoke,
+         :f :write,
+         :value 4,
+         :index 3412,
+         :time 49028603550}
+        {:process 6,
+         :type :invoke,
+         :f :write,
+         :value 3,
+         :index 3406,
+         :time 48979103969}
+        {:process 10,
+         :type :invoke,
+         :f :write,
+         :value 1,
+         :index 3422,
+         :time 49203705458}
+        {:process 15,
+         :type :invoke,
+         :f :write,
+         :value 4,
+         :index 3416,
+         :time 49065078476}]}
+      {:model {:value 2},
+       :last-op
+       {:process 6,
+        :type :ok,
+        :f :read,
+        :value 2,
+        :index 3405,
+        :time 48951536623},
+       :pending
+       [{:process 0,
+         :type :invoke,
+         :f :write,
+         :value 4,
+         :index 3398,
+         :time 48896818776}
+        {:process 5,
+         :type :invoke,
+         :f :write,
+         :value 4,
+         :index 3412,
+         :time 49028603550}
+        {:process 6,
+         :type :invoke,
+         :f :write,
+         :value 3,
+         :index 3406,
+         :time 48979103969}
+        {:process 10,
+         :type :invoke,
+         :f :write,
+         :value 1,
+         :index 3422,
+         :time 49203705458}
+        {:process 15,
+         :type :invoke,
+         :f :write,
+         :value 4,
+         :index 3416,
+         :time 49065078476}]}
+      {:model {:value 2},
+       :last-op
+       {:process 6,
+        :type :ok,
+        :f :read,
+        :value 2,
+        :index 3405,
+        :time 48951536623},
+       :pending
+       [{:process 0,
+         :type :invoke,
+         :f :write,
+         :value 4,
+         :index 3398,
+         :time 48896818776}
+        {:process 2,
+         :type :invoke,
+         :f :write,
+         :value 1,
+         :index 3386,
+         :time 48713580173}
+        {:process 5,
+         :type :invoke,
+         :f :write,
+         :value 4,
+         :index 3412,
+         :time 49028603550}
+        {:process 6,
+         :type :invoke,
+         :f :write,
+         :value 3,
+         :index 3406,
+         :time 48979103969}
+        {:process 10,
+         :type :invoke,
+         :f :write,
+         :value 1,
+         :index 3422,
+         :time 49203705458}
+        {:process 11,
+         :type :invoke,
+         :f :write,
+         :value 0,
+         :index 3400,
+         :time 48908950754}
+        {:process 15,
+         :type :invoke,
+         :f :write,
+         :value 4,
+         :index 3416,
+         :time 49065078476}]}
+      {:model {:value 2},
+       :last-op
+       {:process 6,
+        :type :ok,
+        :f :read,
+        :value 2,
+        :index 3405,
+        :time 48951536623},
+       :pending
+       [{:process 0,
+         :type :invoke,
+         :f :write,
+         :value 4,
+         :index 3398,
+         :time 48896818776}
+        {:process 1,
+         :type :invoke,
+         :f :write,
+         :value 3,
+         :index 3372,
+         :time 47174910510}
+        {:process 5,
+         :type :invoke,
+         :f :write,
+         :value 4,
+         :index 3412,
+         :time 49028603550}
+        {:process 6,
+         :type :invoke,
+         :f :write,
+         :value 3,
+         :index 3406,
+         :time 48979103969}
+        {:process 10,
+         :type :invoke,
+         :f :write,
+         :value 1,
+         :index 3422,
+         :time 49203705458}
+        {:process 11,
+         :type :invoke,
+         :f :write,
+         :value 0,
+         :index 3400,
+         :time 48908950754}
+        {:process 15,
+         :type :invoke,
+         :f :write,
+         :value 4,
+         :index 3416,
+         :time 49065078476}]}),
+     :final-paths ()},
+    :valid? true},
+   10
+   {:timeline {:valid? true},
+    :linear
+    {:valid? true,
+     :configs
+     ({:model {:value 1},
+       :last-op
+       {:process 1,
+        :type :ok,
+        :f :cas,
+        :value [0 1],
+        :index 2211,
+        :time 32012305459},
+       :pending []}),
+     :final-paths ()},
+    :valid? true},
+   18
+   {:timeline {:valid? true},
+    :linear
+    {:valid? true,
+     :configs
+     ({:model {:value 3},
+       :last-op
+       {:process 39,
+        :type :ok,
+        :f :write,
+        :value 3,
+        :index 3823,
+        :time 54911086426},
+       :pending []}),
+     :final-paths ()},
+    :valid? true},
+   8
+   {:timeline {:valid? true},
+    :linear
+    {:valid? true,
+     :configs
+     ({:model {:value 1},
+       :last-op
+       {:process 0,
+        :type :ok,
+        :f :write,
+        :value 1,
+        :index 1813,
+        :time 26565458945},
+       :pending []}),
+     :final-paths ()},
+    :valid? true}},
+  :failures []},
+ :valid? true}
